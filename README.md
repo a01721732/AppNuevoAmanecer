@@ -1,2 +1,3 @@
 # AppNuevoAmanecer
-A mobile app for use by the Nuevo Amanecer Institute, for their students' tablets.
+The purpose of this mobile app is to allow the institute's students to play different games depending on their cognitive level.
+Also, it will have a soundboard intended for communication, that can be personalized to display custom images and sounds for the students' specific needs.
