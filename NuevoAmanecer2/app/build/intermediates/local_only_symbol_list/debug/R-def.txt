@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color nuevoAmarillo
+color white
+drawable buhos
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable pajaroloco
+drawable pelicano
+drawable perro
+drawable rana
+drawable tigre
+id button
+id imageButton3
+id imageButton4
+id imageButton6
+id imageButton7
+id imageButton8
+id imageButton9
+layout activity_main
+layout activity_main2
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.NuevoAmanecer
+style Theme.NuevoAmanecer
+xml backup_rules
+xml data_extraction_rules
