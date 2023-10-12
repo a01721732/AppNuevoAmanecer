@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.nuevo.nuevoamanecer"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.nuevo.nuevoamanecer"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
