@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="colorPrimary">#28AEFA</color>
     <color name="nuevoAmarillo">#d9ef20</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Nuevo Amanecer</string>
@@ -8,5 +9,6 @@
         
         
     </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar"> <item name="android:windowBackground"> @drawable/splash </item> </style>
     <style name="Theme.NuevoAmanecer" parent="Base.Theme.NuevoAmanecer"/>
 </resources>
