@@ -4,7 +4,7 @@ import mysql.connector
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="sqlPassTecIoT506",
+    passwd="AQUI VA LA CONTRASEÑA DE TU SESION DE MYSQL",
     auth_plugin='mysql_native_password'
 )
 
