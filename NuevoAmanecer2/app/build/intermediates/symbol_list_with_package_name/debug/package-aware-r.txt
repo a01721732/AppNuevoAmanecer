@@ -2954,6 +2954,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fotonuevoamanecerbackground
 drawable ic_arrow_back_black_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3044,6 +3045,7 @@ drawable pajaroloco
 drawable pelicano
 drawable perro
 drawable rana
+drawable rounded_edit_text
 drawable test_level_drawable
 drawable tigre
 drawable tooltip_frame_dark
@@ -3146,7 +3148,15 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
+id btnLoginLogin
+id btnNombreJuego1
+id btnNombreJuego2
+id btnNombreJuego3
+id btnRegresarJuego1
+id btnRegresarJuego2
+id btnRegresarJuego3
+id btnRegresarLogin
+id buttonAdmin
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3220,6 +3230,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextText
+id editTextTextPassword
 id edit_query
 id elastic
 id embed
@@ -3273,6 +3285,7 @@ id imageButton6
 id imageButton7
 id imageButton8
 id imageButton9
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3663,8 +3676,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_game1
+layout activity_game2
+layout activity_game3
+layout activity_login
 layout activity_main
-layout activity_main2
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

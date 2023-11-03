@@ -25,10 +25,10 @@ com.nuevo.nuevoamanecer.app-recyclerview-1.1.0-23 C:\Users\ccuil\.gradle\caches\
 com.nuevo.nuevoamanecer.app-lifecycle-runtime-2.6.1-24 C:\Users\ccuil\.gradle\caches\transforms-3\ec07d00380a0b7fd0cb3eea700ea09a8\transformed\lifecycle-runtime-2.6.1\res
 com.nuevo.nuevoamanecer.app-appcompat-resources-1.6.1-25 C:\Users\ccuil\.gradle\caches\transforms-3\f26d7682e72985517502dd76f8307a8b\transformed\appcompat-resources-1.6.1\res
 com.nuevo.nuevoamanecer.app-lifecycle-livedata-core-2.6.1-26 C:\Users\ccuil\.gradle\caches\transforms-3\f99ebac072a90f83fc97d21b9b32de66\transformed\lifecycle-livedata-core-2.6.1\res
-com.nuevo.nuevoamanecer.app-pngs-27 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\build\generated\res\pngs\debug
-com.nuevo.nuevoamanecer.app-resValues-28 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\build\generated\res\resValues\debug
-com.nuevo.nuevoamanecer.app-packageDebugResources-29 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.nuevo.nuevoamanecer.app-packageDebugResources-30 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.nuevo.nuevoamanecer.app-merged_res-31 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\build\intermediates\merged_res\debug
-com.nuevo.nuevoamanecer.app-debug-32 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\src\debug\res
-com.nuevo.nuevoamanecer.app-main-33 C:\Users\ccuil\AndroidStudioProjects\AppNuevoAmanecer-main\NuevoAmanecer2\app\src\main\res
+com.nuevo.nuevoamanecer.app-pngs-27 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\build\generated\res\pngs\debug
+com.nuevo.nuevoamanecer.app-resValues-28 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\build\generated\res\resValues\debug
+com.nuevo.nuevoamanecer.app-packageDebugResources-29 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.nuevo.nuevoamanecer.app-packageDebugResources-30 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.nuevo.nuevoamanecer.app-merged_res-31 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\build\intermediates\merged_res\debug
+com.nuevo.nuevoamanecer.app-debug-32 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\src\debug\res
+com.nuevo.nuevoamanecer.app-main-33 C:\Users\ccuil\Documents\GitHub\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\res

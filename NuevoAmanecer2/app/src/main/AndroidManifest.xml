@@ -13,7 +13,16 @@
         android:theme="@style/Theme.NuevoAmanecer"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGame3"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGame2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGame1"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

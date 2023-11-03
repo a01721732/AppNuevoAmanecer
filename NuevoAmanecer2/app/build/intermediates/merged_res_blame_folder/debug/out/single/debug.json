@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.nuevo.nuevoamanecer.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "com.nuevo.nuevoamanecer.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -16,16 +16,24 @@
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\rana.png"
     },
     {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_rounded_edit_text.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\rounded_edit_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_game1.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_game1.xml"
+    },
+    {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_tigre.png.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\tigre.png"
     },
     {
-        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_main2.xml.flat",
-        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_main2.xml"
-    },
-    {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_game3.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_game3.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-anydpi_ic_launcher_round.xml.flat",
@@ -50,6 +58,14 @@
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_buhos.png.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\buhos.png"
+    },
+    {
+        "merged": "com.nuevo.nuevoamanecer.app-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "com.nuevo.nuevoamanecer.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_fotonuevoamanecerbackground.png.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\fotonuevoamanecerbackground.png"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_pelicano.png.flat",
@@ -78,6 +94,10 @@
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_game2.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_game2.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",

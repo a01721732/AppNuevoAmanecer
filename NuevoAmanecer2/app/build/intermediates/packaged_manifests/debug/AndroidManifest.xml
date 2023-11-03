@@ -28,7 +28,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.NuevoAmanecer" >
         <activity
-            android:name="com.nuevo.nuevoamanecer.MainActivity2"
+            android:name="com.nuevo.nuevoamanecer.ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame3"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame2"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame1"
             android:exported="true" />
         <activity
             android:name="com.nuevo.nuevoamanecer.MainActivity"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="nuevoAmarillo">#d9ef20</color>
+    <color name="nuevoAmarillo">#FFF200</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Nuevo Amanecer</string>
     <style name="Base.Theme.NuevoAmanecer" parent="Theme.Material3.DayNight.NoActionBar">
