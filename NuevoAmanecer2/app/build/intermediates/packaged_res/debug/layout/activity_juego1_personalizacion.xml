@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Juego1Personalizacion">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="#00aeef"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnConfirmarPersonalizacionJuego1"
+            android:layout_width="136dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="Confirmar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCambiarImagenJuego1"
+            android:layout_width="200dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="Cambiar Imagen"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btnNombreJuego1Personalizacion"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnNombreJuego1Personalizacion"
+            android:layout_width="270dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="&quot;Nombre del Juego (Nivel)&quot;"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

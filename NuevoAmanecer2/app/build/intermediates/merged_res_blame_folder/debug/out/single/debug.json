@@ -52,8 +52,16 @@
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_juego1_personalizacion.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_juego1_personalizacion.xml"
+    },
+    {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_personalizacion_selec.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_personalizacion_selec.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_buhos.png.flat",
@@ -76,6 +84,10 @@
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\pajaroloco.png"
     },
     {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\drawable_rounded_dropdown.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\drawable\\rounded_dropdown.xml"
+    },
+    {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_main.xml"
     },
@@ -94,6 +106,10 @@
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_personalizacion_alumno.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-33:\\layout\\activity_personalizacion_alumno.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-31:\\layout_activity_game2.xml.flat",

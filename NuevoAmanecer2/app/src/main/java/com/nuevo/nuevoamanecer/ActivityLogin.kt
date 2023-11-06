@@ -19,5 +19,10 @@ class ActivityLogin : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, PersonalizacionAlumno::class.java)
+            startActivity(intent)
+        }
     }
 }

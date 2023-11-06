@@ -13,6 +13,15 @@
         android:theme="@style/Theme.NuevoAmanecer"
         tools:targetApi="31">
         <activity
+            android:name=".Juego1Personalizacion"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalizacionSelec"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalizacionAlumno"
+            android:exported="false" />
+        <activity
             android:name=".ActivityLogin"
             android:exported="false" />
         <activity

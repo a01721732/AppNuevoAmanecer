@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.NuevoAmanecer" >
         <activity
+            android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.PersonalizacionSelec"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
+            android:exported="false" />
+        <activity
             android:name="com.nuevo.nuevoamanecer.ActivityLogin"
             android:exported="false" />
         <activity
