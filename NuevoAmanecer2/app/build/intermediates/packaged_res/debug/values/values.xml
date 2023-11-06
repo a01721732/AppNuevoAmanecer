@@ -5,6 +5,12 @@
     <color name="nuevoAmarillo">#d9ef20</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Nuevo Amanecer</string>
+    <string name="gcm_defaultSenderId" translatable="false">924586904295</string>
+    <string name="google_api_key" translatable="false">AIzaSyD4x1bwIVcV4OlQ0CfOW_fWiQIyioFU1RM</string>
+    <string name="google_app_id" translatable="false">1:924586904295:android:ea9398af033d9060f6b042</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4x1bwIVcV4OlQ0CfOW_fWiQIyioFU1RM</string>
+    <string name="google_storage_bucket" translatable="false">fir-nuevoamanecerandroid.appspot.com</string>
+    <string name="project_id" translatable="false">fir-nuevoamanecerandroid</string>
     <style name="Base.Theme.NuevoAmanecer" parent="Theme.Material3.DayNight.NoActionBar">
         
         

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -36,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
@@ -44,4 +44,16 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // Firebase dependencies
+    implementation ("com.google.firebase:firebase-analytics-ktx:20.1.2") // Example version, replace with the latest
+    implementation("com.google.firebase:firebase-database-ktx:20.0.3") // Realtime Database
+
+    // Glide for image loading
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+
+    // Kotlin extensions for Realtime Database
+    implementation("com.google.firebase:firebase-database-ktx")
 }
+
+// Make sure to apply the Google services plugin at the bottom
