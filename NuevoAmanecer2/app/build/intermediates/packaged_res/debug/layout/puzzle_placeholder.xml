@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/puzzle_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/puzzle_background_content_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/puzzle_background_placeholder" />
+
+    <GridLayout
+        android:id="@+id/puzzle_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Dynamically add your puzzle pieces here -->
+
+    </GridLayout>
+
+</FrameLayout>
