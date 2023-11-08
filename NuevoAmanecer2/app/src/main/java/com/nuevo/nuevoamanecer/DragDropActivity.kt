@@ -15,6 +15,7 @@ import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import com.google.firebase.database.*
 
+//Ya no se usa
 class DragDropActivity : AppCompatActivity() {
     private lateinit var gridLayoutPuzzle: GridLayout
 

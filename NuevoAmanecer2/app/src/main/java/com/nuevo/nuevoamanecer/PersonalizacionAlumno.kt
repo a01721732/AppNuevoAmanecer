@@ -2,6 +2,7 @@ package com.nuevo.nuevoamanecer
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
@@ -12,20 +13,28 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.ValueEventListener
 
 
-class SelectActivity : AppCompatActivity() {
+class PersonalizacionAlumno : AppCompatActivity() {
 
     private lateinit var spinnerNames: Spinner
     private lateinit var synchronizeButton: Button
+    private lateinit var spinnerLevels: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.select)
+        setContentView(R.layout.activity_personalizacion_alumno)
 
-        spinnerNames = findViewById(R.id.spinnerAlumno)
-        synchronizeButton = findViewById(R.id.btnSincronizar)
+        spinnerNames = findViewById(R.id.dropdownAlumno)
+        synchronizeButton = findViewById(R.id.btnComenzarPersonalizacionAlumno)
+        spinnerLevels = findViewById(R.id.dropdownNivel)
 
         // Lista
         val names = mutableListOf<String>()
+        val levels = listOf("1", "2", "3", "4")
+
+        val adapterLevels = ArrayAdapter(this, R.layout.spinner_custom_item, levels)
+        adapterLevels.setDropDownViewResource(R.layout.spinner_custom_item)
+
+        spinnerLevels.adapter = adapterLevels
 
         // Referencia a firebase
         val databaseReference = FirebaseDatabase.getInstance().reference.child("images")
@@ -39,8 +48,9 @@ class SelectActivity : AppCompatActivity() {
                     name?.let { names.add(it) }
                 }
 
-                val adapter = ArrayAdapter(this@SelectActivity, android.R.layout.simple_spinner_item, names)
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                val adapter = ArrayAdapter(this@PersonalizacionAlumno, R.layout.spinner_custom_item, names)
+                adapter.setDropDownViewResource(R.layout.spinner_custom_item)
+
                 spinnerNames.adapter = adapter
             }
 
@@ -53,11 +63,17 @@ class SelectActivity : AppCompatActivity() {
             // Sacar nombre
             val selectedName = spinnerNames.selectedItem.toString()
             //  Guardar nombre en sharedprefs
-            val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+            val sharedPref = this.getSharedPreferences("AppPrefs", MODE_PRIVATE)
             with(sharedPref.edit()) {
                 putString("user", selectedName)
                 apply()
             }
+            Log.i("SelectActivity", "Saved $selectedName in SharedPreferences")
+
         }
+
+
+
+
     }
 }
