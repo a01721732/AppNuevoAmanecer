@@ -17,7 +17,7 @@
             android:background="#00AEEF">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonAdmin"
                 android:layout_width="254dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="65dp"
@@ -43,7 +43,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
+                android:layout_width="885dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -61,7 +61,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -78,7 +78,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
+                android:layout_width="827dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -87,7 +87,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="wrap_content"
+                android:layout_width="823dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -96,7 +96,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
+                android:layout_width="782dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"

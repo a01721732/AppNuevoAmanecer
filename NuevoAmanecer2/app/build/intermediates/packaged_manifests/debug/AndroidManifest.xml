@@ -32,6 +32,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NuevoAmanecer" >
+
+        <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
         <activity
             android:name="com.nuevo.nuevoamanecer.SplashActivity"
             android:exported="true"
@@ -42,6 +44,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Only one declaration for each activity -->
         <activity
             android:name="com.nuevo.nuevoamanecer.MainActivity2"
             android:exported="true" />
@@ -52,11 +56,31 @@
             android:name="com.nuevo.nuevoamanecer.DragDropActivity"
             android:exported="true" />
         <activity
-            android:name="com.nuevo.nuevoamanecer.SelectActivity"
-            android:exported="true" >
+            android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
+            android:exported="true" />
 
-            <!-- If you have intent filters, they should be declared here -->
-        </activity>
+        <!-- These activities should either be set as exported=true or have an intent-filter -->
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.PersonalizacionSelec"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityLogin"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame3"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame2"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame1"
+            android:exported="true" />
+
+        <!-- Removed duplicate MainActivity declaration -->
+        <!-- Removed erroneous closing </activity> tag -->
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

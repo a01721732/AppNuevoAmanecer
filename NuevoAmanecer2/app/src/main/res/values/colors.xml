@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="nuevoAmarillo">#d9ef20</color>
     <color name = "colorPrimary">#28AEFA</color>
+    <color name="colorPrimary2">#FF6200EE</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="colorAccent">#FF018786</color>
+    <color name="textColorDefault">#FFFFFFFF</color>
 </resources>
