@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-72:12
-INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-72:12
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:2:1-64:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Eduardo\.gradle\caches\transforms-3\0f0e7148267ca135f177841a2bc1e4c9\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Eduardo\.gradle\caches\transforms-3\510e870a9d77b4ad90a362dbb43a6b5a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Eduardo\.gradle\caches\transforms-3\f4626d1c6f35da16bdfb540eb4b14892\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -115,8 +115,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:
 	android:name
 		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-70:19
-INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-70:19
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-62:19
+INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-62:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Eduardo\.gradle\caches\transforms-3\0f0e7148267ca135f177841a2bc1e4c9\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Eduardo\.gradle\caches\transforms-3\0f0e7148267ca135f177841a2bc1e4c9\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Eduardo\.gradle\caches\transforms-3\510e870a9d77b4ad90a362dbb43a6b5a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -199,30 +199,36 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Eduardo\.gradle\ca
 		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:16:9-51
 	android:dataExtractionRules
 		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:10:9-65
+activity#com.nuevo.nuevoamanecer.ActivityGame4
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:18:9-20:40
+	android:exported
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:19:13-42
 activity#com.nuevo.nuevoamanecer.SplashActivity
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:22:9-31:20
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:24:13-36
 	android:theme
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:23:13-48
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:25:13-48
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:21:13-43
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:23:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:29:27-74
 activity#com.nuevo.nuevoamanecer.MainActivity2
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:31:9-33:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:32:9-34:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:32:13-42
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:33:13-42
 activity#com.nuevo.nuevoamanecer.MainActivity
 ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:35:9-37:39
 	android:exported
@@ -230,53 +236,53 @@ ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer
 	android:name
 		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:36:13-41
 activity#com.nuevo.nuevoamanecer.DragDropActivity
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:39:9-41:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:38:9-40:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:40:13-45
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:39:13-45
 activity#com.nuevo.nuevoamanecer.PersonalizacionAlumno
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:43:9-45:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:41:9-43:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:45:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:44:13-50
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:42:13-50
 activity#com.nuevo.nuevoamanecer.Juego1Personalizacion
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:48:9-50:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:44:9-46:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:49:13-50
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:45:13-50
 activity#com.nuevo.nuevoamanecer.PersonalizacionSelec
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:51:9-53:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:47:9-49:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:53:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:49:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:48:13-49
 activity#com.nuevo.nuevoamanecer.ActivityLogin
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:54:9-56:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:50:9-52:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:56:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:52:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:55:13-42
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:51:13-42
 activity#com.nuevo.nuevoamanecer.ActivityGame3
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:57:9-59:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:53:9-55:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:59:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:58:13-42
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:54:13-42
 activity#com.nuevo.nuevoamanecer.ActivityGame2
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:60:9-62:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:56:9-58:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:62:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:58:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:61:13-42
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:57:13-42
 activity#com.nuevo.nuevoamanecer.ActivityGame1
-ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:63:9-65:39
+ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:59:9-61:39
 	android:exported
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:65:13-36
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:64:13-42
+		ADDED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:60:13-42
 uses-sdk
 INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml

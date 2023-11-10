@@ -3013,6 +3013,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable leon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3092,6 +3093,7 @@ drawable puzzle_background_placeholder
 drawable rana
 drawable rounded_dropdown
 drawable rounded_edit_text
+drawable selva
 drawable splash
 drawable test_level_drawable
 drawable tigre
@@ -3358,6 +3360,7 @@ id imageButtonRanaPersonalizacionSelec
 id imageButtonTigrePersonalizacionSelec
 id imageButtonWoodPersonalizacionSelec
 id imageView
+id imagen
 id immediateStop
 id included
 id indeterminate
@@ -3757,6 +3760,7 @@ layout abc_tooltip
 layout activity_game1
 layout activity_game2
 layout activity_game3
+layout activity_game4
 layout activity_juego1_personalizacion
 layout activity_login
 layout activity_main

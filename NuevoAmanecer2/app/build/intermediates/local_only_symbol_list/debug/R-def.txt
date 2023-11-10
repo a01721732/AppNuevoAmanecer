@@ -13,6 +13,7 @@ color white
 dimen dropdown_item_height
 drawable buhos
 drawable fotonuevoamanecerbackground
+drawable leon
 drawable pajaroloco
 drawable pelicano
 drawable perro
@@ -20,6 +21,7 @@ drawable puzzle_background_placeholder
 drawable rana
 drawable rounded_dropdown
 drawable rounded_edit_text
+drawable selva
 drawable splash
 drawable tigre
 id btnCambiarImagenJuego1
@@ -60,12 +62,14 @@ id imageButtonRanaPersonalizacionSelec
 id imageButtonTigrePersonalizacionSelec
 id imageButtonWoodPersonalizacionSelec
 id imageView
+id imagen
 id puzzle_background
 id puzzle_grid
 id textViewLevel
 layout activity_game1
 layout activity_game2
 layout activity_game3
+layout activity_game4
 layout activity_juego1_personalizacion
 layout activity_login
 layout activity_main
