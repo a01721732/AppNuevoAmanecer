@@ -2974,6 +2974,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable buhos
+drawable button_rounded_edges
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3093,6 +3094,7 @@ drawable rana
 drawable rounded_dropdown
 drawable rounded_edit_text
 drawable splash
+drawable tecla
 drawable test_level_drawable
 drawable tigre
 drawable tooltip_frame_dark
@@ -3101,6 +3103,8 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ConstraintLayout
+id ConstraintLayout2
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3582,6 +3586,14 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id teclaA
+id teclaB
+id teclaC
+id teclaC2
+id teclaD
+id teclaE
+id teclaF
+id teclaG
 id text
 id text2
 id textEnd
@@ -3846,6 +3858,14 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw a
+raw b
+raw c
+raw c2
+raw d
+raw e
+raw f
+raw g
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
