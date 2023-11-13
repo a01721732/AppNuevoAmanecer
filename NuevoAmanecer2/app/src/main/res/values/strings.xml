@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Nuevo Amanecer</string>
     <string name="puzzle_background_content_description">puzzle test</string>
+    <string name="papa_sin_cara_content_description">Una papa plana</string>
 </resources>
