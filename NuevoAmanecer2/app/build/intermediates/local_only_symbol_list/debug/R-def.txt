@@ -14,6 +14,16 @@ dimen dropdown_item_height
 drawable buhos
 drawable button_rounded_edges
 drawable fotonuevoamanecerbackground
+drawable image_come
+drawable image_drink
+drawable image_eat
+drawable image_go
+drawable image_help
+drawable image_love
+drawable image_me
+drawable image_playing
+drawable image_you
+drawable leon
 drawable pajaroloco
 drawable pelicano
 drawable perro
@@ -21,6 +31,7 @@ drawable puzzle_background_placeholder
 drawable rana
 drawable rounded_dropdown
 drawable rounded_edit_text
+drawable selva
 drawable splash
 drawable tecla
 drawable tigre
@@ -47,6 +58,7 @@ id dropdownAlumno
 id dropdownNivel
 id editTextText
 id editTextTextPassword
+id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
 id gridLayoutPuzzleSpaces
@@ -64,8 +76,14 @@ id imageButtonRanaPersonalizacionSelec
 id imageButtonTigrePersonalizacionSelec
 id imageButtonWoodPersonalizacionSelec
 id imageView
+id imagen
+id leftArrowButton
 id puzzle_background
 id puzzle_grid
+id resetButton
+id rightArrowButton
+id sentenceArea
+id speakSentenceButton
 id teclaA
 id teclaB
 id teclaC
@@ -78,6 +96,7 @@ id textViewLevel
 layout activity_game1
 layout activity_game2
 layout activity_game3
+layout activity_game4
 layout activity_juego1_personalizacion
 layout activity_login
 layout activity_main

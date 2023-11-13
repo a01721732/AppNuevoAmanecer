@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NuevoAmanecer"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ActivityGame4"
+            android:exported="false" />
         <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
         <activity
             android:name=".SplashActivity"
@@ -23,28 +25,22 @@
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Only one declaration for each activity -->
+        </activity> <!-- Only one declaration for each activity -->
         <activity
             android:name=".MainActivity2"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
         <activity
             android:name=".DragDropActivity"
             android:exported="true" />
-
         <activity
             android:name=".PersonalizacionAlumno"
-            android:exported="true" />
-
-        <!-- These activities should either be set as exported=true or have an intent-filter -->
+            android:exported="true" /> <!-- These activities should either be set as exported=true or have an intent-filter -->
         <activity
             android:name=".Juego1Personalizacion"
             android:exported="true" />
@@ -63,10 +59,6 @@
         <activity
             android:name=".ActivityGame1"
             android:exported="true" />
-
-        <!-- Removed duplicate MainActivity declaration -->
-        <!-- Removed erroneous closing </activity> tag -->
-
     </application>
 
 </manifest>

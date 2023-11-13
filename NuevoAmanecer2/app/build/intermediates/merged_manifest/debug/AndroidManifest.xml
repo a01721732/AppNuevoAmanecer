@@ -31,9 +31,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.NuevoAmanecer" >
-
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame4"
+            android:exported="false" />
         <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
         <activity
             android:name="com.nuevo.nuevoamanecer.SplashActivity"
@@ -44,9 +45,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Only one declaration for each activity -->
+        </activity> <!-- Only one declaration for each activity -->
         <activity
             android:name="com.nuevo.nuevoamanecer.MainActivity2"
             android:exported="true" />
@@ -58,9 +57,7 @@
             android:exported="true" />
         <activity
             android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
-            android:exported="true" />
-
-        <!-- These activities should either be set as exported=true or have an intent-filter -->
+            android:exported="true" /> <!-- These activities should either be set as exported=true or have an intent-filter -->
         <activity
             android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
             android:exported="true" />
@@ -79,9 +76,6 @@
         <activity
             android:name="com.nuevo.nuevoamanecer.ActivityGame1"
             android:exported="true" />
-
-        <!-- Removed duplicate MainActivity declaration -->
-        <!-- Removed erroneous closing </activity> tag -->
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

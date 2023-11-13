@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val btnImg2 = findViewById(R.id.imageButton4) as ImageButton
         val btnImg3 = findViewById(R.id.imageButton6) as ImageButton
         val btnAdmin = findViewById(R.id.buttonAdmin) as Button
+        val btnImg4 = findViewById(R.id.imageButton7) as ImageButton
 
 
 
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         btnAdmin.setOnClickListener{
             val intent = Intent(this, ActivityLogin::class.java)
+            startActivity(intent)
+        }
+
+        btnImg4.setOnClickListener{
+            val intent = Intent(this, ActivityGame4::class.java)
             startActivity(intent)
         }
 

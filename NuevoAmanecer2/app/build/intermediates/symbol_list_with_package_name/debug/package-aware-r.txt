@@ -3014,6 +3014,16 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable image_come
+drawable image_drink
+drawable image_eat
+drawable image_go
+drawable image_help
+drawable image_love
+drawable image_me
+drawable image_playing
+drawable image_you
+drawable leon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3093,6 +3103,7 @@ drawable puzzle_background_placeholder
 drawable rana
 drawable rounded_dropdown
 drawable rounded_edit_text
+drawable selva
 drawable splash
 drawable tecla
 drawable test_level_drawable
@@ -3329,6 +3340,7 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
+id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
 id gridLayoutPuzzleSpaces
@@ -3362,6 +3374,7 @@ id imageButtonRanaPersonalizacionSelec
 id imageButtonTigrePersonalizacionSelec
 id imageButtonWoodPersonalizacionSelec
 id imageView
+id imagen
 id immediateStop
 id included
 id indeterminate
@@ -3375,6 +3388,7 @@ id jumpToStart
 id labeled
 id layout
 id left
+id leftArrowButton
 id leftToRight
 id legacy
 id light
@@ -3504,8 +3518,10 @@ id radio
 id ratio
 id rectangles
 id report_drawn
+id resetButton
 id reverseSawtooth
 id right
+id rightArrowButton
 id rightToLeft
 id right_icon
 id right_side
@@ -3534,6 +3550,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sentenceArea
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3550,6 +3567,7 @@ id snap
 id snapMargins
 id south
 id spacer
+id speakSentenceButton
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
@@ -3769,6 +3787,7 @@ layout abc_tooltip
 layout activity_game1
 layout activity_game2
 layout activity_game3
+layout activity_game4
 layout activity_juego1_personalizacion
 layout activity_login
 layout activity_main
