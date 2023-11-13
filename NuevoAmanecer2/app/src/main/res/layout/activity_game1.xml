@@ -11,7 +11,9 @@
         android:layout_height="92dp"
         android:background="#00aeef"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ConstraintLayout2">
+
 
         <Button
             android:id="@+id/btnRegresarJuego1"
@@ -25,7 +27,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/button_rounded_edges"/>
 
         <Button
             android:id="@+id/btnNombreJuego1"
@@ -40,6 +43,106 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/button_rounded_edges"/>
+        />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="92dp"
+        android:background="@color/nuevoAmarillo"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:weightSum="8"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaC"
+                android:text="Do"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaD"
+                android:text="Re"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaE"
+                android:text="Mi"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaF"
+                android:text="Fa"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaG"
+                android:text="Sol"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaA"
+                android:text="La"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaB"
+                android:text="Si"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:id="@+id/teclaC2"
+                android:text="Do"
+                android:textColor="@color/black"
+                android:background="@drawable/tecla"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

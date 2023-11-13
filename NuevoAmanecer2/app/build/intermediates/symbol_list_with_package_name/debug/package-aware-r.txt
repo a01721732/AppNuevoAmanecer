@@ -2974,6 +2974,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable buhos
+drawable button_rounded_edges
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3013,6 +3014,15 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable image_come
+drawable image_drink
+drawable image_eat
+drawable image_go
+drawable image_help
+drawable image_love
+drawable image_me
+drawable image_playing
+drawable image_you
 drawable leon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3095,6 +3105,7 @@ drawable rounded_dropdown
 drawable rounded_edit_text
 drawable selva
 drawable splash
+drawable tecla
 drawable test_level_drawable
 drawable tigre
 drawable tooltip_frame_dark
@@ -3103,6 +3114,8 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ConstraintLayout
+id ConstraintLayout2
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3327,6 +3340,7 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
+id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
 id gridLayoutPuzzleSpaces
@@ -3374,6 +3388,7 @@ id jumpToStart
 id labeled
 id layout
 id left
+id leftArrowButton
 id leftToRight
 id legacy
 id light
@@ -3503,8 +3518,10 @@ id radio
 id ratio
 id rectangles
 id report_drawn
+id resetButton
 id reverseSawtooth
 id right
+id rightArrowButton
 id rightToLeft
 id right_icon
 id right_side
@@ -3533,6 +3550,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sentenceArea
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3549,6 +3567,7 @@ id snap
 id snapMargins
 id south
 id spacer
+id speakSentenceButton
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
@@ -3585,6 +3604,14 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id teclaA
+id teclaB
+id teclaC
+id teclaC2
+id teclaD
+id teclaE
+id teclaF
+id teclaG
 id text
 id text2
 id textEnd
@@ -3850,6 +3877,14 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw a
+raw b
+raw c
+raw c2
+raw d
+raw e
+raw f
+raw g
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
