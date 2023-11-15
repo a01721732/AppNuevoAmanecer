@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnImg2.setOnClickListener{
-            val intent = Intent(this, ActivityGame2::class.java)
+            val intent = Intent(this, CaraDePapa::class.java)
             startActivity(intent)
         }
 

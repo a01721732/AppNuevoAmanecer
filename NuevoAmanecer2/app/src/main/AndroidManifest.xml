@@ -58,7 +58,7 @@
             android:name=".ActivityGame3"
             android:exported="true" />
         <activity
-            android:name=".ActivityGame2"
+            android:name=".CaraDePapa"
             android:exported="true" />
         <activity
             android:name=".ActivityGame1"
