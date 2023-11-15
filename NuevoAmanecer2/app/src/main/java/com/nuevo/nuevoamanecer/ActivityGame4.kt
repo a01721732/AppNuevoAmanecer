@@ -39,14 +39,14 @@ class ActivityGame4 : AppCompatActivity(), TextToSpeech.OnInitListener {
         val actionItems = getActionItems()
 
 
-        val screenWidth = resources.displayMetrics.widthPixels
-        val imageMargin = (4 * resources.displayMetrics.density).toInt()
-        val imageSize = (screenWidth / 3) - (2 * imageMargin)
+        val screenWidth = resources.displayMetrics.densityDpi
+        val imageMargin = (10 * resources.displayMetrics.density).toInt()
+        val imageSize = 500
 
         actionItems.forEach { item ->
             val imageView = ImageView(this).apply {
                 setImageResource(item.imageResId)
-                scaleType = ImageView.ScaleType.CENTER_INSIDE
+                scaleType = ImageView.ScaleType.FIT_CENTER
                 layoutParams = GridLayout.LayoutParams().apply {
                     width = imageSize
                     height = imageSize
