@@ -2998,7 +2998,6 @@ int drawable design_ic_visibility 0x7f070097
 int drawable design_ic_visibility_off 0x7f070098
 int drawable design_password_eye 0x7f070099
 int drawable design_snackbar_background 0x7f07009a
-int drawable fade_animation 0x7f070100
 int drawable fotonuevoamanecerbackground 0x7f07009b
 int drawable googleg_disabled_color_18 0x7f07009c
 int drawable googleg_standard_color_18 0x7f07009d
