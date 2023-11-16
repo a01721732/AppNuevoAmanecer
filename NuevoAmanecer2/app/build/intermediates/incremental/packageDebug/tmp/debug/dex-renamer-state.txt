@@ -1,4 +1,4 @@
-#Thu Nov 16 09:08:24 CST 2023
+#Thu Nov 16 09:28:38 CST 2023
 base.0=C\:\\Users\\ccuil\\Documents\\GitHub\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\ccuil\\Documents\\GitHub\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\ccuil\\Documents\\GitHub\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex

@@ -13,6 +13,7 @@ color white
 dimen dropdown_item_height
 drawable buhos
 drawable button_rounded_edges
+drawable fade_animation
 drawable fotonuevoamanecerbackground
 drawable pajaroloco
 drawable pelicano

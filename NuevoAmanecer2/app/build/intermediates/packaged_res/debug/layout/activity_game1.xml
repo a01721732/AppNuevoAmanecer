@@ -237,10 +237,12 @@
                     android:layout_height="718dp"
 
                     android:background="@drawable/tecla"
+                    android:backgroundTint="#cc0001"
 
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:stateListAnimator="@drawable/fade_animation"/>
 
                 <Button
                     android:id="@+id/teclaE"

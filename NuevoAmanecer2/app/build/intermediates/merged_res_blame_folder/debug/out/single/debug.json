@@ -20,12 +20,12 @@
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\layout\\activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\raw_bb.mp3.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\raw\\bb.mp3"
+    },
+    {
+        "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_rounded_dropdown.xml.flat",
@@ -206,6 +206,10 @@
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_button_rounded_edges.xml.flat",
         "source": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\button_rounded_edges.xml"
+    },
+    {
+        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/drawable_fade_animation.xml.flat",
+        "source": "com.nuevo.nuevoamanecer.app-main-37:/drawable/fade_animation.xml"
     },
     {
         "merged": "C:\\Users\\ccuil\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\raw_c.mp3.flat",
