@@ -33,10 +33,76 @@
 
     <ImageView
         android:id="@+id/topHatView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/top_hat"
         android:translationX="240dp" />
+
+    <ImageView
+        android:id="@+id/blueShoesView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blue_shoes"
+        android:translationX="360dp" />
+
+    <ImageView
+        android:id="@+id/bootsView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/boots"
+        android:translationX="480dp" />
+
+    <ImageView
+        android:id="@+id/cartoonyLeftArmView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cartoony_left_arm"
+        android:translationX="600dp" />
+
+    <ImageView
+        android:id="@+id/cartoonyRightArmView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cartoony_right_arm"
+        android:translationX="720dp" />
+
+    <ImageView
+        android:id="@+id/mustacheView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mustache"
+        android:translationX="840dp" />
+
+    <ImageView
+        android:id="@+id/rightMuscleArmView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/right_muscle_arm"
+        android:translationX="960dp" />
+
+    <ImageView
+        android:id="@+id/leftMuscleArmView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:rotationY="180"
+        android:src="@drawable/right_muscle_arm"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/smileView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/smile"
+        android:translationX="120dp"
+        android:translationY="100dp"/>
+
+    <ImageView
+        android:id="@+id/soccerShoesView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/soccer_shoes"
+        android:translationX="240dp"
+        android:translationY="100dp"/>
 
 
 </RelativeLayout>

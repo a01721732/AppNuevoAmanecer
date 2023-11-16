@@ -15,6 +15,15 @@ public class CaraDePapa extends AppCompatActivity {
     ImageView ojosView;
     ImageView bocaLineaView;
     ImageView topHatView;
+    ImageView blueShoesView;
+    ImageView bootsView;
+    ImageView cartoonyLeftArmView;
+    ImageView cartoonyRightArmView;
+    ImageView mustacheView;
+    ImageView rightMuscleArmView;
+    ImageView leftMuscleArmView;
+    ImageView smileView;
+    ImageView soccerShoesView;
 
     private ViewGroup mainLayout;
     private int xDelta;
@@ -30,10 +39,28 @@ public class CaraDePapa extends AppCompatActivity {
         ojosView = (ImageView) findViewById(R.id.ojosView);
         bocaLineaView = (ImageView) findViewById(R.id.bocaLineaView);
         topHatView = (ImageView) findViewById(R.id.topHatView);
+        blueShoesView = (ImageView) findViewById(R.id.blueShoesView);
+        bootsView = (ImageView) findViewById(R.id.bootsView);
+        cartoonyLeftArmView = (ImageView) findViewById(R.id.cartoonyLeftArmView);
+        cartoonyRightArmView = (ImageView) findViewById(R.id.cartoonyRightArmView);
+        mustacheView = (ImageView) findViewById(R.id.mustacheView);
+        rightMuscleArmView = (ImageView) findViewById(R.id.rightMuscleArmView);
+        leftMuscleArmView = (ImageView) findViewById(R.id.leftMuscleArmView);
+        smileView = (ImageView) findViewById(R.id.smileView);
+        soccerShoesView = (ImageView) findViewById(R.id.soccerShoesView);
 
         ojosView.setOnTouchListener(onTouchListener());
         bocaLineaView.setOnTouchListener(onTouchListener());
         topHatView.setOnTouchListener(onTouchListener());
+        blueShoesView.setOnTouchListener(onTouchListener());
+        bootsView.setOnTouchListener(onTouchListener());
+        cartoonyLeftArmView.setOnTouchListener(onTouchListener());
+        cartoonyRightArmView.setOnTouchListener(onTouchListener());
+        mustacheView.setOnTouchListener(onTouchListener());
+        rightMuscleArmView.setOnTouchListener(onTouchListener());
+        leftMuscleArmView.setOnTouchListener(onTouchListener());
+        smileView.setOnTouchListener(onTouchListener());
+        soccerShoesView.setOnTouchListener(onTouchListener());
 
         /*
         ojosView.setOnDragListener(new View.OnDragListener() {
