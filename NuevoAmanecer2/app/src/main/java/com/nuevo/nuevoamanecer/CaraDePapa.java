@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CaraDePapa extends AppCompatActivity {
     //ImageView papaView;
     ImageView ojosView;
+    ImageView bocaLineaView;
+    ImageView topHatView;
 
     private ViewGroup mainLayout;
     private int xDelta;
@@ -23,14 +25,15 @@ public class CaraDePapa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cara_de_papa);
-        ojosView = (ImageView) findViewById(R.id.ojosView);
 
         mainLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
         ojosView = (ImageView) findViewById(R.id.ojosView);
-        //image2 = (ImageView) findViewById(R.id.image2);
+        bocaLineaView = (ImageView) findViewById(R.id.bocaLineaView);
+        topHatView = (ImageView) findViewById(R.id.topHatView);
 
         ojosView.setOnTouchListener(onTouchListener());
-        //image2.setOnTouchListener(onTouchListener());
+        bocaLineaView.setOnTouchListener(onTouchListener());
+        topHatView.setOnTouchListener(onTouchListener());
 
         /*
         ojosView.setOnDragListener(new View.OnDragListener() {

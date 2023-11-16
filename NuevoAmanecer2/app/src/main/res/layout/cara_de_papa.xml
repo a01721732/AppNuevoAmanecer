@@ -10,12 +10,6 @@
     tools:context=".CaraDePapa">
 
     <ImageView
-        android:id="@+id/ojosView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ojos" />
-
-    <ImageView
         android:id="@+id/papaView"
         android:layout_width="600dp"
         android:layout_height="600dp"
@@ -23,6 +17,26 @@
         android:translationX="300dp"
         android:translationY="200dp"
         app:srcCompat="@drawable/papa_sin_cara" />
-        <!-- android:layout_centerInParent="true" -->
+
+    <ImageView
+        android:id="@+id/ojosView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ojos" />
+
+    <ImageView
+        android:id="@+id/bocaLineaView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/boca_linea"
+        android:translationX="120dp" />
+
+    <ImageView
+        android:id="@+id/topHatView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/top_hat"
+        android:translationX="240dp" />
+
 
 </RelativeLayout>
