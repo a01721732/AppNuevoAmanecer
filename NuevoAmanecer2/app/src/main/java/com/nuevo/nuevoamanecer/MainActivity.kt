@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         val btnImg3 = findViewById(R.id.imageButton6) as ImageButton
         val btnAdmin = findViewById(R.id.buttonAdmin) as Button
         val btnImg4 = findViewById(R.id.imageButton7) as ImageButton
+        val btnImg5 = findViewById(R.id.imageButton8) as ImageButton
+        val btnImg6 = findViewById(R.id.imageButton9) as ImageButton
 
 
 
@@ -44,7 +46,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnImg5.setOnClickListener{
+            val intent = Intent(this, ActivityGame5::class.java)
+            startActivity(intent)
+        }
 
+        btnImg6.setOnClickListener{
+            val intent = Intent(this, CaraDePapa::class.java)
+            startActivity(intent)
+        }
 
     }
 }

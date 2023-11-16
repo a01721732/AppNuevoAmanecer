@@ -3,4 +3,6 @@
 
 <resources>
     <dimen name="dropdown_item_height">48dp</dimen>
+    <dimen name="initial_margin_start">150dp</dimen>
+    <dimen name="initial_margin_top">200dp</dimen>
 </resources>
