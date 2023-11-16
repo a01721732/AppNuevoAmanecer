@@ -2,6 +2,7 @@ package com.nuevo.nuevoamanecer
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.widget.Button
 import android.widget.GridLayout
 import android.widget.ImageView
@@ -41,7 +42,7 @@ class ActivityGame4 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         val screenWidth = resources.displayMetrics.densityDpi
         val imageMargin = (10 * resources.displayMetrics.density).toInt()
-        val imageSize = 500 // a
+        val imageSize = 500
 
         actionItems.forEach { item ->
             val imageView = ImageView(this).apply {
@@ -85,12 +86,14 @@ class ActivityGame4 : AppCompatActivity(), TextToSpeech.OnInitListener {
         rightArrowButton.setOnClickListener { }
         speakSentenceButton.setOnClickListener {
             tts.speak(sentenceArea.text, TextToSpeech.QUEUE_FLUSH, null, null)
+            Log.d("TTS", "Speaking sentence: ${sentenceArea.text}")
         }
     }
 
     private fun addToSentence(text: String) {
         sentenceArea.append("$text ")
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+        Log.d("TTS", "Added $text to sentence")
     }
 
     override fun onInit(status: Int) {

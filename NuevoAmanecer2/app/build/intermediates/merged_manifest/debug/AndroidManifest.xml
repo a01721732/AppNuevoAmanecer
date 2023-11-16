@@ -33,9 +33,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NuevoAmanecer" >
         <activity
-            android:name="com.nuevo.nuevoamanecer.ActivityGame4"
+            android:name="com.nuevo.nuevoamanecer.CaraDePapa"
             android:exported="false" />
-        <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame5"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.ActivityGame4"
+            android:exported="false" /> <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
         <activity
             android:name="com.nuevo.nuevoamanecer.SplashActivity"
             android:exported="true"

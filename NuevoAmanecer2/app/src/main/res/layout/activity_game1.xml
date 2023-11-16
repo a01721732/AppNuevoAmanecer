@@ -7,12 +7,10 @@
     tools:context=".ActivityGame1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="92dp"
-        android:background="#00aeef"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/ConstraintLayout2">
+        android:background="#00aeef">
 
 
         <Button
@@ -21,14 +19,14 @@
             android:layout_height="54dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="56dp"
+            android:background="@drawable/button_rounded_edges"
             android:backgroundTint="@color/nuevoAmarillo"
             android:text="Regresar"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/button_rounded_edges"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnNombreJuego1"
@@ -36,6 +34,7 @@
             android:layout_height="54dp"
             android:layout_marginStart="56dp"
             android:layout_marginTop="16dp"
+            android:background="@drawable/button_rounded_edges"
             android:backgroundTint="@color/nuevoAmarillo"
             android:text="&quot;Nombre del Juego (Nivel)&quot;"
             android:textAllCaps="false"
@@ -43,8 +42,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/button_rounded_edges"/>
+            app:layout_constraintTop_toTopOf="parent" />
         />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -56,6 +54,7 @@
         android:background="@color/nuevoAmarillo"
         app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2">
 
+        <!--
         <LinearLayout
             android:layout_width="wrap_content"
             android:orientation="horizontal"
@@ -141,6 +140,200 @@
                 />
 
         </LinearLayout>
+        -->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/teclaEb"
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="212dp"
+
+
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/teclaGb"
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="467dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/teclaAb"
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="596dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/teclaBb"
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="726dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/teclaDb"
+                android:layout_width="84dp"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="88dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/teclaD"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+
+
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#fb940b"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaC" />
+
+                <Button
+                    android:id="@+id/teclaC"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#cc0001"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <Button
+                    android:id="@+id/teclaE"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+
+
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#ffff01
+"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaD" />
+
+                <Button
+                    android:id="@+id/teclaF"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#01cc00"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaE" />
+
+                <Button
+                    android:id="@+id/teclaG"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#03c0c6"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaF" />
+
+                <Button
+                    android:id="@+id/teclaA"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#0000fe"
+
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaG" />
+
+                <Button
+                    android:id="@+id/teclaB"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#762ca7"
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaA" />
+
+                <Button
+                    android:id="@+id/teclaC2"
+                    android:layout_width="128dp"
+                    android:layout_height="718dp"
+                    android:background="@drawable/tecla"
+                    android:backgroundTint="#fe98bf"
+
+
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/teclaB" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/teclaDb2"
+                android:layout_width="wrap_content"
+                android:layout_height="375dp"
+
+
+                android:layout_marginStart="-48dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </RelativeLayout>
 
