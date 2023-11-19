@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pinkSquare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_purple"/>
+
+    <ImageView
+        android:id="@+id/blackSquare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@id/pinkSquare"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/greenSquare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/pinkSquare"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_dark"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/pinkBobomb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/pinkbobomb"
+        android:contentDescription="@string/pink_bobomb"/>
+
+    <ImageView
+        android:id="@+id/greenBobomb"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/greenbobomb"
+        android:contentDescription="@string/green_bobomb"/>
+
+    <ImageView
+        android:id="@+id/blackBobomb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/blackbobomb"
+        android:contentDescription="@string/black_bobomb"/>
+
+    <ImageView
+        android:id="@+id/pinkBobomb1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/pinkbobomb"
+        android:contentDescription="@string/pink_bobomb"/>
+
+    <ImageView
+        android:id="@+id/greenBobomb1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/greenbobomb"
+        android:contentDescription="@string/green_bobomb"/>
+
+    <ImageView
+        android:id="@+id/blackBobomb1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/blackbobomb"
+        android:contentDescription="@string/black_bobomb"/>
+
+    <ImageView
+        android:id="@+id/pinkBobomb2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/pinkbobomb"
+        android:contentDescription="@string/pink_bobomb"/>
+
+    <ImageView
+        android:id="@+id/greenBobomb2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/greenbobomb"
+        android:contentDescription="@string/green_bobomb"/>
+
+    <ImageView
+        android:id="@+id/blackBobomb2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/blackbobomb"
+        android:contentDescription="@string/black_bobomb"/>
+
+    <ImageView
+        android:id="@+id/pinkBobomb3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/pinkbobomb"
+        android:contentDescription="@string/pink_bobomb"/>
+
+    <ImageView
+        android:id="@+id/greenBobomb3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/greenbobomb"
+        android:contentDescription="@string/green_bobomb"/>
+
+    <ImageView
+        android:id="@+id/blackBobomb3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/blackbobomb"
+        android:contentDescription="@string/black_bobomb"/>
+
+
+</RelativeLayout>
+
