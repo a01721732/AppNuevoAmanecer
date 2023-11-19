@@ -1,6 +1,7 @@
 package com.nuevo.nuevoamanecer
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
@@ -19,9 +20,24 @@ class PersonalizacionAlumno : AppCompatActivity() {
     private lateinit var synchronizeButton: Button
     private lateinit var spinnerLevels: Spinner
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personalizacion_alumno)
+
+        val btnPers = findViewById(R.id.btnPersonalizacionAlumno) as Button
+        val btnRegresar = findViewById(R.id.btnRegresarPersonalizacionAlumno) as Button
+
+        btnRegresar.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnPers.setOnClickListener {
+            val intent = Intent(this, PersonalizacionSelec::class.java)
+            startActivity(intent)
+        }
 
         spinnerNames = findViewById(R.id.dropdownAlumno)
         synchronizeButton = findViewById(R.id.btnComenzarPersonalizacionAlumno)

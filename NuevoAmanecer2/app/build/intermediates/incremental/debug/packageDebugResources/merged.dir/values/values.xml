@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#FF018786</color>
+    <color name="colorPrimary">#28AEFA</color>
+    <color name="colorPrimary2">#FF6200EE</color>
+    <color name="colorPrimaryDark">#FF3700B3</color>
+    <color name="nuevoAmarillo">#d9ef20</color>
+    <color name="textColorDefault">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="dropdown_item_height">48dp</dimen>
+    <dimen name="initial_margin_start">150dp</dimen>
+    <dimen name="initial_margin_top">200dp</dimen>
+    <string name="app_name">Nuevo Amanecer</string>
+    <string name="ballon_name">bombascolor</string>
+    <string name="black_bobomb">Pink Bobomb</string>
+    <string name="gcm_defaultSenderId" translatable="false">924586904295</string>
+    <string name="google_api_key" translatable="false">AIzaSyD4x1bwIVcV4OlQ0CfOW_fWiQIyioFU1RM</string>
+    <string name="google_app_id" translatable="false">1:924586904295:android:ea9398af033d9060f6b042</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4x1bwIVcV4OlQ0CfOW_fWiQIyioFU1RM</string>
+    <string name="google_storage_bucket" translatable="false">fir-nuevoamanecerandroid.appspot.com</string>
+    <string name="green_bobomb">Pink Bobomb</string>
+    <string name="papa_sin_cara_content_description">Una papa plana</string>
+    <string name="pink_bobomb">Pink Bobomb</string>
+    <string name="project_id" translatable="false">fir-nuevoamanecerandroid</string>
+    <string name="puzzle_background_content_description">puzzle test</string>
+    <style name="Base.Theme.NuevoAmanecer" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        
+    </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar"> <item name="android:windowBackground"> @drawable/splash </item> </style>
+    <style name="Theme.NuevoAmanecer" parent="Base.Theme.NuevoAmanecer"/>
+</resources>

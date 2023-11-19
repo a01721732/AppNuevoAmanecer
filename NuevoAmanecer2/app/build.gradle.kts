@@ -45,9 +45,11 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+
     // Firebase dependencies
     implementation ("com.google.firebase:firebase-analytics-ktx:20.1.2") // Example version, replace with the latest
     implementation("com.google.firebase:firebase-database-ktx:20.0.3") // Realtime Database
+    implementation("com.google.firebase:firebase-storage-ktx:20.0.0") // Storage
 
     // Glide for image loading
     implementation("com.github.bumptech.glide:glide:4.12.0")
