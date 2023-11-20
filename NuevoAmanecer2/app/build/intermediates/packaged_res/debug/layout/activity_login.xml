@@ -7,7 +7,6 @@
     android:background="#00aeef"
     tools:context=".ActivityLogin">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -34,7 +33,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/button_rounded_edges"/>
-    />
 
     <Button
         android:id="@+id/btnLoginLogin"
@@ -50,34 +48,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.716"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
         android:background="@drawable/button_rounded_edges"/>
-    />
+
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextUserName"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="176dp"
         android:layout_marginEnd="200dp"
         android:background="@drawable/rounded_edit_text"
+        android:hint="Usuario / Email"
         android:ems="10"
-        android:inputType="text"
-        android:text="  Usuario / Email"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="200dp"
         android:background="@drawable/rounded_edit_text"
+        android:hint="Contraseña"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

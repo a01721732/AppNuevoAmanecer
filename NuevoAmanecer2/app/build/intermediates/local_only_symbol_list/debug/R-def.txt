@@ -85,8 +85,8 @@ id cartoonyRightArmView
 id constraintLayout
 id dropdownAlumno
 id dropdownNivel
-id editTextText
-id editTextTextPassword
+id editTextPassword
+id editTextUserName
 id greenBobomb
 id greenBobomb1
 id greenBobomb2
@@ -196,3 +196,4 @@ style SplashScreen
 style Theme.NuevoAmanecer
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config
