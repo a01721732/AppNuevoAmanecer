@@ -10,11 +10,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 import java.util.UUID
 
-
 class PersonalizacionSelec : AppCompatActivity() {
-
 
     private val databaseReference = FirebaseDatabase.getInstance().reference
     private val storageReference = FirebaseStorage.getInstance().reference
@@ -31,48 +30,49 @@ class PersonalizacionSelec : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Use the activity result API for image picking
-        val imagePicker =
-            registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-                uri?.let {
-                    handleImageSelected(it)
-                }
-            }
-
         btnPersJuego1.setOnClickListener {
-            // Start the image picker
-            imagePicker.launch("image/*")
+            // Start the image picker using Intent.ACTION_GET_CONTENT
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image/*"
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
+        }
+    }
+
+    companion object {
+        private const val IMAGE_PICK_CODE = 1000
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
+            val imageUri: Uri? = data?.data
+            imageUri?.let {
+                handleImageSelected(it)
+            }
         }
     }
 
     private fun handleImageSelected(imageUri: Uri) {
-        // Generate a unique name for the image based on the child's name
-        val childName = "images" // Replace with the actual child's name
-        val imageName = "$childName/${UUID.randomUUID()}.jpg"
+        val childName = "carlos" // Cambiar esto con shared preferences para el nombre el nino
+        val imageName = "${UUID.randomUUID()}.jpg"
 
-        // Upload the image to Firebase Storage
-        val imageRef = storageReference.child(imageName)
-        imageRef.putFile(imageUri)
+        // Ensure the destination path exists in Firebase Storage
+        val childReference: StorageReference = storageReference.child(childName)
+        childReference.child(imageName).putFile(imageUri)
             .addOnSuccessListener { taskSnapshot ->
-                // Image upload success
-                Toast.makeText(this, "Image uploaded successfully", Toast.LENGTH_SHORT)
-                    .show()
-
-                // Now, you may want to store the image URL in the Firebase Realtime Database
+                Toast.makeText(this, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
                 val imageUrl = taskSnapshot.metadata?.reference?.downloadUrl.toString()
                 saveImageUrlToDatabase(childName, imageUrl)
             }
             .addOnFailureListener { e ->
-                // Handle unsuccessful uploads
-                Toast.makeText(this, "Image upload failed: ${e.message}", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this, "Image upload failed: ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
-    private fun saveImageUrlToDatabase(childName: String, imageUrl: String) {
-        // Save the image URL under the child's name in the Firebase Realtime Database
-        databaseReference.child(childName).setValue(imageUrl)
-    }
 
+    private fun saveImageUrlToDatabase(childName: String, imageUrl: String) {
+        // Save the image URL under "pic" inside the "images" node in the Firebase Realtime Database
+        databaseReference.child("images").child(childName).child("foto").setValue(imageUrl)
+    }
 
 }
