@@ -150,10 +150,10 @@
             <Button
                 android:id="@+id/teclaEb"
                 android:layout_width="wrap_content"
-                android:layout_height="375dp"
+                android:layout_height="400dp"
 
 
-                android:layout_marginStart="212dp"
+                android:layout_marginStart="276dp"
 
 
                 android:layout_marginBottom="308dp"
@@ -165,20 +165,7 @@
             <Button
                 android:id="@+id/teclaGb"
                 android:layout_width="wrap_content"
-                android:layout_height="375dp"
-
-
-                android:layout_marginStart="467dp"
-                android:layout_marginBottom="308dp"
-                android:background="@drawable/tecla_negra"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <Button
-                android:id="@+id/teclaAb"
-                android:layout_width="wrap_content"
-                android:layout_height="375dp"
+                android:layout_height="400dp"
 
 
                 android:layout_marginStart="596dp"
@@ -189,12 +176,25 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
+                android:id="@+id/teclaAb"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+
+
+                android:layout_marginStart="758dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
                 android:id="@+id/teclaBb"
                 android:layout_width="wrap_content"
-                android:layout_height="375dp"
+                android:layout_height="400dp"
 
 
-                android:layout_marginStart="726dp"
+                android:layout_marginStart="915dp"
                 android:layout_marginBottom="308dp"
                 android:background="@drawable/tecla_negra"
                 android:textColor="@color/black"
@@ -204,10 +204,23 @@
             <Button
                 android:id="@+id/teclaDb"
                 android:layout_width="84dp"
-                android:layout_height="375dp"
+                android:layout_height="400dp"
 
 
-                android:layout_marginStart="88dp"
+                android:layout_marginStart="118dp"
+                android:layout_marginBottom="308dp"
+                android:background="@drawable/tecla_negra"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/teclaDb2"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+
+
+                android:layout_marginStart="1229dp"
                 android:layout_marginBottom="308dp"
                 android:background="@drawable/tecla_negra"
                 android:textColor="@color/black"
@@ -221,7 +234,7 @@
 
                 <Button
                     android:id="@+id/teclaD"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
 
 
@@ -234,7 +247,7 @@
 
                 <Button
                     android:id="@+id/teclaC"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
 
                     android:background="@drawable/tecla"
@@ -242,12 +255,11 @@
 
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
                     android:id="@+id/teclaE"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
 
 
@@ -261,7 +273,7 @@
 
                 <Button
                     android:id="@+id/teclaF"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
                     android:background="@drawable/tecla"
                     android:backgroundTint="#01cc00"
@@ -272,7 +284,7 @@
 
                 <Button
                     android:id="@+id/teclaG"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
                     android:background="@drawable/tecla"
                     android:backgroundTint="#03c0c6"
@@ -283,7 +295,7 @@
 
                 <Button
                     android:id="@+id/teclaA"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
                     android:background="@drawable/tecla"
                     android:backgroundTint="#0000fe"
@@ -295,7 +307,7 @@
 
                 <Button
                     android:id="@+id/teclaB"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
                     android:background="@drawable/tecla"
                     android:backgroundTint="#762ca7"
@@ -306,7 +318,7 @@
 
                 <Button
                     android:id="@+id/teclaC2"
-                    android:layout_width="128dp"
+                    android:layout_width="160dp"
                     android:layout_height="718dp"
                     android:background="@drawable/tecla"
                     android:backgroundTint="#fe98bf"
@@ -318,19 +330,6 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Button
-                android:id="@+id/teclaDb2"
-                android:layout_width="wrap_content"
-                android:layout_height="375dp"
-
-
-                android:layout_marginStart="-48dp"
-                android:layout_marginBottom="308dp"
-                android:background="@drawable/tecla_negra"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -38,6 +38,10 @@ class ActivityLogin : AppCompatActivity() {
     }
 
     private fun performLogin(username: String, password: String) {
+
+        //CAMBIAR ESTA PARTE CUANDO YA FUNCIONE CON EL API BIEN
+        startActivity(Intent(this@ActivityLogin, PersonalizacionAlumno::class.java))
+        return
         val service = RetrofitClientInstance.retrofitInstance?.create(StudentApiService::class.java)
         if (service != null) {
             val credentials = hashMapOf("sUserNamePsicologo" to username, "sPasswordPsicologo" to password)
