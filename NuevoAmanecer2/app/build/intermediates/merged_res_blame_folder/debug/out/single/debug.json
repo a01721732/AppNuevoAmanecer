@@ -68,6 +68,10 @@
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\top_hat.webp"
     },
     {
+        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/layout_activity_game1.xml.flat",
+        "source": "com.nuevo.nuevoamanecer.app-main-37:/layout/activity_game1.xml"
+    },
+    {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_perro.png.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\perro.png"
     },
@@ -178,10 +182,6 @@
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_blue_shoes.webp.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\blue_shoes.webp"
-    },
-    {
-        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/xml_network_security_config.xml.flat",
-        "source": "com.nuevo.nuevoamanecer.app-main-37:/xml/network_security_config.xml"
     },
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -318,6 +318,10 @@
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\raw_db.mp3.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\raw\\db.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\xml\\network_security_config.xml"
     },
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

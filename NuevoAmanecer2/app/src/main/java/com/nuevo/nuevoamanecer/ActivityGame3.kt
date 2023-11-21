@@ -8,6 +8,7 @@ import android.widget.Button
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.DragEvent
 import android.view.MotionEvent
 import android.view.View
@@ -40,10 +41,10 @@ class ActivityGame3 : AppCompatActivity() {
         val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
         val personName = sharedPref.getString("user", "DefaultName")
 
-        val gameType = "dragAndDrop" //Tipo de juego
-        val imagePath = "images/$personName/$gameType/imageUrl" // ruta
 
-        fetchAndSliceImage(imagePath)
+
+
+        fetchAndSliceImage(personName.toString(),"puzzle")
 
         btnRegresar.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
@@ -52,25 +53,32 @@ class ActivityGame3 : AppCompatActivity() {
 
     }
 
-    private fun fetchAndSliceImage(imagePath: String) {
-        val databaseReference = FirebaseDatabase.getInstance().getReference(imagePath)
+    private fun fetchAndSliceImage(personName: String, gameType: String) {
+        val imagesPath = "images/$personName/$gameType"
+        val databaseReference = FirebaseDatabase.getInstance().getReference(imagesPath)
 
-        databaseReference.addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val imageUrl = dataSnapshot.getValue(String::class.java)
-                imageUrl?.let { downloadImage(it) }
-            }
+        databaseReference.orderByChild("timestamp").limitToLast(1)
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        // Assuming each child has a structure with 'url' field
+                        val latestImageSnapshot = dataSnapshot.children.first()
+                        val imageUrl = latestImageSnapshot.child("url").getValue(String::class.java)
+                        imageUrl?.let { downloadImage(it) }
+                    }
+                }
 
-            override fun onCancelled(databaseError: DatabaseError) {
-                // Mostrar mensaje de error
-
-            }
-        })
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Mostrar mensaje de error
+                }
+            })
 
         setupPuzzleSpaces()
     }
 
+
     private fun downloadImage(imageUrl: String) {
+        Log.d("ActivityGame3", "Downloading image from $imageUrl")
         Glide.with(this)
             .asBitmap()
             .load(imageUrl)

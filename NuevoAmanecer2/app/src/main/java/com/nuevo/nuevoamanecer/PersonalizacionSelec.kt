@@ -12,12 +12,18 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import org.json.JSONObject
+import java.io.IOException
 import java.util.UUID
 
 class PersonalizacionSelec : AppCompatActivity() {
 
     private val databaseReference = FirebaseDatabase.getInstance().reference
     private val storageReference = FirebaseStorage.getInstance().reference
+    private val client = OkHttpClient()
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,31 +62,78 @@ class PersonalizacionSelec : AppCompatActivity() {
         }
     }
 
+
+    //Esta funcion hace uso de la API de imgur para subir la imagen a un servidor
+    //La idea es que se suben las fotos locales de android, y se obtiene un URL
+    //Teniendo el URL, se manda el URL y el timestamp a la base de datos de firebase
+    //Para en otros juegos poder bajar la foto con el URL
     private fun handleImageSelected(imageUri: Uri) {
 
-        val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
-        val personName = sharedPref.getString("user", "DefaultName")
+        //Obtener el nombre del usuario de sharedprefs
+        val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        val personName = sharedPref.getString("user", "DefaultName") ?: "DefaultName"
 
-        //val childName = "Carlos" // Cambiar esto con shared preferences para el nombre el nino
-        val imageName = "${UUID.randomUUID()}.jpg"
+        // Obtener el contenido de la imagen y el tipo de la imagen
+        val mimeType = contentResolver.getType(imageUri)
+        val imageStream = contentResolver.openInputStream(imageUri) ?: return
 
-        // Ensure the destination path exists in Firebase Storage
-        val childReference: StorageReference = storageReference.child(personName.toString())
-        childReference.child(imageName).putFile(imageUri)
-            .addOnSuccessListener { taskSnapshot ->
-                Toast.makeText(this, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
-                val imageUrl = taskSnapshot.metadata?.reference?.downloadUrl.toString()
-                saveImageUrlToDatabase(personName.toString(), imageUrl)
+        // Crear el cuerpo de la peticion
+        val requestBody = MultipartBody.Builder()
+            .setType(MultipartBody.FORM)
+            .addFormDataPart("image", "filename", RequestBody.create(mimeType?.toMediaTypeOrNull(), imageStream.readBytes()))
+            .build()
+
+        // Crear y mandar la peticion
+        val request = Request.Builder()
+            .url("https://api.imgur.com/3/image")
+            .header("Authorization", "Client-ID 360ac22aafbb2de")
+            .post(requestBody)
+            .build()
+
+
+        //Manejar la peticion asincronicamente con enqueue en otro hilo
+        // El callback maneja la respuesta
+        client.newCall(request).enqueue(object : Callback {
+            override fun onResponse(call: Call, response: Response) {
+                val responseBody = response.body?.string() ?: ""
+                response.close()
+
+                // Si la respuesta es exitosa, obtener el URL de la imagen y guardarlo en la base de datos
+                if (response.isSuccessful && responseBody.isNotEmpty()) {
+                    val json = JSONObject(responseBody)
+                    val imageUrl = json.getJSONObject("data").getString("link")
+
+                    runOnUiThread {
+                        Toast.makeText(this@PersonalizacionSelec, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
+                        saveImageUrlToDatabase(personName, "puzzle",imageUrl)
+                    }
+                } else {
+                    runOnUiThread {
+                        Toast.makeText(this@PersonalizacionSelec, "Upload failed: ${response.message}", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
-            .addOnFailureListener { e ->
-                Toast.makeText(this, "Image upload failed: ${e.message}", Toast.LENGTH_SHORT).show()
+
+            override fun onFailure(call: Call, e: IOException) {
+                runOnUiThread {
+                    Toast.makeText(this@PersonalizacionSelec, "Image upload failed: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
             }
+        })
+    }
+
+    private fun saveImageUrlToDatabase(childName: String, gameType: String, imageUrl: String) {
+        // Generar clave
+        val timestamp = System.currentTimeMillis()
+
+        // Crear un objeto con la informacion de la imagen
+        val imageInfo = mapOf("timestamp" to timestamp, "url" to imageUrl)
+
+        //  Guardar la informacion en la base de datos
+        databaseReference.child("images").child(childName).child(gameType).push().setValue(imageInfo)
     }
 
 
-    private fun saveImageUrlToDatabase(childName: String, imageUrl: String) {
-        // Save the image URL under "pic" inside the "images" node in the Firebase Realtime Database
-        databaseReference.child("images").child(childName).child("foto").setValue(imageUrl)
-    }
+
 
 }
