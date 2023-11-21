@@ -1,5 +1,6 @@
 package com.nuevo.nuevoamanecer
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -18,9 +19,12 @@ class PersonalizacionSelec : AppCompatActivity() {
     private val databaseReference = FirebaseDatabase.getInstance().reference
     private val storageReference = FirebaseStorage.getInstance().reference
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personalizacion_selec)
+
+
 
         val btnConfirmar = findViewById<Button>(R.id.buttonConfirmarPersonalizacionSelec)
         val btnPersJuego1 = findViewById<ImageButton>(R.id.imageButtonBuhoPersonalizacionSelec)
@@ -53,16 +57,20 @@ class PersonalizacionSelec : AppCompatActivity() {
     }
 
     private fun handleImageSelected(imageUri: Uri) {
-        val childName = "carlos" // Cambiar esto con shared preferences para el nombre el nino
+
+        val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
+        val personName = sharedPref.getString("user", "DefaultName")
+
+        //val childName = "Carlos" // Cambiar esto con shared preferences para el nombre el nino
         val imageName = "${UUID.randomUUID()}.jpg"
 
         // Ensure the destination path exists in Firebase Storage
-        val childReference: StorageReference = storageReference.child(childName)
+        val childReference: StorageReference = storageReference.child(personName.toString())
         childReference.child(imageName).putFile(imageUri)
             .addOnSuccessListener { taskSnapshot ->
                 Toast.makeText(this, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
                 val imageUrl = taskSnapshot.metadata?.reference?.downloadUrl.toString()
-                saveImageUrlToDatabase(childName, imageUrl)
+                saveImageUrlToDatabase(personName.toString(), imageUrl)
             }
             .addOnFailureListener { e ->
                 Toast.makeText(this, "Image upload failed: ${e.message}", Toast.LENGTH_SHORT).show()
