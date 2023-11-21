@@ -58,6 +58,9 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     // Gson Converter for Retrofit
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.firebase:firebase-storage-ktx:20.0.0") // Storage
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+
 }
 
 // Make sure to apply the Google services plugin at the bottom

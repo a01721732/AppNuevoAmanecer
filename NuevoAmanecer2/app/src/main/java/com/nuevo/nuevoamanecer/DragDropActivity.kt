@@ -19,6 +19,7 @@ import com.google.firebase.database.*
 class DragDropActivity : AppCompatActivity() {
     private lateinit var gridLayoutPuzzle: GridLayout
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dragdrop)
@@ -30,7 +31,7 @@ class DragDropActivity : AppCompatActivity() {
         val personName = sharedPref.getString("user", "DefaultName")
 
         val gameType = "dragAndDrop" //Tipo de juego
-        val imagePath = "images/$personName/$gameType/imageUrl" // ruta
+        val imagePath = "images/bobby/foto" // ruta
 
         fetchAndSliceImage(imagePath)
     }

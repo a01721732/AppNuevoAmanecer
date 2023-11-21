@@ -1,5 +1,6 @@
 package com.nuevo.nuevoamanecer
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
@@ -25,6 +26,13 @@ class PersonalizacionAlumno : AppCompatActivity() {
         spinnerNames = findViewById(R.id.dropdownAlumno)
         spinnerLevels = findViewById(R.id.dropdownNivel)
         synchronizeButton = findViewById(R.id.btnComenzarPersonalizacionAlumno)
+        val btnPers = findViewById(R.id.btnPersonalizacionAlumno) as Button
+
+
+        btnPers.setOnClickListener {
+            val intent = Intent(this, PersonalizacionSelec::class.java)
+            startActivity(intent)
+        }
 
         val levels = listOf("1", "2", "3", "4")
         val adapterLevels = ArrayAdapter(this, R.layout.spinner_custom_item, levels)
