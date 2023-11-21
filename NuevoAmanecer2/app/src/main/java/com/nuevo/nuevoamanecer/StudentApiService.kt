@@ -9,6 +9,7 @@ import retrofit2.http.Path
 
 interface StudentApiService {
 
+    // Rutas para el API
     @GET("getAlumnoPsicologo/{IdPsicologo}")
     fun getStudents(@Path("IdPsicologo") idPsicologo: Int): Call<List<Student?>>
 

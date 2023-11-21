@@ -5,7 +5,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 object RetrofitClientInstance {
+
+    // Instancia de retrofit
     private var retrofit: Retrofit? = null
+    //SI SE USA EL IP DE ELIEZER SE DEBE CAMBIAR LA URL A LA SIGUIENTE:
+    //22. algo no me acuerdo
     private const val BASE_URL = "http://127.0.0.1:8000/"
     val retrofitInstance: Retrofit?
         get() {

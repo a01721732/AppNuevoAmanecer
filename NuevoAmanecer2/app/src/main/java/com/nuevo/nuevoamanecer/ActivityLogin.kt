@@ -42,12 +42,20 @@ class ActivityLogin : AppCompatActivity() {
         //CAMBIAR ESTA PARTE CUANDO YA FUNCIONE CON EL API BIEN
         startActivity(Intent(this@ActivityLogin, PersonalizacionAlumno::class.java))
         return
-        val service = RetrofitClientInstance.retrofitInstance?.create(StudentApiService::class.java)
-        if (service != null) {
-            val credentials = hashMapOf("sUserNamePsicologo" to username, "sPasswordPsicologo" to password)
 
+        // Creacion de instancia de cliente de retrofit
+        val service = RetrofitClientInstance.retrofitInstance?.create(StudentApiService::class.java)  //El .create crea una implementacion de StudentApiService usando la instancia de retrofit
+        if (service != null) { //Checar que no sea null para evitar problemas
+            val credentials = hashMapOf("sUserNamePsicologo" to username, "sPasswordPsicologo" to password) //Mapa con las credenciales
+
+            //Llamada al servicio de login en el interfaz de StudentApiService, hace un POST
+            //La parte de enqueue hace una llamada asincrona, se ejecuta en un hilo diferente al principal
+            //Regresa la respuesta en una implementacion anonima del interfaz de Callback
+            //El tipo generico de list<Psicologo> es el tipo de la respuesta que se espera.
+            //Psicologo es un data class que se encuentra en los archivos
             service.login(credentials).enqueue(object : Callback<List<Psicologo>> {
                 override fun onResponse(call: Call<List<Psicologo>>, response: Response<List<Psicologo>>) {
+                    // Checar que la respuesta este correcta y que no sea null
                     if (response.isSuccessful && response.body() != null && response.body()!!.isNotEmpty()) {
                         val psicologo = response.body()!![0]
                         savePsicologoId(psicologo.id)
@@ -68,6 +76,8 @@ class ActivityLogin : AppCompatActivity() {
 
 
     private fun savePsicologoId(id: Int) {
+
+        // Guardar el id del psicologo en shared preferences
         val sharedPref = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         with(sharedPref.edit()) {
             putInt("psicologoId", id)
