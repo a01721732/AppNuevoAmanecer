@@ -1,108 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:padding="10dp"
-    android:id="@+id/relativeLayout"
-    tools:context=".CaraDePapa">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/woodBackground">
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:background="#00aeef"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+        android:id="@+id/btnRegresarJuego3"
+        android:layout_width="136dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/nuevoAmarillo"
+        android:text="Regresar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNombreJuego3"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/nuevoAmarillo"
+        android:text="Nombre del Juego (Nivel)"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnRegresarJuego3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center"
+android:padding="10dp"
+android:id="@+id/relativeLayout"
+tools:context=".CaraDePapa"
+app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
         android:id="@+id/papaView"
-        android:layout_width="600dp"
-        android:layout_height="600dp"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
         android:contentDescription="@string/papa_sin_cara_content_description"
-        android:translationX="300dp"
-        android:translationY="200dp"
+        android:translationX="350dp"
+        android:translationY="220dp"
         app:srcCompat="@drawable/papa_sin_cara" />
 
-    <ImageView
-        android:id="@+id/ojosView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ojos" />
+<ImageView
+    android:id="@+id/ojosView"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/ojos"
+    android:translationY="100dp"/>
 
-    <ImageView
-        android:id="@+id/bocaLineaView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/boca_linea"
-        android:translationX="120dp" />
+<ImageView
+    android:id="@+id/bocaLineaView"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/boca_linea"
+    android:translationX="140dp"
+    android:translationY="100dp"/>
 
     <ImageView
         android:id="@+id/topHatView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/top_hat"
-        android:translationX="240dp" />
+        android:translationX="0dp"
+        android:translationY="400dp" />
 
     <ImageView
         android:id="@+id/blueShoesView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/blue_shoes"
-        android:translationX="360dp" />
-
-    <ImageView
-        android:id="@+id/bootsView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/boots"
-        android:translationX="480dp" />
-
-    <ImageView
-        android:id="@+id/cartoonyLeftArmView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/cartoony_left_arm"
-        android:translationX="600dp" />
-
-    <ImageView
-        android:id="@+id/cartoonyRightArmView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/cartoony_right_arm"
-        android:translationX="720dp" />
-
-    <ImageView
-        android:id="@+id/mustacheView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/mustache"
-        android:translationX="840dp" />
-
-    <ImageView
-        android:id="@+id/rightMuscleArmView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/right_muscle_arm"
-        android:translationX="960dp" />
-
-    <ImageView
-        android:id="@+id/leftMuscleArmView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:rotationY="180"
-        android:src="@drawable/right_muscle_arm"
+        android:translationX="420dp"
         android:translationY="100dp" />
 
     <ImageView
+        android:id="@+id/bootsView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/boots"
+        android:translationX="560dp"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/cartoonyLeftArmView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cartoony_left_arm"
+        android:translationX="700dp"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/cartoonyRightArmView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cartoony_right_arm"
+        android:translationX="820dp"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/mustacheView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mustache"
+        android:translationX="960dp"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/rightMuscleArmView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/right_muscle_arm"
+        android:translationX="1100dp"
+        android:translationY="100dp" />
+
+    <ImageView
+        android:id="@+id/leftMuscleArmView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotationY="180"
+        android:src="@drawable/right_muscle_arm"
+        android:translationY="250dp" />
+
+    <ImageView
         android:id="@+id/smileView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/smile"
-        android:translationX="120dp"
-        android:translationY="100dp"/>
+        android:translationX="270dp"
+        android:translationY="100dp" />
 
     <ImageView
         android:id="@+id/soccerShoesView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/soccer_shoes"
-        android:translationX="240dp"
-        android:translationY="100dp"/>
+        android:translationX="200dp"
+        android:translationY="250dp" />
 
 
 </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
