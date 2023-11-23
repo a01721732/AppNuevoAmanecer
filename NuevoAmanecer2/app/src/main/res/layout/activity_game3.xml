@@ -60,7 +60,11 @@
             tools:layout_editor_absoluteY="65dp" />
         />
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <GridLayout
         android:id="@+id/gridLayoutPuzzleSpaces"
@@ -95,5 +99,7 @@
 
 
     </GridLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
