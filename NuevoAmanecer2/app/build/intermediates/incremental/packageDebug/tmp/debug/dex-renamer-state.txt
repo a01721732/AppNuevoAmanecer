@@ -1,8 +1,8 @@
-#Sun Nov 19 20:34:11 CST 2023
-base.0=C\:\\Users\\Eduardo\\AndroidStudioProjects\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Eduardo\\AndroidStudioProjects\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Eduardo\\AndroidStudioProjects\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.3=C\:\\Users\\Eduardo\\AndroidStudioProjects\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Thu Nov 23 10:42:12 CST 2023
+base.0=C\:\\Users\\ccuil\\Documents\\GitHub\\NuevaAppNuevoAmanecer\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\ccuil\\Documents\\GitHub\\NuevaAppNuevoAmanecer\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\ccuil\\Documents\\GitHub\\NuevaAppNuevoAmanecer\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.3=C\:\\Users\\ccuil\\Documents\\GitHub\\NuevaAppNuevoAmanecer\\AppNuevoAmanecer\\NuevoAmanecer2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=2/classes.dex

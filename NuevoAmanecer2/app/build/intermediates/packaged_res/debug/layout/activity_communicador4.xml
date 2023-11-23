@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- First Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- First Column -->
+        <FrameLayout
+            android:id="@+id/column31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the first column -->
+            <ImageButton
+                android:id="@+id/comView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/comer"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the first column as needed -->
+
+        </FrameLayout>
+
+        <!-- Second Column -->
+        <FrameLayout
+            android:id="@+id/column32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the second column -->
+            <ImageButton
+                android:id="@+id/comView32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dormir"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the second column as needed -->
+
+        </FrameLayout>
+
+        <!-- Third Column -->
+        <FrameLayout
+            android:id="@+id/column33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the third column -->
+            <ImageButton
+                android:id="@+id/comView33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/beber"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the third column as needed -->
+
+        </FrameLayout>
+
+        <!-- Fourth Column -->
+        <FrameLayout
+            android:id="@+id/column34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the fourth column -->
+            <ImageButton
+                android:id="@+id/comView34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/correr"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the fourth column as needed -->
+
+        </FrameLayout>
+
+
+
+        <!-- Add more columns as needed -->
+
+    </LinearLayout>
+
+    <!-- Second Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- First Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column35"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the fifth column -->
+            <ImageButton
+                android:id="@+id/comView35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/regreso"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the fifth column as needed -->
+
+        </FrameLayout>
+
+        <!-- Second Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column36"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the sixth column -->
+            <ImageButton
+                android:id="@+id/comView36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/nadar"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the sixth column as needed -->
+
+        </FrameLayout>
+
+        <!-- Third Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the seventh column -->
+            <ImageButton
+                android:id="@+id/comView37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/salar_pelota"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the seventh column as needed -->
+
+        </FrameLayout>
+
+        <!-- Fourth Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column38"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the eighth column -->
+            <ImageButton
+                android:id="@+id/comView38"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/siguiente"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the eighth column as needed -->
+
+        </FrameLayout>
+
+
+
+        <!-- Add more columns as needed -->
+
+    </LinearLayout>
+
+    <!-- Remaining views -->
+
+    <TextView
+        android:id="@+id/sentenceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:padding="16dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+
+
+        <Button
+            android:id="@+id/speakSentenceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speak"
+            android:layout_marginLeft="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

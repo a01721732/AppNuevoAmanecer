@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnImg4.setOnClickListener{
-            val intent = Intent(this, ActivityGame4::class.java)
+            val intent = Intent(this, Communicador1::class.java)
             startActivity(intent)
         }
 

@@ -42,7 +42,7 @@ class ActivityGame4 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         val screenWidth = resources.displayMetrics.densityDpi
         val imageMargin = (10 * resources.displayMetrics.density).toInt()
-        val imageSize = 500
+        val imageSize = 470
 
         actionItems.forEach { item ->
             val imageView = ImageView(this).apply {

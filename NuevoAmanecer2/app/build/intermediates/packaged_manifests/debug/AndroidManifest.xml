@@ -32,7 +32,29 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.NuevoAmanecer" >
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador7"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador6"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador5"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador4"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador3"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador2"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador1"
+            android:exported="false" />
         <activity
             android:name="com.nuevo.nuevoamanecer.CaraDePapa"
             android:exported="false" />

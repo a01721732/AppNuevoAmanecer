@@ -9,335 +9,378 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:24:5-68
-13-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:24:22-65
+13-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:24:22-65
 14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-14-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:25:5-79
-14-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:25:22-76
+14-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:25:22-76
 15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:26:5-110
-15-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:26:22-107
+15-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:26:22-107
 16
 17    <permission
-17-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 18        android:name="com.nuevo.nuevoamanecer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 20
 21    <uses-permission android:name="com.nuevo.nuevoamanecer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-68:19
+23-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:8:5-89:19
 24        android:allowBackup="true"
-24-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:10:9-35
+24-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:9:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.9.0] C:\Users\Eduardo\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25-->[androidx.core:core:1.9.0] C:\Users\ccuil\.gradle\caches\transforms-3\fa5b8c27d3a67ea41b19585cddd623f5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:11:9-65
+26-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:10:9-65
 27        android:debuggable="true"
 28        android:extractNativeLibs="false"
 29        android:fullBackupContent="@xml/backup_rules"
-29-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:12:9-54
+29-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:11:9-54
 30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:13:9-43
+30-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:12:9-43
 31        android:label="@string/app_name"
-31-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:14:9-41
+31-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:13:9-41
 32        android:networkSecurityConfig="@xml/network_security_config"
-32-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:9:9-69
+32-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:14:9-69
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:15:9-54
+33-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:15:9-54
 34        android:supportsRtl="true"
-34-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:16:9-35
-35        android:theme="@style/Theme.NuevoAmanecer" >
-35-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:17:9-51
-36        <activity
-36-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:19:9-21:40
-37            android:name="com.nuevo.nuevoamanecer.CaraDePapa"
-37-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:20:13-39
-38            android:exported="false" />
-38-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:21:13-37
-39        <activity
-39-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:22:9-24:40
-40            android:name="com.nuevo.nuevoamanecer.ActivityGame5"
-40-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:23:13-42
-41            android:exported="false" />
-41-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:24:13-37
-42        <activity
-42-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:25:9-27:40
-43            android:name="com.nuevo.nuevoamanecer.ActivityGame4"
-43-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:26:13-42
-44            android:exported="false" /> <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
-44-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:27:13-37
-45        <activity
-45-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:28:9-37:20
-46            android:name="com.nuevo.nuevoamanecer.SplashActivity"
-46-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:29:13-43
-47            android:exported="true"
-47-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:30:13-36
-48            android:theme="@style/SplashScreen" >
-48-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:31:13-48
-49            <intent-filter>
-49-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:32:13-36:29
-50                <action android:name="android.intent.action.MAIN" />
-50-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:33:17-69
-50-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:33:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:35:17-77
-52-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:35:27-74
-53            </intent-filter>
-54        </activity> <!-- Only one declaration for each activity -->
+34-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:16:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.NuevoAmanecer" >
+36-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:17:9-51
+37        <activity
+37-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:19:9-21:40
+38            android:name="com.nuevo.nuevoamanecer.Communicador7"
+38-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:20:13-42
+39            android:exported="false" />
+39-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:21:13-37
+40        <activity
+40-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:22:9-24:40
+41            android:name="com.nuevo.nuevoamanecer.Communicador6"
+41-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:23:13-42
+42            android:exported="false" />
+42-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:24:13-37
+43        <activity
+43-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:25:9-27:40
+44            android:name="com.nuevo.nuevoamanecer.Communicador5"
+44-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:26:13-42
+45            android:exported="false" />
+45-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:27:13-37
+46        <activity
+46-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:28:9-30:40
+47            android:name="com.nuevo.nuevoamanecer.Communicador4"
+47-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:29:13-42
+48            android:exported="false" />
+48-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:30:13-37
+49        <activity
+49-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:31:9-33:40
+50            android:name="com.nuevo.nuevoamanecer.Communicador3"
+50-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:32:13-42
+51            android:exported="false" />
+51-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:33:13-37
+52        <activity
+52-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:34:9-36:40
+53            android:name="com.nuevo.nuevoamanecer.Communicador2"
+53-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:35:13-42
+54            android:exported="false" />
+54-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:36:13-37
 55        <activity
-55-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:38:9-40:39
-56            android:name="com.nuevo.nuevoamanecer.MainActivity2"
-56-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:39:13-42
-57            android:exported="true" />
-57-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:40:13-36
+55-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:37:9-39:40
+56            android:name="com.nuevo.nuevoamanecer.Communicador1"
+56-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:38:13-42
+57            android:exported="false" />
+57-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:39:13-37
 58        <activity
-58-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:41:9-43:39
-59            android:name="com.nuevo.nuevoamanecer.MainActivity"
-59-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:42:13-41
-60            android:exported="true" />
-60-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:43:13-36
+58-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:40:9-42:40
+59            android:name="com.nuevo.nuevoamanecer.CaraDePapa"
+59-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:41:13-39
+60            android:exported="false" />
+60-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:42:13-37
 61        <activity
-61-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:44:9-46:39
-62            android:name="com.nuevo.nuevoamanecer.DragDropActivity"
-62-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:45:13-45
-63            android:exported="true" />
-63-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:46:13-36
+61-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:43:9-45:40
+62            android:name="com.nuevo.nuevoamanecer.ActivityGame5"
+62-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:44:13-42
+63            android:exported="false" />
+63-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:45:13-37
 64        <activity
-64-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:47:9-49:39
-65            android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
-65-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:48:13-50
-66            android:exported="true" /> <!-- These activities should either be set as exported=true or have an intent-filter -->
-66-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:49:13-36
+64-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:46:9-48:40
+65            android:name="com.nuevo.nuevoamanecer.ActivityGame4"
+65-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:47:13-42
+66            android:exported="false" /> <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
+66-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:48:13-37
 67        <activity
-67-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:50:9-52:39
-68            android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
-68-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:51:13-50
-69            android:exported="true" />
-69-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:52:13-36
-70        <activity
-70-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:53:9-55:39
-71            android:name="com.nuevo.nuevoamanecer.PersonalizacionSelec"
-71-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:54:13-49
-72            android:exported="true" />
-72-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:55:13-36
-73        <activity
-73-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:56:9-58:39
-74            android:name="com.nuevo.nuevoamanecer.ActivityLogin"
-74-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:57:13-42
-75            android:exported="true" />
-75-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:58:13-36
-76        <activity
-76-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:59:9-61:39
-77            android:name="com.nuevo.nuevoamanecer.ActivityGame3"
-77-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:60:13-42
-78            android:exported="true" />
-78-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:61:13-36
-79        <activity
-79-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:62:9-64:39
-80            android:name="com.nuevo.nuevoamanecer.ActivityGame2"
-80-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:63:13-42
-81            android:exported="true" />
-81-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:64:13-36
-82        <activity
-82-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:65:9-67:39
-83            android:name="com.nuevo.nuevoamanecer.ActivityGame1"
-83-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:66:13-42
-84            android:exported="true" />
-84-->C:\Users\Eduardo\AndroidStudioProjects\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:67:13-36
-85
-86        <service
-86-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:8:9-14:19
-87            android:name="com.google.firebase.components.ComponentDiscoveryService"
-87-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:9:13-84
-88            android:directBootAware="true"
-88-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-89            android:exported="false" >
-89-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:10:13-37
-90            <meta-data
-90-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:11:13-13:85
-91                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-91-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:12:17-126
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:13:17-82
-93            <meta-data
-93-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:15:13-17:85
-94                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-94-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:16:17-124
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:17:17-82
-96            <meta-data
-96-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
-97                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-97-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:16:17-122
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:17:17-82
-99            <meta-data
-99-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
-100                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-100-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
-102            <meta-data
-102-->[com.google.firebase:firebase-database:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
-103                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-103-->[com.google.firebase:firebase-database:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:33:17-109
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-database:20.0.3] C:\Users\Eduardo\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:34:17-82
-105            <meta-data
-105-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
-106                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-106-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
-108            <meta-data
-108-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:31:13-33:85
-109                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-109-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:32:17-139
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:33:17-82
-111            <meta-data
-111-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
-112                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-112-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
-114        </service>
-115
-116        <provider
-116-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-117            android:name="com.google.firebase.provider.FirebaseInitProvider"
-117-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-118            android:authorities="com.nuevo.nuevoamanecer.firebaseinitprovider"
-118-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-119            android:directBootAware="true"
-119-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-120            android:exported="false"
-120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-121            android:initOrder="100" />
-121-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-122
-123        <receiver
-123-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:29:9-33:20
-124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-124-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:30:13-85
-125            android:enabled="true"
-125-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:31:13-35
-126            android:exported="false" >
-126-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:32:13-37
-127        </receiver>
-128
-129        <service
-129-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:35:9-38:40
-130            android:name="com.google.android.gms.measurement.AppMeasurementService"
-130-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:36:13-84
-131            android:enabled="true"
-131-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:37:13-35
-132            android:exported="false" />
-132-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:38:13-37
-133        <service
-133-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:39:9-43:72
-134            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-134-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:40:13-87
-135            android:enabled="true"
-135-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:41:13-35
-136            android:exported="false"
-136-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:42:13-37
-137            android:permission="android.permission.BIND_JOB_SERVICE" />
-137-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\Eduardo\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:43:13-69
-138
-139        <activity
-139-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Eduardo\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-140            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-140-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Eduardo\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-141            android:exported="false"
-141-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Eduardo\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-142-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Eduardo\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-143
-144        <meta-data
-144-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-145            android:name="com.google.android.gms.version"
-145-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-146            android:value="@integer/google_play_services_version" />
-146-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Eduardo\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-147
-148        <provider
-148-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-149            android:name="androidx.startup.InitializationProvider"
-149-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-150            android:authorities="com.nuevo.nuevoamanecer.androidx-startup"
-150-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-151            android:exported="false" >
-151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-152            <meta-data
-152-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-153                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-154                android:value="androidx.startup" />
-154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Eduardo\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-155            <meta-data
-155-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Eduardo\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-156                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-156-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Eduardo\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-157                android:value="androidx.startup" />
-157-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Eduardo\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-158            <meta-data
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-159                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-160                android:value="androidx.startup" />
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-161        </provider>
-162
-163        <receiver
-163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-164            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-165            android:directBootAware="false"
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-166            android:enabled="true"
-166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-167            android:exported="true"
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-168            android:permission="android.permission.DUMP" >
-168-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-169            <intent-filter>
-169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-170                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-171            </intent-filter>
-172            <intent-filter>
-172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-173                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-174            </intent-filter>
-175            <intent-filter>
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-176                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-177            </intent-filter>
-178            <intent-filter>
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-179                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Eduardo\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-180            </intent-filter>
-181        </receiver>
-182    </application>
-183
-184</manifest>
+67-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:49:9-58:20
+68            android:name="com.nuevo.nuevoamanecer.SplashActivity"
+68-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:50:13-43
+69            android:exported="true"
+69-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:51:13-36
+70            android:theme="@style/SplashScreen" >
+70-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:52:13-48
+71            <intent-filter>
+71-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:53:13-57:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:54:17-69
+72-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:54:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:56:17-77
+74-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:56:27-74
+75            </intent-filter>
+76        </activity> <!-- Only one declaration for each activity -->
+77        <activity
+77-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:59:9-61:39
+78            android:name="com.nuevo.nuevoamanecer.MainActivity2"
+78-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:60:13-42
+79            android:exported="true" />
+79-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:61:13-36
+80        <activity
+80-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:62:9-64:39
+81            android:name="com.nuevo.nuevoamanecer.MainActivity"
+81-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:63:13-41
+82            android:exported="true" />
+82-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:64:13-36
+83        <activity
+83-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:65:9-67:39
+84            android:name="com.nuevo.nuevoamanecer.DragDropActivity"
+84-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:66:13-45
+85            android:exported="true" />
+85-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:67:13-36
+86        <activity
+86-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:68:9-70:39
+87            android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
+87-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:69:13-50
+88            android:exported="true" /> <!-- These activities should either be set as exported=true or have an intent-filter -->
+88-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:70:13-36
+89        <activity
+89-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:71:9-73:39
+90            android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
+90-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:72:13-50
+91            android:exported="true" />
+91-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:73:13-36
+92        <activity
+92-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:74:9-76:39
+93            android:name="com.nuevo.nuevoamanecer.PersonalizacionSelec"
+93-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:75:13-49
+94            android:exported="true" />
+94-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:76:13-36
+95        <activity
+95-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:77:9-79:39
+96            android:name="com.nuevo.nuevoamanecer.ActivityLogin"
+96-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:78:13-42
+97            android:exported="true" />
+97-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:79:13-36
+98        <activity
+98-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:80:9-82:39
+99            android:name="com.nuevo.nuevoamanecer.ActivityGame3"
+99-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:81:13-42
+100            android:exported="true" />
+100-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:82:13-36
+101        <activity
+101-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:83:9-85:39
+102            android:name="com.nuevo.nuevoamanecer.ActivityGame2"
+102-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:84:13-42
+103            android:exported="true" />
+103-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:85:13-36
+104        <activity
+104-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:86:9-88:39
+105            android:name="com.nuevo.nuevoamanecer.ActivityGame1"
+105-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:87:13-42
+106            android:exported="true" />
+106-->C:\Users\ccuil\Documents\GitHub\NuevaAppNuevoAmanecer\AppNuevoAmanecer\NuevoAmanecer2\app\src\main\AndroidManifest.xml:88:13-36
+107
+108        <service
+108-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:8:9-14:19
+109            android:name="com.google.firebase.components.ComponentDiscoveryService"
+109-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:9:13-84
+110            android:directBootAware="true"
+110-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+111            android:exported="false" >
+111-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:10:13-37
+112            <meta-data
+112-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:11:13-13:85
+113                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+113-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:12:17-126
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-analytics-ktx:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\98d7c2258f7c94afab1e680cdb9e8609\transformed\firebase-analytics-ktx-20.1.2\AndroidManifest.xml:13:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:15:13-17:85
+116                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+116-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:16:17-124
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-database-ktx:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\aad7280d171686a0f5b9299222ccc1fe\transformed\firebase-database-ktx-20.0.3\AndroidManifest.xml:17:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+119                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+119-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:16:17-122
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-storage-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\3105060a220f976ea4c5ae318df0d434\transformed\firebase-storage-ktx-20.0.0\AndroidManifest.xml:17:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+122                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+122-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\cc25e8a1aa8842b05dc3408430d8b577\transformed\firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-database:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
+125                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+125-->[com.google.firebase:firebase-database:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:33:17-109
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-database:20.0.3] C:\Users\ccuil\.gradle\caches\transforms-3\9e6bcf63eb2120c8eabea743f22c29a4\transformed\firebase-database-20.0.3\AndroidManifest.xml:34:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+128                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+128-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\7ad79d931bf5d083ffe77df0eeaa52e9\transformed\firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+130            <meta-data
+130-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:31:13-33:85
+131                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+131-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:32:17-139
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.android.gms:play-services-measurement-api:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\b5618014c3d5d82500ebb5079cf110bf\transformed\play-services-measurement-api-20.1.2\AndroidManifest.xml:33:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+134                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+134-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e67167235dcb0ab92b7058058c173451\transformed\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+136        </service>
+137
+138        <provider
+138-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+139            android:name="com.google.firebase.provider.FirebaseInitProvider"
+139-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+140            android:authorities="com.nuevo.nuevoamanecer.firebaseinitprovider"
+140-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+141            android:directBootAware="true"
+141-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+142            android:exported="false"
+142-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+143            android:initOrder="100" />
+143-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\d265ea38970dea98420f02136523ea48\transformed\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+144
+145        <receiver
+145-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:29:9-33:20
+146            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+146-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:30:13-85
+147            android:enabled="true"
+147-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:31:13-35
+148            android:exported="false" >
+148-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:32:13-37
+149        </receiver>
+150
+151        <service
+151-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:35:9-38:40
+152            android:name="com.google.android.gms.measurement.AppMeasurementService"
+152-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:36:13-84
+153            android:enabled="true"
+153-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:37:13-35
+154            android:exported="false" />
+154-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:38:13-37
+155        <service
+155-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:39:9-43:72
+156            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+156-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:40:13-87
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:41:13-35
+158            android:exported="false"
+158-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:42:13-37
+159            android:permission="android.permission.BIND_JOB_SERVICE" />
+159-->[com.google.android.gms:play-services-measurement:20.1.2] C:\Users\ccuil\.gradle\caches\transforms-3\5468e717bcf275a663b25c7ad66bd630\transformed\play-services-measurement-20.1.2\AndroidManifest.xml:43:13-69
+160
+161        <activity
+161-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ccuil\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+162            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+162-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ccuil\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ccuil\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ccuil\.gradle\caches\transforms-3\b661162afa123648b86132cd3032af39\transformed\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+165
+166        <meta-data
+166-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+167            android:name="com.google.android.gms.version"
+167-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+168            android:value="@integer/google_play_services_version" />
+168-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\ccuil\.gradle\caches\transforms-3\e7783f2edc88c05efe8e272d0e99180b\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+169
+170        <provider
+170-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+171            android:name="androidx.startup.InitializationProvider"
+171-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+172            android:authorities="com.nuevo.nuevoamanecer.androidx-startup"
+172-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+173            android:exported="false" >
+173-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+174            <meta-data
+174-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+175                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+175-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+176                android:value="androidx.startup" />
+176-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ccuil\.gradle\caches\transforms-3\5dd820c5b0a1d46b0699fcacef60c6b1\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+177            <meta-data
+177-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ccuil\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+178                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+178-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ccuil\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+179                android:value="androidx.startup" />
+179-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ccuil\.gradle\caches\transforms-3\038cdb9cdbffa1eec49550ff70b84376\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+180            <meta-data
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+181                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+182                android:value="androidx.startup" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+183        </provider>
+184
+185        <receiver
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+186            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+187            android:directBootAware="false"
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+188            android:enabled="true"
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+189            android:exported="true"
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+190            android:permission="android.permission.DUMP" >
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+191            <intent-filter>
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+192                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+193            </intent-filter>
+194            <intent-filter>
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+195                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+196            </intent-filter>
+197            <intent-filter>
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+198                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+198-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+199            </intent-filter>
+200            <intent-filter>
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+201                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+201-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+201-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ccuil\.gradle\caches\transforms-3\067087acb367a9adc40e9ef424d85802\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+202            </intent-filter>
+203        </receiver>
+204    </application>
+205
+206</manifest>

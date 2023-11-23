@@ -35,7 +35,7 @@ class PersonalizacionSelec : AppCompatActivity() {
         }
 
         btnPersJuego1.setOnClickListener {
-            // Start the image picker using Intent.ACTION_GET_CONTENT
+            // Abre la galeria
             val intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
             startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
