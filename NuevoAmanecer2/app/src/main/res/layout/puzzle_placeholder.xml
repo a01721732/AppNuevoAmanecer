@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/puzzle_background_content_description"
         android:scaleType="fitCenter"
-        android:src="@drawable/puzzle_background_placeholder" />
+        android:src="@drawable/question_mark" />
 
     <GridLayout
         android:id="@+id/puzzle_grid"
