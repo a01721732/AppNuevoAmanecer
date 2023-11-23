@@ -53,8 +53,12 @@ class ActivityGame3 : AppCompatActivity() {
         }
 
         resetButton.setOnClickListener {
+            gridLayoutPuzzlePieces.removeAllViews()
+            gridLayoutPuzzleSpaces.removeAllViews()
+            setupPuzzleSpaces()
             fetchAndSliceImage(personName.toString(),"puzzle")
         }
+
 
     }
 
@@ -86,6 +90,7 @@ class ActivityGame3 : AppCompatActivity() {
         Glide.with(this)
             .asBitmap()
             .load(imageUrl)
+            .error(R.drawable.tigre)
             .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                     val pieces = sliceImage(resource)
