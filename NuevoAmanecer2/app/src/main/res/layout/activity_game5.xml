@@ -6,140 +6,143 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
-        android:id="@+id/pinkSquare"
+        android:id="@+id/yellowSquare"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_purple"/>
+        android:background="#FFFF00" />
+
 
     <ImageView
-        android:id="@+id/blackSquare"
+        android:id="@+id/orangeSquare"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toLeftOf="@id/pinkSquare"
+        android:layout_toLeftOf="@id/yellowSquare"
         android:layout_centerVertical="true"
-        android:background="@android:color/black"/>
+        android:background="#FFA500" />
+
 
     <ImageView
-        android:id="@+id/greenSquare"
+        android:id="@+id/redSquare"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toRightOf="@id/pinkSquare"
+        android:layout_toRightOf="@id/yellowSquare"
         android:layout_centerVertical="true"
-        android:background="@android:color/holo_green_dark"/>
+        android:background="#FF0000" />
 
 
 
 
     <ImageView
-        android:id="@+id/pinkBobomb"
+        android:id="@+id/cherry"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/pinkbobomb"
-        android:contentDescription="@string/pink_bobomb"/>
+        android:src="@drawable/cherry"
+        android:contentDescription="@string/cherry"/>
 
     <ImageView
-        android:id="@+id/greenBobomb"
+        android:id="@+id/lemon"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="150dp"
         android:layout_marginStart="120dp"
-        android:src="@drawable/greenbobomb"
-        android:contentDescription="@string/green_bobomb"/>
+        android:src="@drawable/lemon"
+        android:contentDescription="@string/lemon"/>
 
     <ImageView
-        android:id="@+id/blackBobomb"
+        android:id="@+id/orange"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/blackbobomb"
-        android:contentDescription="@string/black_bobomb"/>
+        android:src="@drawable/orange"
+        android:contentDescription="@string/orange"/>
 
     <ImageView
-        android:id="@+id/pinkBobomb1"
+        android:id="@+id/cherry1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/pinkbobomb"
-        android:contentDescription="@string/pink_bobomb"/>
+        android:src="@drawable/cherry"
+        android:contentDescription="@string/cherry"/>
 
     <ImageView
-        android:id="@+id/greenBobomb1"
+        android:id="@+id/lemon1"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="150dp"
         android:layout_marginStart="120dp"
-        android:src="@drawable/greenbobomb"
-        android:contentDescription="@string/green_bobomb"/>
+        android:src="@drawable/lemon"
+        android:contentDescription="@string/lemon"/>
 
     <ImageView
-        android:id="@+id/blackBobomb1"
+        android:id="@+id/orange1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/blackbobomb"
-        android:contentDescription="@string/black_bobomb"/>
+        android:src="@drawable/orange"
+        android:contentDescription="@string/orange"/>
 
     <ImageView
-        android:id="@+id/pinkBobomb2"
+        android:id="@+id/cherry2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/pinkbobomb"
-        android:contentDescription="@string/pink_bobomb"/>
+        android:src="@drawable/cherry"
+        android:contentDescription="@string/cherry"/>
 
     <ImageView
-        android:id="@+id/greenBobomb2"
+        android:id="@+id/lemon2"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="150dp"
         android:layout_marginStart="120dp"
-        android:src="@drawable/greenbobomb"
-        android:contentDescription="@string/green_bobomb"/>
+        android:src="@drawable/lemon"
+        android:contentDescription="@string/lemon"/>
 
     <ImageView
-        android:id="@+id/blackBobomb2"
+        android:id="@+id/orange2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/blackbobomb"
-        android:contentDescription="@string/black_bobomb"/>
+        android:src="@drawable/orange"
+        android:contentDescription="@string/orange"/>
 
     <ImageView
-        android:id="@+id/pinkBobomb3"
+        android:id="@+id/cherry3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/pinkbobomb"
-        android:contentDescription="@string/pink_bobomb"/>
+        android:src="@drawable/cherry"
+        android:contentDescription="@string/cherry"/>
 
     <ImageView
-        android:id="@+id/greenBobomb3"
+        android:id="@+id/lemon3"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="150dp"
         android:layout_marginStart="120dp"
-        android:src="@drawable/greenbobomb"
-        android:contentDescription="@string/green_bobomb"/>
+        android:src="@drawable/lemon"
+        android:contentDescription="@string/lemon"/>
 
     <ImageView
-        android:id="@+id/blackBobomb3"
+        android:id="@+id/orange3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginStart="150dp"
-        android:src="@drawable/blackbobomb"
-        android:contentDescription="@string/black_bobomb"/>
+        android:src="@drawable/orange"
+        android:contentDescription="@string/orange"/>
 
 
 </RelativeLayout>
