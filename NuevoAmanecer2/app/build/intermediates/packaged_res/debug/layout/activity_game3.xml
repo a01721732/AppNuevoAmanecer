@@ -44,6 +44,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/button_rounded_edges"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_edges"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="65dp" />
         />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,7 @@ import com.google.firebase.database.ValueEventListener
 class ActivityGame3 : AppCompatActivity() {
     private lateinit var gridLayoutPuzzlePieces: GridLayout
     private lateinit var gridLayoutPuzzleSpaces: GridLayout
-
+    private lateinit var resetButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game3)
@@ -36,6 +36,7 @@ class ActivityGame3 : AppCompatActivity() {
         val btnRegresar = findViewById<Button>(R.id.btnRegresarJuego3)
         gridLayoutPuzzlePieces = findViewById(R.id.gridLayoutPuzzlePieces)
         gridLayoutPuzzleSpaces = findViewById(R.id.gridLayoutPuzzleSpaces)
+        resetButton = findViewById(R.id.btnReset)
 
 
         val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
@@ -51,6 +52,10 @@ class ActivityGame3 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        resetButton.setOnClickListener {
+            fetchAndSliceImage(personName.toString(),"puzzle")
+        }
+
     }
 
     private fun fetchAndSliceImage(personName: String, gameType: String) {
@@ -61,7 +66,6 @@ class ActivityGame3 : AppCompatActivity() {
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
-                        // Assuming each child has a structure with 'url' field
                         val latestImageSnapshot = dataSnapshot.children.first()
                         val imageUrl = latestImageSnapshot.child("url").getValue(String::class.java)
                         imageUrl?.let { downloadImage(it) }
@@ -182,7 +186,6 @@ class ActivityGame3 : AppCompatActivity() {
                 val draggedView = dragEvent.localState as View
                 val owner = draggedView.parent as ViewGroup
                 owner.removeView(draggedView)
-
                 val destination = view as ImageView
                 destination.setImageBitmap((draggedView as ImageView).drawable.toBitmap())
 

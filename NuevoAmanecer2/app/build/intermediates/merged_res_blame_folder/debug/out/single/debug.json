@@ -68,10 +68,6 @@
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\top_hat.webp"
     },
     {
-        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/layout_activity_game1.xml.flat",
-        "source": "com.nuevo.nuevoamanecer.app-main-37:/layout/activity_game1.xml"
-    },
-    {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_perro.png.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\perro.png"
     },
@@ -214,6 +210,10 @@
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_tigre.png.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\tigre.png"
+    },
+    {
+        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/layout_activity_game3.xml.flat",
+        "source": "com.nuevo.nuevoamanecer.app-main-37:/layout/activity_game3.xml"
     },
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_smile.png.flat",

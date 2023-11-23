@@ -77,6 +77,7 @@ id btnRegresarJuego2
 id btnRegresarJuego3
 id btnRegresarLogin
 id btnRegresarPersonalizacionAlumno
+id btnReset
 id buttonAdmin
 id buttonConfirmarPersonalizacionSelec
 id buttonReturn
