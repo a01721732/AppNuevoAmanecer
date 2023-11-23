@@ -93,8 +93,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/bomba"
-                tools:src="@drawable/bomba" />
+                android:src="@drawable/frutas"
+                tools:src="@drawable/frutas" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
