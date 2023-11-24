@@ -5,56 +5,76 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.content.Intent
 import android.widget.Button
+import android.content.Context
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val btnImg1 = findViewById(R.id.imageButton3) as ImageButton
-        val btnImg2 = findViewById(R.id.imageButton4) as ImageButton
-        val btnImg3 = findViewById(R.id.imageButton6) as ImageButton
-        val btnAdmin = findViewById(R.id.buttonAdmin) as Button
-        val btnImg4 = findViewById(R.id.imageButton7) as ImageButton
-        val btnImg5 = findViewById(R.id.imageButton8) as ImageButton
-        val btnImg6 = findViewById(R.id.imageButton9) as ImageButton
+        val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        val cognitiveLevel = sharedPref.getInt("cognitiveLevel", -1)
 
-
-
-        btnImg1.setOnClickListener{
-            val intent = Intent(this, ActivityGame1::class.java)
-            startActivity(intent)
+        // Cambiar layout dependiendo del nivel cognitivo
+        when (cognitiveLevel) {
+            -1 -> setContentView(R.layout.activity_main_grayed_out)
+            else -> setContentView(R.layout.activity_main)
         }
 
-        btnImg2.setOnClickListener{
-            val intent = Intent(this, ActivityGame2::class.java)
-            startActivity(intent)
+        // Initialize buttons
+        val btnImg1 = findViewById<ImageButton>(R.id.imageButton3)
+        val btnImg2 = findViewById<ImageButton>(R.id.imageButton4)
+        val btnImg3 = findViewById<ImageButton>(R.id.imageButton6)
+        val btnImg4 = findViewById<ImageButton>(R.id.imageButton7)
+        val btnImg5 = findViewById<ImageButton>(R.id.imageButton8)
+        val btnImg6 = findViewById<ImageButton>(R.id.imageButton9)
+        val btnAdmin = findViewById<Button>(R.id.buttonAdmin)
+
+        btnAdmin.setOnClickListener {
+            //val sharedPref = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+            //with(sharedPref.edit()) {
+              //  putInt("cognitiveLevel", 2)
+                //apply()
+            //}
+            startActivity(Intent(this, ActivityLogin::class.java))
         }
 
-        btnImg3.setOnClickListener{
-            val intent = Intent(this, ActivityGame3::class.java)
-            startActivity(intent)
+        if (cognitiveLevel > -1) {
+            setupButtonInteractions(btnImg1, ActivityGame1::class.java, cognitiveLevel >= 1)
+            setupButtonInteractions(btnImg2, ActivityGame2::class.java, cognitiveLevel >= 1)
+            setupButtonInteractions(btnImg3, ActivityGame3::class.java, cognitiveLevel >= 2)
+            setupButtonInteractions(btnImg4, Communicador1::class.java, cognitiveLevel >= 2)
+            setupButtonInteractions(btnImg5, ActivityGame5::class.java, cognitiveLevel >= 3)
+            setupButtonInteractions(btnImg6, CaraDePapa::class.java, cognitiveLevel >= 3)
         }
-
-        btnAdmin.setOnClickListener{
-            val intent = Intent(this, ActivityLogin::class.java)
-            startActivity(intent)
+        else{
+            btnAdmin.alpha = 1.0f
         }
-
-        btnImg4.setOnClickListener{
-            val intent = Intent(this, ActivityGame4::class.java)
-            startActivity(intent)
-        }
-
-        btnImg5.setOnClickListener{
-            val intent = Intent(this, ActivityGame5::class.java)
-            startActivity(intent)
-        }
-
-        btnImg6.setOnClickListener{
-            val intent = Intent(this, CaraDePapa::class.java)
-            startActivity(intent)
-        }
-
     }
+
+    private fun setupButtonInteractions(button: ImageButton, activityClass: Class<*>, isEnabled: Boolean) {
+        button.isEnabled = isEnabled
+        if (isEnabled) {
+            button.alpha = 1.0f
+            button.setOnClickListener {
+                startActivity(Intent(this, activityClass))
+            }
+        } else {
+            button.isEnabled = true
+            button.alpha = 0.1f
+            button.setOnClickListener {
+                showAccessDeniedDialog()
+            }
+        }
+    }
+
+    private fun showAccessDeniedDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Acceso Denegado")
+            .setMessage("No tienes acceso a este juego")
+            .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+            .show()
+    }
+
 }

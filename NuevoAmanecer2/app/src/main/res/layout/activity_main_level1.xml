@@ -44,31 +44,14 @@
             android:translationY="-80dp">
 
             <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="835dp"
+                android:id="@+id/imageButton1"
+                android:layout_width="885dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/piano"
-                tools:src="@drawable/piano" />
+                android:src="@drawable/buhos"
+                tools:src="@drawable/buhos" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/iconoleon"
-                tools:src="@drawable/iconoleon" />
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/rompecabezas"
-                tools:src="@drawable/rompecabezas" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,31 +62,14 @@
             android:translationY="-140dp">
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/comunicador"
-                tools:src="@drawable/comunicador" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="835dp"
+                android:id="@+id/imageButton2"
+                android:layout_width="823dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/frutas"
-                tools:src="@drawable/frutas" />
+                android:src="@drawable/pelicano"
+                tools:src="@drawable/pelicano" />
 
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/papa"
-                tools:src="@drawable/papa" />
         </LinearLayout>
     </LinearLayout>
 

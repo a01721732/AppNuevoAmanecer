@@ -65,6 +65,27 @@
         <activity
             android:name=".ActivityGame1"
             android:exported="true" />
+        <activity
+            android:name=".Communicador1"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador2"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador3"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador4"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador5"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador6"
+            android:exported="true" />
+        <activity
+            android:name=".Communicador7"
+            android:exported="true" />
     </application>
 
 </manifest>
