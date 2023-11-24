@@ -43,6 +43,11 @@ class PersonalizacionAlumno : AppCompatActivity() {
         loadStudents(psychologistId)
 
         synchronizeButton?.setOnClickListener {
+
+            //ESTA PARTE DEBERIA ESTAR ABAJO
+
+            // ESTA PARTE DEBERIA ESTAR ABAJO
+
             val selectedStudentId = getSelectedStudentId() ?: return@setOnClickListener
             val selectedLevel = getSelectedLevel()
 
@@ -53,6 +58,20 @@ class PersonalizacionAlumno : AppCompatActivity() {
                 override fun onResponse(call: Call<Void>, response: Response<Void>) {
                     if (response.isSuccessful) {
                         Toast.makeText(this@PersonalizacionAlumno, "Nivel actualizado con éxito", Toast.LENGTH_SHORT).show()
+
+
+                        //ESPACIO ABIERTO PARA LA PARTE DE SHARED PREREFERENCES
+                        //AQUI DEBERIA ESTAR EN VEZ DE ESTAR ARRIBA EN LA FUNCION
+                        //MOVER CUANDO YA FUNCIONE CON EL API BIEN
+
+                        val selectedCognitiveLevel = updateCognitiveLevel()
+                        val selectedStudent = spinnerNames?.selectedItem as? Student
+                        val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+                        val editor = sharedPreferences.edit()
+                        editor.putInt("cognitiveLevel", selectedCognitiveLevel!!)
+                        editor.putString("user", selectedStudent?.name)
+
+
                     } else {
                         Toast.makeText(this@PersonalizacionAlumno, "Error al actualizar el nivel", Toast.LENGTH_SHORT).show()
                     }
@@ -70,6 +89,11 @@ class PersonalizacionAlumno : AppCompatActivity() {
     private fun getSelectedStudentId(): Int? {
         val selectedStudent = spinnerNames?.selectedItem as? Student
         return selectedStudent?.id
+    }
+
+    private fun updateCognitiveLevel(): Int?{
+        val selectedStudent = spinnerNames?.selectedItem as? Student
+        return selectedStudent?.cognitiveLevel
     }
 
     private fun getSelectedLevel(): Int {
