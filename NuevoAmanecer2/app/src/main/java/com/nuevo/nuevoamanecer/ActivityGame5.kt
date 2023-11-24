@@ -89,7 +89,7 @@ class ActivityGame5 : AppCompatActivity() {
         val initialY1 = 500f
 
         val initialX2 = 600f
-        val initialY2 = 200f
+        val initialY2 = 500f
 
         val initialX3 = 150f
         val initialY3 = 750f
