@@ -49,6 +49,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
         }
 
         synchronizeButton?.setOnClickListener {
+            Log.d("PersonalizacionAlumno", "Try to synchronize student level")
 
             //ESTA PARTE DEBERIA ESTAR ABAJO
 
@@ -59,6 +60,8 @@ class PersonalizacionAlumno : AppCompatActivity() {
 
             val requestData = hashMapOf("iIdAlumno" to selectedStudentId, "iNivel" to selectedLevel)
             val service = retrofitInstance?.create(StudentApiService::class.java)
+
+            Log.d("PersonalizacionAlumno", "Try to synchronize student level: ${requestData.get("iIdAlumno")}, ${requestData.get("iNivel")}")
 
             service?.updateStudentLevel(requestData)?.enqueue(object : Callback<Void> {
                 override fun onResponse(call: Call<Void>, response: Response<Void>) {
@@ -118,8 +121,11 @@ class PersonalizacionAlumno : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val students = response.body() ?: emptyList()
                     val studentNames = students.mapNotNull { it?.name }
+                    val studentLevels = students.mapNotNull { it?.cognitiveLevel }
+                    val adapter2 = ArrayAdapter(this@PersonalizacionAlumno, R.layout.spinner_custom_item, studentLevels)
                     val adapter = ArrayAdapter(this@PersonalizacionAlumno, R.layout.spinner_custom_item, studentNames)
                     spinnerNames?.adapter = adapter
+                    spinnerLevels?.adapter = adapter2
                 }
             }
 
