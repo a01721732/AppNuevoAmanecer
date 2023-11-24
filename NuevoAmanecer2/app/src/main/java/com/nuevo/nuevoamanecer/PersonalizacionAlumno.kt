@@ -28,6 +28,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
         spinnerLevels = findViewById(R.id.dropdownNivel)
         synchronizeButton = findViewById(R.id.btnComenzarPersonalizacionAlumno)
         val btnPers = findViewById(R.id.btnPersonalizacionAlumno) as Button
+        val btnRegresar = findViewById(R.id.btnRegresarPersonalizacionAlumno) as Button
 
 
         btnPers.setOnClickListener {
@@ -41,6 +42,11 @@ class PersonalizacionAlumno : AppCompatActivity() {
 
         val psychologistId = getPsychologistIdFromPreferences()
         loadStudents(psychologistId)
+
+        btnRegresar.setOnClickListener {
+            val intent = Intent(this, ActivityLogin::class.java)
+            startActivity(intent)
+        }
 
         synchronizeButton?.setOnClickListener {
 
@@ -81,8 +87,10 @@ class PersonalizacionAlumno : AppCompatActivity() {
                     Toast.makeText(this@PersonalizacionAlumno, "Error en la red: ${t.message}", Toast.LENGTH_SHORT).show()
                 }
             })
-        }
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
+        }
     }
 
 
