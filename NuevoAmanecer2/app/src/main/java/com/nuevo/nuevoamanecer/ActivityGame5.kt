@@ -18,21 +18,21 @@ class ActivityGame5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game5)
 
-        setDraggable(findViewById(R.id.pinkSquare))
-        setDraggable(findViewById(R.id.blackSquare))
-        setDraggable(findViewById(R.id.greenSquare))
+        setDraggable(findViewById(R.id.yellowSquare))
+        setDraggable(findViewById(R.id.redSquare))
+        setDraggable(findViewById(R.id.orangeSquare))
         setDraggable(findViewById(R.id.cherry))
         setDraggable(findViewById(R.id.lemon))
-        setDraggable(findViewById(R.id.blackBobomb))
+        setDraggable(findViewById(R.id.orange))
         setDraggable(findViewById(R.id.cherry1))
         setDraggable(findViewById(R.id.lemon1))
-        setDraggable(findViewById(R.id.blackBobomb1))
+        setDraggable(findViewById(R.id.orange1))
         setDraggable(findViewById(R.id.cherry2))
         setDraggable(findViewById(R.id.lemon2))
-        setDraggable(findViewById(R.id.blackBobomb2))
+        setDraggable(findViewById(R.id.orange2))
         setDraggable(findViewById(R.id.cherry3))
         setDraggable(findViewById(R.id.lemon3))
-        setDraggable(findViewById(R.id.blackBobomb3))
+        setDraggable(findViewById(R.id.orange3))
     }
 
     private fun setDraggable(view: ImageView) {
@@ -96,20 +96,20 @@ class ActivityGame5 : AppCompatActivity() {
 
         findViewById<ImageView>(R.id.cherry).animate().x(initialX).y(initialY).setDuration(0).start()
         findViewById<ImageView>(R.id.lemon).animate().x(initialX).y(initialY).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb).animate().x(initialX).y(initialY).setDuration(0).start()
+        findViewById<ImageView>(R.id.orange).animate().x(initialX).y(initialY).setDuration(0).start()
 
         findViewById<ImageView>(R.id.cherry1).animate().x(initialX1).y(initialY1).setDuration(0).start()
         findViewById<ImageView>(R.id.lemon1).animate().x(initialX1).y(initialY1).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb1).animate().x(initialX1).y(initialY1).setDuration(0).start()
+        findViewById<ImageView>(R.id.orange1).animate().x(initialX1).y(initialY1).setDuration(0).start()
 
         findViewById<ImageView>(R.id.cherry2).animate().x(initialX2).y(initialY2).setDuration(0).start()
         findViewById<ImageView>(R.id.lemon2).animate().x(initialX2).y(initialY2).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb2).animate().x(initialX2).y(initialY2).setDuration(0).start()
+        findViewById<ImageView>(R.id.orange2).animate().x(initialX2).y(initialY2).setDuration(0).start()
 
 
         findViewById<ImageView>(R.id.cherry3).animate().x(initialX3).y(initialY3).setDuration(0).start()
         findViewById<ImageView>(R.id.lemon3).animate().x(initialX3).y(initialY3).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb3).animate().x(initialX3).y(initialY3).setDuration(0).start()
+        findViewById<ImageView>(R.id.orange3).animate().x(initialX3).y(initialY3).setDuration(0).start()
 
         imagesMovedCount = 0
     }

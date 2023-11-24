@@ -2983,6 +2983,7 @@ drawable buhos
 drawable button_rounded_edges
 drawable cartoony_left_arm
 drawable cartoony_right_arm
+drawable cherry
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3032,6 +3033,7 @@ drawable image_love
 drawable image_me
 drawable image_playing
 drawable image_you
+drawable lemon
 drawable leon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3107,6 +3109,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable ojos
+drawable orange
 drawable pajaroloco
 drawable papa_sin_cara
 drawable pelicano
@@ -3224,11 +3227,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
-id blackBobomb
-id blackBobomb1
-id blackBobomb2
-id blackBobomb3
-id blackSquare
 id blocking
 id blueShoesView
 id bocaLineaView
@@ -3273,6 +3271,10 @@ id chain2
 id chains
 id checkbox
 id checked
+id cherry
+id cherry1
+id cherry2
+id cherry3
 id chronometer
 id circle_center
 id clear_text
@@ -3370,11 +3372,6 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
-id greenBobomb
-id greenBobomb1
-id greenBobomb2
-id greenBobomb3
-id greenSquare
 id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
@@ -3427,6 +3424,10 @@ id leftArrowButton
 id leftMuscleArmView
 id leftToRight
 id legacy
+id lemon
+id lemon1
+id lemon2
+id lemon3
 id light
 id line1
 id line3
@@ -3530,6 +3531,11 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id orange
+id orange1
+id orange2
+id orange3
+id orangeSquare
 id outline
 id outward
 id overshoot
@@ -3546,11 +3552,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id pinkBobomb
-id pinkBobomb1
-id pinkBobomb2
-id pinkBobomb3
-id pinkSquare
 id position
 id postLayout
 id pressed
@@ -3561,6 +3562,7 @@ id puzzle_grid
 id radio
 id ratio
 id rectangles
+id redSquare
 id relativeLayout
 id report_drawn
 id resetButton
@@ -3724,6 +3726,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yellowSquare
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -3979,7 +3982,6 @@ string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string ballon_name
-string black_bobomb
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -3989,6 +3991,7 @@ string bottomsheet_drag_handle_content_description
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string cherry
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -4018,10 +4021,10 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string green_bobomb
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string lemon
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4122,13 +4125,13 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string orange
 string papa_sin_cara_content_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string pink_bobomb
 string project_id
 string puzzle_background_content_description
 string search_menu_title

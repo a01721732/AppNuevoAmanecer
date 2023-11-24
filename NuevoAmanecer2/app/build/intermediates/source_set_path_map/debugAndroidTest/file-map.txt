@@ -1,0 +1,6 @@
+com.nuevo.nuevoamanecer.test.app-annotation-experimental-1.3.0-0 /Users/charlieayala/.gradle/caches/transforms-3/913604e8c17ec63679e981dca099163c/transformed/annotation-experimental-1.3.0/res
+com.nuevo.nuevoamanecer.test.app-core-1.5.0-1 /Users/charlieayala/.gradle/caches/transforms-3/ddf277019d9cdd1aa5f253fb1bd2fa7c/transformed/core-1.5.0/res
+com.nuevo.nuevoamanecer.test.app-androidTest-2 /Users/charlieayala/AndroidStudioProjects/AppNuevoAmanecer/NuevoAmanecer2/app/build/generated/res/resValues/androidTest/debug
+com.nuevo.nuevoamanecer.test.app-mergeDebugAndroidTestResources-3 /Users/charlieayala/AndroidStudioProjects/AppNuevoAmanecer/NuevoAmanecer2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.nuevo.nuevoamanecer.test.app-mergeDebugAndroidTestResources-4 /Users/charlieayala/AndroidStudioProjects/AppNuevoAmanecer/NuevoAmanecer2/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.nuevo.nuevoamanecer.test.app-merged_res-5 /Users/charlieayala/AndroidStudioProjects/AppNuevoAmanecer/NuevoAmanecer2/app/build/intermediates/merged_res/debugAndroidTest
