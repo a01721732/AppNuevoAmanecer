@@ -82,6 +82,27 @@
         <activity
             android:name="com.nuevo.nuevoamanecer.ActivityGame1"
             android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador1"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador2"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador3"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador4"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador5"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador6"
+            android:exported="true" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador7"
+            android:exported="true" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

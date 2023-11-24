@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- First Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- First Column -->
+        <FrameLayout
+            android:id="@+id/column61"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the first column -->
+            <ImageButton
+                android:id="@+id/comView61"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/vaso"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the first column as needed -->
+
+        </FrameLayout>
+
+        <!-- Second Column -->
+        <FrameLayout
+            android:id="@+id/column62"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the second column -->
+            <ImageButton
+                android:id="@+id/comView62"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/plato"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the second column as needed -->
+
+        </FrameLayout>
+
+        <!-- Third Column -->
+        <FrameLayout
+            android:id="@+id/column63"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the third column -->
+            <ImageButton
+                android:id="@+id/comView63"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/comida"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the third column as needed -->
+
+        </FrameLayout>
+
+        <!-- Fourth Column -->
+        <FrameLayout
+            android:id="@+id/column64"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the fourth column -->
+            <ImageButton
+                android:id="@+id/comView64"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jabon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the fourth column as needed -->
+
+        </FrameLayout>
+
+
+
+        <!-- Add more columns as needed -->
+
+    </LinearLayout>
+
+    <!-- Second Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- First Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column65"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the fifth column -->
+            <ImageButton
+                android:id="@+id/comView65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/regreso"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the fifth column as needed -->
+
+        </FrameLayout>
+
+        <!-- Second Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column66"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the sixth column -->
+            <ImageButton
+                android:id="@+id/comView66"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cepillo_dientes"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the sixth column as needed -->
+
+        </FrameLayout>
+
+        <!-- Third Column in the second linear layout -->
+        <FrameLayout
+            android:id="@+id/column67"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <!-- Add ImageButtons for the seventh column -->
+            <ImageButton
+                android:id="@+id/comView67"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/peine"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Add more ImageButtons for the seventh column as needed -->
+
+        </FrameLayout>
+
+        <!-- Fourth Column in the second linear layout -->
+
+
+
+
+        <!-- Add more columns as needed -->
+
+    </LinearLayout>
+
+    <!-- Remaining views -->
+
+    <TextView
+        android:id="@+id/sentenceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:padding="16dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+
+
+        <Button
+            android:id="@+id/speakSentenceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speak"
+            android:layout_marginLeft="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
