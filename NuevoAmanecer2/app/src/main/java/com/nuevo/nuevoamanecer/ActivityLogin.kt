@@ -43,7 +43,7 @@ class ActivityLogin : AppCompatActivity() {
     private fun performLogin(username: String, password: String) {
 
         //CAMBIAR ESTA PARTE CUANDO YA FUNCIONE CON EL API BIEN
-        //startActivity(Intent(this@ActivityLogin, PersonalizacionAlumno::class.java))
+       // startActivity(Intent(this@ActivityLogin, PersonalizacionAlumno::class.java))
         //return
 
         // Creacion de instancia de cliente de retrofit
