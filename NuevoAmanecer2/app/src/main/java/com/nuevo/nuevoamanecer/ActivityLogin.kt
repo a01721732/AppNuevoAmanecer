@@ -3,6 +3,7 @@ package com.nuevo.nuevoamanecer
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -27,7 +28,9 @@ class ActivityLogin : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLoginLogin)
 
         btnRegresar.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            Log.d("ActivityLogin", "Try to show login activity")
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         btnLogin.setOnClickListener {
