@@ -45,21 +45,21 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="885dp"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/buhos"
-                tools:src="@drawable/buhos" />
+                android:src="@drawable/piano"
+                tools:src="@drawable/piano" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/perro"
-                tools:src="@drawable/perro" />
+                android:src="@drawable/iconoleon"
+                tools:src="@drawable/iconoleon" />
 
             <ImageButton
                 android:id="@+id/imageButton6"
@@ -67,8 +67,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/tigre"
-                tools:src="@drawable/tigre" />
+                android:src="@drawable/rompecabezas"
+                tools:src="@drawable/rompecabezas" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,30 +80,30 @@
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="827dp"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pajaroloco"
-                tools:src="@drawable/pajaroloco" />
+                android:scaleType="fitXY"
+                android:src="@drawable/comunicador"
+                tools:src="@drawable/comunicador" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="823dp"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/pelicano"
-                tools:src="@drawable/pelicano" />
+                android:src="@drawable/frutas"
+                tools:src="@drawable/frutas" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
-                android:layout_width="782dp"
+                android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/rana"
-                tools:src="@drawable/rana" />
+                android:src="@drawable/papa"
+                tools:src="@drawable/papa" />
         </LinearLayout>
     </LinearLayout>
 
