@@ -6,106 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".PersonalizacionSelec">
 
+    <!-- Regresar Button -->
+    <Button
+        android:id="@+id/btnRegresarJuego1"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/button_rounded_edges"
+        android:backgroundTint="#d9ef20"
+        android:text="Regresar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <!-- Confirmar Button -->
+    <Button
+        android:id="@+id/buttonConfirmarPersonalizacionSelec"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_rounded_edges"
+        android:backgroundTint="#d9ef20"
+        android:text="Confirmar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="#00AEEF">
+    <!-- Left ImageButton (Puzzle) -->
+    <ImageButton
+        android:id="@+id/imageButtonPuzzle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/rompecabezas"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/buttonConfirmarPersonalizacionSelec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButtonFamily"
+        app:layout_constraintHorizontal_weight="1"/>
 
-            <Button
-                android:id="@+id/buttonConfirmarPersonalizacionSelec"
-                android:layout_width="254dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="26dp"
-                android:layout_marginEnd="705dp"
-                android:backgroundTint="#d9ef20"
-                android:text="Confirmar"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:background="@drawable/button_rounded_edges"/>
-            />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal"
-            android:translationY="-80dp">
-
-            <ImageButton
-                android:id="@+id/imageButtonBuhoPersonalizacionSelec"
-                android:layout_width="885dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/buhos"
-                tools:src="@drawable/buhos" />
-
-            <ImageButton
-                android:id="@+id/imageButtonPerroPersonalizacionSelec"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/perro"
-                tools:src="@drawable/perro" />
-
-            <ImageButton
-                android:id="@+id/imageButtonTigrePersonalizacionSelec"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/tigre"
-                tools:src="@drawable/tigre" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal"
-            android:translationY="-140dp">
-
-            <ImageButton
-                android:id="@+id/imageButtonWoodPersonalizacionSelec"
-                android:layout_width="827dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pajaroloco"
-                tools:src="@drawable/pajaroloco" />
-
-            <ImageButton
-                android:id="@+id/imageButtonGaviotaPersonalizacionSelec"
-                android:layout_width="823dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pelicano"
-                tools:src="@drawable/pelicano" />
-
-            <ImageButton
-                android:id="@+id/imageButtonRanaPersonalizacionSelec"
-                android:layout_width="782dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/rana"
-                tools:src="@drawable/rana" />
-        </LinearLayout>
-    </LinearLayout>
+    <!-- Right ImageButton (Family) -->
+    <ImageButton
+        android:id="@+id/imageButtonFamily"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/family_icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/buttonConfirmarPersonalizacionSelec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButtonPuzzle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

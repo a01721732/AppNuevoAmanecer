@@ -22,6 +22,7 @@ class Communicador1 : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var btnComunicador1: ImageButton
     private lateinit var btnComunicador2: ImageButton
     private lateinit var btnComunicador3: ImageButton
+    private lateinit var btnComunicador4: ImageButton
     private lateinit var btnRegresar: Button
 
 
@@ -42,12 +43,15 @@ class Communicador1 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnComunicador1 = findViewById(R.id.comView1)
         btnComunicador2 = findViewById(R.id.comView2)
         btnComunicador3 = findViewById(R.id.comView3)
+        btnComunicador4 = findViewById(R.id.comView4)
         btnRegresar = findViewById(R.id.btnRegresarJuego1) as Button
 
         btnRegresar.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
         sentenceArea.text = receivedVariable
@@ -84,6 +88,11 @@ class Communicador1 : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
         btnComunicador3.setOnClickListener {
             val intent = Intent(this, Communicador2::class.java)
+            intent.putExtra("key", sentenceArea.text.toString())
+            startActivity(intent)
+        }
+        btnComunicador4.setOnClickListener {
+            val intent = Intent(this, Communicador8::class.java)
             intent.putExtra("key", sentenceArea.text.toString())
             startActivity(intent)
         }

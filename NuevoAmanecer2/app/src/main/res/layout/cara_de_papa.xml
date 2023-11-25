@@ -38,7 +38,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/nuevoAmarillo"
-            android:text="Nombre del Juego (Nivel)"
+            android:text="Juego de Cara de Papa"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="16sp"
