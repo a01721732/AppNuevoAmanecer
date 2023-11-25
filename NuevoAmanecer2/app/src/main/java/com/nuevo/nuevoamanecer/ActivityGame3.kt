@@ -39,12 +39,13 @@ class ActivityGame3 : AppCompatActivity() {
         resetButton = findViewById(R.id.btnReset)
 
 
+        // Sacar de preferencias
         val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
         val personName = sharedPref.getString("user", "DefaultName")
 
 
 
-
+        // Sacar la imagen
         fetchAndSliceImage(personName.toString(),"puzzle")
 
         btnRegresar.setOnClickListener{
@@ -63,6 +64,7 @@ class ActivityGame3 : AppCompatActivity() {
     }
 
     private fun fetchAndSliceImage(personName: String, gameType: String) {
+        // Sacar y obtener la imagen
         val imagesPath = "images/$personName/$gameType"
         val databaseReference = FirebaseDatabase.getInstance().getReference(imagesPath)
 
