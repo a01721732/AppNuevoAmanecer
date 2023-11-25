@@ -17,7 +17,7 @@ interface StudentApiService {
     fun login(@Body credentials: HashMap<String, String>): Call<List<Psicologo>>
 
     @POST("updateNivelAlumno")
-    fun updateStudentLevel(@Body requestData: HashMap<String, Int>): Call<Void>
+    fun updateStudentLevel(@Body requestData: HashMap<String, Int?>): Call<Void>
 
 }
 

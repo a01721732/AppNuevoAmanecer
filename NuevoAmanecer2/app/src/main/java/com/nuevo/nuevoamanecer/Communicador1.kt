@@ -22,7 +22,7 @@ class Communicador1 : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var btnComunicador1: ImageButton
     private lateinit var btnComunicador2: ImageButton
     private lateinit var btnComunicador3: ImageButton
-
+    private lateinit var btnRegresar: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +42,12 @@ class Communicador1 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnComunicador1 = findViewById(R.id.comView1)
         btnComunicador2 = findViewById(R.id.comView2)
         btnComunicador3 = findViewById(R.id.comView3)
+        btnRegresar = findViewById(R.id.btnRegresarJuego1) as Button
+
+        btnRegresar.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
         sentenceArea.text = receivedVariable
