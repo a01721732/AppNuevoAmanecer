@@ -84,16 +84,15 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if (snapshot.exists()) {
-                        // Reset to default images first
                         resetToDefaultImages()
 
-                        // Load available images
+                        // Cargar imagenes disponibles
                         val images = snapshot.children.mapNotNull { it.child("url").getValue(String::class.java) }
                         for ((index, imageUrl) in images.withIndex()) {
                             downloadAndSetImage(imageUrl, familyMember, index)
                         }
                     } else {
-                        // If no images, set all to default
+                        // Si no hay imagenes, usar las imagenes por defecto
                         resetToDefaultImages()
                     }
                 }
@@ -132,8 +131,8 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
             "madre" -> R.drawable.mothericon
             "hermano" -> R.drawable.brothericon
             "hermana" -> R.drawable.sistericon
-            // Add cases for other family members
-            else -> R.drawable.family_icon // A generic default image
+
+            else -> R.drawable.family_icon // Default
         }
     }
 

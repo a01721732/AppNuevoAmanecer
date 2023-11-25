@@ -47,14 +47,12 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- First Horizontal Linear Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <!-- FrameLayout for Father -->
         <FrameLayout
             android:id="@+id/frameFather"
             android:layout_width="0dp"
@@ -70,7 +68,6 @@
                 android:background="@android:color/darker_gray"/>
         </FrameLayout>
 
-        <!-- FrameLayout for Mother -->
         <FrameLayout
             android:id="@+id/frameMother"
             android:layout_width="0dp"
@@ -87,14 +84,12 @@
         </FrameLayout>
     </LinearLayout>
 
-    <!-- Second Horizontal Linear Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <!-- FrameLayout for Brother -->
         <FrameLayout
             android:id="@+id/frameBrother"
             android:layout_width="0dp"
@@ -110,7 +105,6 @@
                 android:background="@android:color/darker_gray"/>
         </FrameLayout>
 
-        <!-- FrameLayout for Sister -->
         <FrameLayout
             android:id="@+id/frameSister"
             android:layout_width="0dp"
@@ -127,7 +121,6 @@
         </FrameLayout>
     </LinearLayout>
 
-    <!-- TextView for Sentence Area -->
     <TextView
         android:id="@+id/sentenceArea"
         android:layout_width="match_parent"
@@ -136,7 +129,6 @@
         android:padding="16dp"
         android:textSize="20sp" />
 
-    <!-- Button Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

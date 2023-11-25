@@ -191,7 +191,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
                     val studentNames = students.mapNotNull { it?.name }
                     studentsList = students
 
-                    // Set the adapter for spinnerNames with student names
+                    // Adaptador
                     val adapter = ArrayAdapter(this@PersonalizacionAlumno, R.layout.spinner_custom_item, studentNames)
                     spinnerNames?.adapter = adapter
                 }

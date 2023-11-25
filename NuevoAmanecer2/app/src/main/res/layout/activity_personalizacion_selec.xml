@@ -38,7 +38,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Left ImageButton (Puzzle) -->
     <ImageButton
         android:id="@+id/imageButtonPuzzle"
         android:layout_width="0dp"
@@ -51,7 +50,6 @@
         app:layout_constraintEnd_toStartOf="@id/imageButtonFamily"
         app:layout_constraintHorizontal_weight="1"/>
 
-    <!-- Right ImageButton (Family) -->
     <ImageButton
         android:id="@+id/imageButtonFamily"
         android:layout_width="0dp"
