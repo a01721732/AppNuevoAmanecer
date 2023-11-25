@@ -34,6 +34,21 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:background="@drawable/button_rounded_edges"/>
             />
+
+            <TextView
+                android:id="@+id/textViewBienvenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonAdmin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/buttonAdmin"
+                app:layout_constraintTop_toTopOf="@+id/buttonAdmin" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout

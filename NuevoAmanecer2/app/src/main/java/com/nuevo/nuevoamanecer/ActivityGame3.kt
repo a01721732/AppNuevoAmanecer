@@ -74,6 +74,9 @@ class ActivityGame3 : AppCompatActivity() {
                         val imageUrl = latestImageSnapshot.child("url").getValue(String::class.java)
                         imageUrl?.let { downloadImage(it) }
                     }
+                    else{
+                        useDefaultImage()
+                    }
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
@@ -90,7 +93,7 @@ class ActivityGame3 : AppCompatActivity() {
         Glide.with(this)
             .asBitmap()
             .load(imageUrl)
-            .error(R.drawable.tigre)
+            .error(R.drawable.perro)
             .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                     val pieces = sliceImage(resource)
@@ -136,6 +139,37 @@ class ActivityGame3 : AppCompatActivity() {
             }
         }
         return pieces
+    }
+
+    private fun useDefaultImage() {
+        val defaultImage = ContextCompat.getDrawable(this, R.drawable.perro)?.toBitmap()
+        defaultImage?.let {
+            val pieces = sliceImage(it)
+            runOnUiThread {
+                displayPuzzlePieces(pieces)
+            }
+        }
+    }
+
+    private fun displayPuzzlePieces(pieces: List<Bitmap>) {
+        gridLayoutPuzzlePieces.removeAllViews()
+        val screenWidth = resources.displayMetrics.widthPixels
+        val pieceWidth = screenWidth / gridLayoutPuzzlePieces.columnCount
+        val pieceHeight = pieceWidth
+
+        pieces.forEach { piece ->
+            val imageView = ImageView(this@ActivityGame3).apply {
+                layoutParams = GridLayout.LayoutParams().apply {
+                    width = pieceWidth
+                    height = pieceHeight
+                }
+                scaleType = ImageView.ScaleType.FIT_XY
+                setImageBitmap(piece)
+                setOnTouchListener(touchListener)
+            }
+            gridLayoutPuzzlePieces.addView(imageView)
+            imageView.setOnDragListener(dragListener)
+        }
     }
 
     private fun setupPuzzleSpaces() {

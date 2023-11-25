@@ -176,10 +176,6 @@
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\blue_shoes.webp"
     },
     {
-        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/xml_network_security_config.xml.flat",
-        "source": "com.nuevo.nuevoamanecer.app-main-37:/xml/network_security_config.xml"
-    },
-    {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
@@ -202,6 +198,10 @@
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\drawable_puzzle_background_placeholder.png.flat",
         "source": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-main-37:\\drawable\\puzzle_background_placeholder.png"
+    },
+    {
+        "merged": "com.nuevo.nuevoamanecer.app-merged_res-35:/layout_cara_de_papa.xml.flat",
+        "source": "com.nuevo.nuevoamanecer.app-main-37:/layout/cara_de_papa.xml"
     },
     {
         "merged": "C:\\Users\\Eduardo\\.gradle\\daemon\\8.0\\com.nuevo.nuevoamanecer.app-merged_res-35:\\layout_activity_communicador6.xml.flat",

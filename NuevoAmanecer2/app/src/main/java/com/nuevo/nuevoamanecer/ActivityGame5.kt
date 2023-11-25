@@ -1,8 +1,10 @@
 package com.nuevo.nuevoamanecer
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -13,6 +15,7 @@ class ActivityGame5 : AppCompatActivity() {
     private var dX = 0f
     private var dY = 0f
     private var imagesMovedCount = 0
+    private lateinit var btnRegresar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +36,13 @@ class ActivityGame5 : AppCompatActivity() {
         setDraggable(findViewById(R.id.pinkBobomb3))
         setDraggable(findViewById(R.id.greenBobomb3))
         setDraggable(findViewById(R.id.blackBobomb3))
+
+        btnRegresar = findViewById(R.id.btnRegresarJuego1) as Button
+
+        btnRegresar.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setDraggable(view: ImageView) {

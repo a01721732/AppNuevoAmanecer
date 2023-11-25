@@ -1,11 +1,13 @@
 package com.nuevo.nuevoamanecer
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +29,7 @@ class CaraDePapa : AppCompatActivity() {
     private var mainLayout: ViewGroup? = null
     private var xDelta = 0
     private var yDelta = 0
+    private lateinit var btnRegresar: Button
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,6 +61,12 @@ class CaraDePapa : AppCompatActivity() {
         smileView!!.setOnTouchListener(onTouchListener())
         soccerShoesView!!.setOnTouchListener(onTouchListener())
 
+        btnRegresar = findViewById(R.id.btnRegresarJuego3) as Button
+
+        btnRegresar.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
         /*
         ojosView.setOnDragListener(new View.OnDragListener() {
             @Override
