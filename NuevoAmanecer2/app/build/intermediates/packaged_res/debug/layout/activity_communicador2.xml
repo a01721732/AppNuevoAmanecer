@@ -257,7 +257,7 @@
             android:id="@+id/resetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="Resetear"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp" />
 
@@ -267,7 +267,7 @@
             android:id="@+id/speakSentenceButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Speak"
+            android:text="Hablar"
             android:layout_marginLeft="16dp" />
     </LinearLayout>
 

@@ -34,6 +34,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NuevoAmanecer" >
         <activity
+            android:name="com.nuevo.nuevoamanecer.PersonalizacionFamilia"
+            android:exported="false" />
+        <activity
+            android:name="com.nuevo.nuevoamanecer.Communicador8"
+            android:exported="false" />
+        <activity
             android:name="com.nuevo.nuevoamanecer.CaraDePapa"
             android:exported="false" />
         <activity

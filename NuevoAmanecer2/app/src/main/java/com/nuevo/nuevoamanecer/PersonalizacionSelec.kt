@@ -23,6 +23,8 @@ class PersonalizacionSelec : AppCompatActivity() {
     private val databaseReference = FirebaseDatabase.getInstance().reference
     private val storageReference = FirebaseStorage.getInstance().reference
     private val client = OkHttpClient()
+    private var lastClickedButton: String = ""
+
 
 
 
@@ -33,14 +35,29 @@ class PersonalizacionSelec : AppCompatActivity() {
 
 
         val btnConfirmar = findViewById<Button>(R.id.buttonConfirmarPersonalizacionSelec)
-        val btnPersJuego1 = findViewById<ImageButton>(R.id.imageButtonBuhoPersonalizacionSelec)
-
+        val btnPersJuego1 = findViewById<ImageButton>(R.id.imageButtonPuzzle)
+        val btnPersFamilia = findViewById<ImageButton>(R.id.imageButtonFamily)
+        val btnRegresar = findViewById<Button>(R.id.btnRegresarJuego1)
         btnConfirmar.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
+
+        btnRegresar.setOnClickListener {
+            val intent = Intent(this, PersonalizacionAlumno::class.java)
+            startActivity(intent)
+        }
         btnPersJuego1.setOnClickListener {
+            lastClickedButton = "puzzle"
+            // Start the image picker using Intent.ACTION_GET_CONTENT
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image/*"
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
+        }
+
+        btnPersFamilia.setOnClickListener {
+            lastClickedButton = "family"
             // Start the image picker using Intent.ACTION_GET_CONTENT
             val intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
@@ -57,7 +74,7 @@ class PersonalizacionSelec : AppCompatActivity() {
         if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
             val imageUri: Uri? = data?.data
             imageUri?.let {
-                handleImageSelected(it)
+                handleImageSelected(it,lastClickedButton)
             }
         }
     }
@@ -67,7 +84,7 @@ class PersonalizacionSelec : AppCompatActivity() {
     //La idea es que se suben las fotos locales de android, y se obtiene un URL
     //Teniendo el URL, se manda el URL y el timestamp a la base de datos de firebase
     //Para en otros juegos poder bajar la foto con el URL
-    private fun handleImageSelected(imageUri: Uri) {
+    private fun handleImageSelected(imageUri: Uri, gameType: String) {
 
         //Obtener el nombre del usuario de sharedprefs
         val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
@@ -105,7 +122,7 @@ class PersonalizacionSelec : AppCompatActivity() {
 
                     runOnUiThread {
                         Toast.makeText(this@PersonalizacionSelec, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
-                        saveImageUrlToDatabase(personName, "puzzle",imageUrl)
+                        saveImageUrlToDatabase(personName, gameType,imageUrl)
                     }
                 } else {
                     runOnUiThread {

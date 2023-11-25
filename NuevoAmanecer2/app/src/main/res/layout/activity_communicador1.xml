@@ -12,7 +12,6 @@
         android:layout_height="92dp"
         android:background="#00aeef">
 
-
         <Button
             android:id="@+id/btnRegresarJuego1"
             android:layout_width="136dp"
@@ -36,14 +35,14 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/button_rounded_edges"
             android:backgroundTint="@color/nuevoAmarillo"
-            android:text="&quot;Nombre del Juego (Nivel)&quot;"
+            android:text="Comunicador"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- First Horizontal Linear Layout -->
@@ -61,7 +60,6 @@
             android:layout_weight="1"
             android:padding="8dp">
 
-            <!-- Add ImageButtons for the first column -->
             <ImageButton
                 android:id="@+id/comView1"
                 android:layout_width="match_parent"
@@ -69,9 +67,6 @@
                 android:src="@drawable/jugetes"
                 android:scaleType="fitCenter"
                 android:background="@android:color/darker_gray"/>
-
-            <!-- Add more ImageButtons for the first column as needed -->
-
         </FrameLayout>
 
         <!-- Second Column -->
@@ -82,7 +77,6 @@
             android:layout_weight="1"
             android:padding="8dp">
 
-            <!-- Add ImageButtons for the second column -->
             <ImageButton
                 android:id="@+id/comView2"
                 android:layout_width="match_parent"
@@ -90,10 +84,15 @@
                 android:src="@drawable/correr"
                 android:scaleType="fitCenter"
                 android:background="@android:color/darker_gray"/>
-
-            <!-- Add more ImageButtons for the second column as needed -->
-
         </FrameLayout>
+    </LinearLayout>
+
+    <!-- Second Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <!-- Third Column -->
         <FrameLayout
@@ -103,7 +102,6 @@
             android:layout_weight="1"
             android:padding="8dp">
 
-            <!-- Add ImageButtons for the third column -->
             <ImageButton
                 android:id="@+id/comView3"
                 android:layout_width="match_parent"
@@ -111,23 +109,27 @@
                 android:src="@drawable/uno"
                 android:scaleType="fitCenter"
                 android:background="@android:color/darker_gray"/>
-
-            <!-- Add more ImageButtons for the third column as needed -->
-
         </FrameLayout>
 
-        <!-- Fourth Column -->
+        <!-- Fourth Column (For Family) -->
+        <FrameLayout
+            android:id="@+id/column4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
 
-
-        <!-- Add more columns as needed -->
-
+            <ImageButton
+                android:id="@+id/comView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/family_icon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+        </FrameLayout>
     </LinearLayout>
 
-    <!-- Second Horizontal Linear Layout -->
-
-
-    <!-- Remaining views -->
-
+    <!-- Sentence Area and Buttons -->
     <TextView
         android:id="@+id/sentenceArea"
         android:layout_width="match_parent"
@@ -142,23 +144,19 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-
-
         <Button
             android:id="@+id/resetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="Resetear"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp" />
-
-
 
         <Button
             android:id="@+id/speakSentenceButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Speak"
+            android:text="Hablar"
             android:layout_marginLeft="16dp" />
     </LinearLayout>
 

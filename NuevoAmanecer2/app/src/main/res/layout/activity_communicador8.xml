@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="#00aeef"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnRegresarJuego1"
+            android:layout_width="136dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_rounded_edges"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="Regresar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnNombreJuego1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnNombreJuego1"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_rounded_edges"
+            android:backgroundTint="@color/nuevoAmarillo"
+            android:text="Nombre del Juego (Nivel)"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btnRegresarJuego1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- First Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- FrameLayout for Father -->
+        <FrameLayout
+            android:id="@+id/frameFather"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageFather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fathericon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+        </FrameLayout>
+
+        <!-- FrameLayout for Mother -->
+        <FrameLayout
+            android:id="@+id/frameMother"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageMother"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mothericon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Second Horizontal Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- FrameLayout for Brother -->
+        <FrameLayout
+            android:id="@+id/frameBrother"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageBrother"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/brothericon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/darker_gray"/>
+        </FrameLayout>
+
+        <!-- FrameLayout for Sister -->
+        <FrameLayout
+            android:id="@+id/frameSister"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageSister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sistericon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/darker_gray"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- TextView for Sentence Area -->
+    <TextView
+        android:id="@+id/sentenceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:padding="16dp"
+        android:textSize="20sp" />
+
+    <!-- Button Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resetear"
+            android:layout_margin="16dp" />
+        <Button
+            android:id="@+id/speakSentenceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hablar"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
