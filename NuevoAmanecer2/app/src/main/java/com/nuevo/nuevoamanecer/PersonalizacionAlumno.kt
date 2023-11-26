@@ -22,7 +22,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
     private var spinnerNames: Spinner? = null
     private var spinnerLevels: Spinner? = null
     private var synchronizeButton: Button? = null
-    private var studentsList: List<Student?> = emptyList()
+    private var studentsList: List<Estudiante?> = emptyList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,7 +81,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
             Log.d("Data", "selected student id: $selectedStudentId (${selectedStudentId?.javaClass?.simpleName}) selected level: $selectedLevel (${selectedLevel.javaClass.simpleName})")
 
             val requestData = hashMapOf("iIdAlumno" to selectedStudentId, "iNivel" to selectedLevel)
-            val service = retrofitInstance?.create(StudentApiService::class.java)
+            val service = retrofitInstance?.create(EstudianteApiService::class.java)
 
             Log.d("PersonalizacionAlumno", "Try to synchronize student level: ${requestData.get("iIdAlumno")}, ${requestData.get("iNivel")}")
 
@@ -184,8 +184,8 @@ class PersonalizacionAlumno : AppCompatActivity() {
     }
 
     private fun loadStudents(idPsicologo: Int) {
-        retrofitInstance?.create(StudentApiService::class.java)?.getStudents(idPsicologo)?.enqueue(object : Callback<List<Student?>> {
-            override fun onResponse(call: Call<List<Student?>>, response: Response<List<Student?>>) {
+        retrofitInstance?.create(EstudianteApiService::class.java)?.getStudents(idPsicologo)?.enqueue(object : Callback<List<Estudiante?>> {
+            override fun onResponse(call: Call<List<Estudiante?>>, response: Response<List<Estudiante?>>) {
                 if (response.isSuccessful) {
                     val students = response.body() ?: emptyList()
                     val studentNames = students.mapNotNull { it?.name }
@@ -197,7 +197,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
                 }
             }
 
-            override fun onFailure(call: Call<List<Student?>>, t: Throwable) {
+            override fun onFailure(call: Call<List<Estudiante?>>, t: Throwable) {
                 Log.e("PersonalizacionAlumno", "Error cargando estudiantes", t)
             }
         })
