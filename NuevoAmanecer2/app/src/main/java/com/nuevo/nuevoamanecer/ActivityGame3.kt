@@ -15,6 +15,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.GridLayout
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
 import com.bumptech.glide.Glide
@@ -29,6 +30,8 @@ class ActivityGame3 : AppCompatActivity() {
     private lateinit var gridLayoutPuzzlePieces: GridLayout
     private lateinit var gridLayoutPuzzleSpaces: GridLayout
     private lateinit var resetButton: Button
+    private var personNameG: String? = null
+    private var piecesPlaced = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game3)
@@ -128,20 +131,24 @@ class ActivityGame3 : AppCompatActivity() {
             })
     }
 
+    private var puzzlePieceTags = mutableListOf<Int>()
+
     private fun sliceImage(image: Bitmap): List<Bitmap> {
         val pieces = ArrayList<Bitmap>()
         val rows = 3
         val cols = 3
-        val pieceWidth = (image.width / cols)-50
-        val pieceHeight = (image.height / rows)-50
 
         for (i in 0 until rows) {
             for (j in 0 until cols) {
-                pieces.add(Bitmap.createBitmap(image, j * pieceWidth, i * pieceHeight, pieceWidth, pieceHeight))
+                val piece = Bitmap.createBitmap(image, j * (image.width / cols), i * (image.height / rows), image.width / cols, image.height / rows)
+                pieces.add(piece)
             }
         }
+
         return pieces
     }
+
+
 
     private fun useDefaultImage() {
         val defaultImage = ContextCompat.getDrawable(this, R.drawable.perro)?.toBitmap()
@@ -201,6 +208,31 @@ class ActivityGame3 : AppCompatActivity() {
 
 
 
+    private fun showPuzzleCompletionDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Rompecabezas terminado")
+            .setMessage("Felicidades! Has terminado el rompecabezas")
+            .setPositiveButton("Reset") { dialog, _ ->
+                dialog.dismiss()
+                resetPuzzle()
+            }
+            .setNegativeButton("Cancelar") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
+    }
+
+    private fun resetPuzzle() {
+        gridLayoutPuzzlePieces.removeAllViews()
+        gridLayoutPuzzleSpaces.removeAllViews()
+        piecesPlaced = 0
+        setupPuzzleSpaces()
+        fetchAndSliceImage(personNameG.toString(),"puzzle")
+    }
+
+
+
+
     private val touchListener = View.OnTouchListener { view, motionEvent ->
         if (motionEvent.action == MotionEvent.ACTION_DOWN) {
             val data = ClipData.newPlainText("", "")
@@ -230,20 +262,23 @@ class ActivityGame3 : AppCompatActivity() {
                 val destination = view as ImageView
                 destination.setImageBitmap((draggedView as ImageView).drawable.toBitmap())
 
+                gridLayoutPuzzlePieces.addView(draggedView)
                 draggedView.visibility = View.VISIBLE
+
+                draggedView.setOnTouchListener(touchListener)
+                piecesPlaced++
+                if(piecesPlaced == 9){
+                    showPuzzleCompletionDialog()
+                }
                 true
             }
-
             DragEvent.ACTION_DRAG_ENDED -> {
                 view.alpha = 1.0f
-                if (!dragEvent.result) {
-                    val v = dragEvent.localState as View
-                    v.visibility = View.VISIBLE
-                }
                 true
             }
             else -> false
         }
     }
+
 
 }

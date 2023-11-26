@@ -1,7 +1,6 @@
 package com.nuevo.nuevoamanecer
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -11,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import com.nuevo.nuevoamanecer.RetrofitClientInstance
 
 class ActivityLogin : AppCompatActivity() {
 
@@ -47,7 +45,7 @@ class ActivityLogin : AppCompatActivity() {
         //return
 
         // Creacion de instancia de cliente de retrofit
-        val service = RetrofitClientInstance.retrofitInstance?.create(StudentApiService::class.java)  //El .create crea una implementacion de StudentApiService usando la instancia de retrofit
+        val service = RetrofitClientInstance.retrofitInstance?.create(EstudianteApiService::class.java)  //El .create crea una implementacion de StudentApiService usando la instancia de retrofit
         if (service != null) { //Checar que no sea null para evitar problemas
             val credentials = hashMapOf("sUserNamePsicologo" to username, "sPasswordPsicologo" to password) //Mapa con las credenciales
 
