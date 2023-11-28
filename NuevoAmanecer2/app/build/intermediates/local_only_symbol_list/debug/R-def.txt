@@ -293,6 +293,8 @@ id pinkBobomb1
 id pinkBobomb2
 id pinkBobomb3
 id pinkSquare
+id puzzlePieceImage
+id puzzlePieceNumber
 id puzzle_background
 id puzzle_grid
 id relativeLayout
@@ -345,6 +347,7 @@ layout activity_personalizacion_familia
 layout activity_personalizacion_selec
 layout cara_de_papa
 layout dragdrop
+layout puzzle_piece_layout
 layout puzzle_placeholder
 layout selected_item_layout
 layout spinner_custom_item
