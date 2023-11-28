@@ -3177,6 +3177,7 @@ drawable sistericon
 drawable smile
 drawable soccer_shoes
 drawable splash
+drawable supermercado
 drawable tecla
 drawable tecla_negra
 drawable test_level_drawable

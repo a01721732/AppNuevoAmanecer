@@ -268,18 +268,16 @@ class ActivityGame3 : AppCompatActivity() {
                 val destination = view as ImageView
                 destination.setImageBitmap((draggedView as ImageView).drawable.toBitmap())
 
-                gridLayoutPuzzlePieces.addView(draggedView)
                 draggedView.visibility = View.VISIBLE
-
-                draggedView.setOnTouchListener(touchListener)
-                piecesPlaced++
-                if(piecesPlaced == 9){
-                    showPuzzleCompletionDialog()
-                }
                 true
             }
+
             DragEvent.ACTION_DRAG_ENDED -> {
                 view.alpha = 1.0f
+                if (!dragEvent.result) {
+                    val v = dragEvent.localState as View
+                    v.visibility = View.VISIBLE
+                }
                 true
             }
             else -> false
