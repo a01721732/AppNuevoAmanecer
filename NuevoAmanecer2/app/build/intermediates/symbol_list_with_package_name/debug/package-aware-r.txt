@@ -3727,6 +3727,8 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id puzzlePieceImage
+id puzzlePieceNumber
 id puzzle_background
 id puzzle_grid
 id radio
@@ -4108,6 +4110,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout puzzle_piece_layout
 layout puzzle_placeholder
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

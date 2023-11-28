@@ -145,11 +145,8 @@ class PersonalizacionAlumno : AppCompatActivity() {
 
 
     private fun updateCognitiveLevel(): Int? {
-        // Get the name of the selected student from spinnerNames
         val selectedStudentName = spinnerNames?.selectedItem as? String
-        // Find the student in the studentsList that matches the selected name
         val selectedStudent = studentsList.find { it?.name == selectedStudentName }
-        // Return the cognitive level of the found student
         return selectedStudent?.cognitiveLevel
     }
 

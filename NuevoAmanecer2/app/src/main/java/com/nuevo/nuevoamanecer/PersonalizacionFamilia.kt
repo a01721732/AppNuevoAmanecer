@@ -17,7 +17,7 @@ import java.io.IOException
 import java.util.*
 class PersonalizacionFamilia : AppCompatActivity() {
 
-
+// NO SE USA
 
     private val databaseReference = FirebaseDatabase.getInstance().reference
     private val storageReference = FirebaseStorage.getInstance().reference

@@ -93,22 +93,23 @@ class ActivityGame3 : AppCompatActivity() {
     }
 
 
+    //Bajar la imagen de firebase
     private fun downloadImage(imageUrl: String) {
         Log.d("ActivityGame3", "Downloading image from $imageUrl")
         Glide.with(this)
             .asBitmap()
             .load(imageUrl)
             .error(R.drawable.perro)
-            .into(object : CustomTarget<Bitmap>() {
+            .into(object : CustomTarget<Bitmap>() { //Bajarla a un bitmap
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                    val pieces = sliceImage(resource)
+                    val pieces = sliceImage(resource) // Arreglo de piezas cortadas
                     runOnUiThread {
-                        gridLayoutPuzzlePieces.removeAllViews()
+                        gridLayoutPuzzlePieces.removeAllViews() //Limpiar el gridlayout
                         val screenWidth = resources.displayMetrics.widthPixels
                         val pieceWidth = screenWidth / gridLayoutPuzzlePieces.columnCount
                         val pieceHeight = pieceWidth
 
-                        pieces.forEach { piece ->
+                        pieces.forEach { piece -> //Por cada pieza ponerla en un imageview
                             val imageView = ImageView(this@ActivityGame3).apply {
                                 layoutParams = GridLayout.LayoutParams().apply {
                                     width = pieceWidth
@@ -133,6 +134,7 @@ class ActivityGame3 : AppCompatActivity() {
 
     private var puzzlePieceTags = mutableListOf<Int>()
 
+    // Cortar la imagen en 9 piezas y regresar un arreglo de piezas
     private fun sliceImage(image: Bitmap): List<Bitmap> {
         val pieces = ArrayList<Bitmap>()
         val rows = 3
@@ -150,6 +152,7 @@ class ActivityGame3 : AppCompatActivity() {
 
 
 
+    // Si no hay imagen, poner una por default
     private fun useDefaultImage() {
         val defaultImage = ContextCompat.getDrawable(this, R.drawable.perro)?.toBitmap()
         defaultImage?.let {
@@ -160,6 +163,7 @@ class ActivityGame3 : AppCompatActivity() {
         }
     }
 
+    // Poner las piezas en el gridlayout
     private fun displayPuzzlePieces(pieces: List<Bitmap>) {
         gridLayoutPuzzlePieces.removeAllViews()
         val screenWidth = resources.displayMetrics.widthPixels
@@ -181,6 +185,7 @@ class ActivityGame3 : AppCompatActivity() {
         }
     }
 
+    // Poner los espacios para las piezas
     private fun setupPuzzleSpaces() {
         runOnUiThread {
             val totalSpacing = gridLayoutPuzzleSpaces.paddingLeft + gridLayoutPuzzleSpaces.paddingRight
@@ -214,6 +219,7 @@ class ActivityGame3 : AppCompatActivity() {
             .setMessage("Felicidades! Has terminado el rompecabezas")
             .setPositiveButton("Reset") { dialog, _ ->
                 dialog.dismiss()
+                piecesPlaced = 0
                 resetPuzzle()
             }
             .setNegativeButton("Cancelar") { dialog, _ ->
