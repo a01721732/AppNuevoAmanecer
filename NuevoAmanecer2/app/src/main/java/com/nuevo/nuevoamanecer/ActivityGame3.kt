@@ -210,8 +210,8 @@ class ActivityGame3 : AppCompatActivity() {
                         rightMargin = 10
                         bottomMargin = 10
                     }
-                    imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.puzzle_background_placeholder)
-                    tag = "Slot_$i" // Tag each slot with a unique identifier
+                    imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.rompecabezas)
+                    tag = "Slot_$i" // Identificador unico
                 }
                 gridLayoutPuzzleSpaces.addView(puzzleSlotView)
                 puzzleSlotView.setOnTouchListener(touchListener)
