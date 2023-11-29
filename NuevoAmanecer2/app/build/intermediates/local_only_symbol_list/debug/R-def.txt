@@ -88,6 +88,8 @@ drawable pinturas
 drawable plastilina
 drawable plato
 drawable puzzle_background_placeholder
+drawable puzzleplaceholder2
+drawable puzzleplaceholder3
 drawable question_mark
 drawable rana
 drawable regreso

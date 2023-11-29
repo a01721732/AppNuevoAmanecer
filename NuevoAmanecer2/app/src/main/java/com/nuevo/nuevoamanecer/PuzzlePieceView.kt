@@ -17,9 +17,9 @@ class PuzzlePieceView(context: Context, val pieceNumber: Int) : FrameLayout(cont
 
     val numberView: TextView = TextView(context).apply {
         text = pieceNumber.toString()
-        // Position the TextView in the top-left corner
+        // Posicionar el número en la esquina superior izquierda
         layoutParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT).apply {
-            setMargins(8, 8, 0, 0) // Adjust margins as needed
+            setMargins(8, 8, 0, 0)
         }
     }
 
@@ -27,10 +27,10 @@ class PuzzlePieceView(context: Context, val pieceNumber: Int) : FrameLayout(cont
         addView(imageView)
         addView(numberView)
         numberView.apply {
-            setTextColor(ContextCompat.getColor(context, android.R.color.black)) // Set text color to black
-            setTypeface(numberView.typeface, Typeface.BOLD) // Make the text bold
-            textSize = 18f // Set text size (adjust as needed)
-            // Other styling options can be set here
+            setTextColor(ContextCompat.getColor(context, android.R.color.black)) // Texto negro
+            setTypeface(numberView.typeface, Typeface.BOLD) // Hacer el texto bold
+            textSize = 18f
+
         }
     }
 
