@@ -266,6 +266,7 @@ id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
 id gridLayoutPuzzleSpaces
+id guidelineVerticalCenter
 id headerConstraintLayout
 id headerLayout
 id imageBrother
