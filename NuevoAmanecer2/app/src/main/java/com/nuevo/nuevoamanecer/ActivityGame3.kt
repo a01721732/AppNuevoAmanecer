@@ -14,6 +14,7 @@ import android.view.DragEvent
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.GridLayout
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
@@ -46,7 +47,7 @@ class ActivityGame3 : AppCompatActivity() {
         // Sacar de preferencias
         val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE) //Obtener el nombre del usuario de sharedprefs
         val personName = sharedPref.getString("user", "DefaultName")
-
+        personNameG = personName
 
 
         // Sacar la imagen
@@ -104,6 +105,7 @@ class ActivityGame3 : AppCompatActivity() {
             .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                     val pieces = sliceImage(resource) // List of PuzzlePieceView
+                    pieces.shuffle();
                     runOnUiThread {
                         gridLayoutPuzzlePieces.removeAllViews()
                         val screenWidth = resources.displayMetrics.widthPixels
@@ -134,8 +136,8 @@ class ActivityGame3 : AppCompatActivity() {
     private var puzzlePieceTags = mutableListOf<Int>()
 
     // Cortar la imagen en 9 piezas y regresar un arreglo de piezas
-    private fun sliceImage(image: Bitmap): List<PuzzlePieceView> {
-        val pieces = ArrayList<PuzzlePieceView>()
+    private fun sliceImage(image: Bitmap): MutableList<PuzzlePieceView> {
+        val pieces = mutableListOf<PuzzlePieceView>()
         val rows = 3
         val cols = 3
         var pieceNumber = 1
@@ -151,6 +153,7 @@ class ActivityGame3 : AppCompatActivity() {
                 pieceNumber++
             }
         }
+
         return pieces
     }
 
@@ -162,6 +165,7 @@ class ActivityGame3 : AppCompatActivity() {
         val defaultImage = ContextCompat.getDrawable(this, R.drawable.perro)?.toBitmap()
         defaultImage?.let {
             val pieces = sliceImage(it)
+            pieces.shuffle()
             runOnUiThread {
                 displayPuzzlePieces(pieces)
             }
@@ -184,6 +188,7 @@ class ActivityGame3 : AppCompatActivity() {
             }
             gridLayoutPuzzlePieces.addView(pieceView)
             pieceView.setOnTouchListener(touchListener)
+            pieceView.setOnDragListener(dragListener)
         }
     }
 
@@ -206,9 +211,11 @@ class ActivityGame3 : AppCompatActivity() {
                         bottomMargin = 10
                     }
                     imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.puzzle_background_placeholder)
-                    tag = convertNumberToTag(i) // Tag each view with its slot number
+                    tag = "Slot_$i" // Tag each slot with a unique identifier
                 }
                 gridLayoutPuzzleSpaces.addView(puzzleSlotView)
+                puzzleSlotView.setOnTouchListener(touchListener)
+                puzzleSlotView.setOnDragListener(dragListener)
             }
         }
     }
@@ -236,7 +243,9 @@ class ActivityGame3 : AppCompatActivity() {
         gridLayoutPuzzleSpaces.removeAllViews()
         piecesPlaced = 0
         setupPuzzleSpaces()
+        Log.d("ActivityGame3", "Person name is $personNameG")
         fetchAndSliceImage(personNameG.toString(),"puzzle")
+
     }
 
     private fun convertNumberToTag(number: Int): Int {
@@ -270,7 +279,6 @@ class ActivityGame3 : AppCompatActivity() {
 
     private val dragListener = View.OnDragListener { view, dragEvent ->
 
-        Log.d("ActivityGame3", "Drag event: $dragEvent")
         when (dragEvent.action) {
             DragEvent.ACTION_DRAG_STARTED -> true
             DragEvent.ACTION_DRAG_ENTERED -> {
@@ -285,31 +293,37 @@ class ActivityGame3 : AppCompatActivity() {
                 val draggedView = dragEvent.localState as PuzzlePieceView
                 val destination = view as PuzzlePieceView
 
-                if (draggedView.tag == destination.tag) {
+                // Extraer la parte numerica
+                val slotNumber = destination.tag.toString().substringAfter("Slot_").toIntOrNull()
+
+                // Checar que las tags empaten y que el slot este vacio
+                if (slotNumber == draggedView.tag as? Int && destination.imageView.drawable == null) {
                     val owner = draggedView.parent as ViewGroup
-                    owner.removeView(draggedView) // Remove from the current parent
+                    owner.removeView(draggedView) // Quitar el movido
 
-                    // Retrieve the bitmap from the ImageView within the dragged PuzzlePieceView
-                    val bitmap = (draggedView.imageView.drawable as BitmapDrawable).bitmap
-                    destination.setImageBitmap(bitmap) // Set the bitmap on the destination PuzzlePieceView
-
-                    draggedView.visibility = View.INVISIBLE // Hide the dragged view
+                    // Poner la imagen en el destino
+                    destination.setImageBitmap(draggedView.imageView.drawable.toBitmap())
+                    destination.tag = "Filled_$slotNumber" // Cambiar la tag para que no se pueda mover
                     piecesPlaced++
-                    if (piecesPlaced == gridLayoutPuzzlePieces.childCount) {
-                        showPuzzleCompletionDialog() // Show completion dialog when all pieces are placed
+                    draggedView.visibility = View.INVISIBLE // Hacer invisible la pieza movida
+
+                    if (piecesPlaced == 9) { // Si todas las piezas estan puestas
+                        showPuzzleCompletionDialog() // Mostrar dialogo de terminado
                     }
                 } else {
-                    // If the piece is not placed correctly, reset its visibility
-                    draggedView.visibility = View.VISIBLE
+                    // Si no se puede poner la pieza, regresarla a su lugar
+                    draggedView.visibility = View.VISIBLE // Hacer visible la pieza movida cuando se puede poner
                 }
                 true
             }
+
+
 
             DragEvent.ACTION_DRAG_ENDED -> {
                 view.alpha = 1.0f
                 if (!dragEvent.result) {
                     val v = dragEvent.localState as View
-                    v.visibility = View.VISIBLE // Reset visibility if the drag did not result in a drop
+                    v.visibility = View.VISIBLE // Hacer visible la pieza movida cuando se puede poner
                 }
                 true
             }
