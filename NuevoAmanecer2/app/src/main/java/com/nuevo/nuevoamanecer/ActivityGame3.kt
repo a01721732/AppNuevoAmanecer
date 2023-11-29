@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.util.Log
 import android.view.DragEvent
@@ -100,55 +101,59 @@ class ActivityGame3 : AppCompatActivity() {
             .asBitmap()
             .load(imageUrl)
             .error(R.drawable.perro)
-            .into(object : CustomTarget<Bitmap>() { //Bajarla a un bitmap
+            .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                    val pieces = sliceImage(resource) // Arreglo de piezas cortadas
+                    val pieces = sliceImage(resource) // List of PuzzlePieceView
                     runOnUiThread {
-                        gridLayoutPuzzlePieces.removeAllViews() //Limpiar el gridlayout
+                        gridLayoutPuzzlePieces.removeAllViews()
                         val screenWidth = resources.displayMetrics.widthPixels
                         val pieceWidth = screenWidth / gridLayoutPuzzlePieces.columnCount
                         val pieceHeight = pieceWidth
 
-                        pieces.forEach { piece -> //Por cada pieza ponerla en un imageview
-                            val imageView = ImageView(this@ActivityGame3).apply {
-                                layoutParams = GridLayout.LayoutParams().apply {
-                                    width = pieceWidth
-                                    height = pieceHeight
-                                }
-                                scaleType = ImageView.ScaleType.FIT_XY //
-                                setImageBitmap(piece)
-                                setOnTouchListener(touchListener)
+                        pieces.forEach { puzzlePieceView ->
+                            puzzlePieceView.layoutParams = GridLayout.LayoutParams().apply {
+                                width = 420
+                                height = 420
+                                rightMargin = 10
+                                bottomMargin = 10
                             }
-                            gridLayoutPuzzlePieces.addView(imageView)
-                            imageView.setOnDragListener(dragListener)
+                            gridLayoutPuzzlePieces.addView(puzzlePieceView)
+                            puzzlePieceView.setOnTouchListener(touchListener)
+                            puzzlePieceView.setOnDragListener(dragListener)
                         }
                     }
                 }
 
-
                 override fun onLoadCleared(placeholder: Drawable?) {
-                    // Vacio
+                    // Empty
                 }
             })
     }
 
+
     private var puzzlePieceTags = mutableListOf<Int>()
 
     // Cortar la imagen en 9 piezas y regresar un arreglo de piezas
-    private fun sliceImage(image: Bitmap): List<Bitmap> {
-        val pieces = ArrayList<Bitmap>()
+    private fun sliceImage(image: Bitmap): List<PuzzlePieceView> {
+        val pieces = ArrayList<PuzzlePieceView>()
         val rows = 3
         val cols = 3
+        var pieceNumber = 1
 
         for (i in 0 until rows) {
             for (j in 0 until cols) {
-                val piece = Bitmap.createBitmap(image, j * (image.width / cols), i * (image.height / rows), image.width / cols, image.height / rows)
-                pieces.add(piece)
+                val pieceBitmap = Bitmap.createBitmap(image, j * (image.width / cols), i * (image.height / rows), image.width / cols, image.height / rows)
+                val puzzlePieceView = PuzzlePieceView(this, pieceNumber).apply {
+                    setImageBitmap(pieceBitmap)
+                    tag = pieceNumber // Tag each view with its piece number
+                }
+                pieces.add(puzzlePieceView)
+                pieceNumber++
             }
         }
-
         return pieces
     }
+
 
 
 
@@ -164,26 +169,24 @@ class ActivityGame3 : AppCompatActivity() {
     }
 
     // Poner las piezas en el gridlayout
-    private fun displayPuzzlePieces(pieces: List<Bitmap>) {
+    private fun displayPuzzlePieces(pieces: List<PuzzlePieceView>) {
         gridLayoutPuzzlePieces.removeAllViews()
         val screenWidth = resources.displayMetrics.widthPixels
         val pieceWidth = screenWidth / gridLayoutPuzzlePieces.columnCount
         val pieceHeight = pieceWidth
 
-        pieces.forEach { piece ->
-            val imageView = ImageView(this@ActivityGame3).apply {
-                layoutParams = GridLayout.LayoutParams().apply {
-                    width = pieceWidth
-                    height = pieceHeight
-                }
-                scaleType = ImageView.ScaleType.FIT_XY
-                setImageBitmap(piece)
-                setOnTouchListener(touchListener)
+        pieces.forEach { pieceView ->
+            pieceView.layoutParams = GridLayout.LayoutParams().apply {
+                width = 420
+                height = 420
+                rightMargin = 10
+                bottomMargin = 10
             }
-            gridLayoutPuzzlePieces.addView(imageView)
-            imageView.setOnDragListener(dragListener)
+            gridLayoutPuzzlePieces.addView(pieceView)
+            pieceView.setOnTouchListener(touchListener)
         }
     }
+
 
     // Poner los espacios para las piezas
     private fun setupPuzzleSpaces() {
@@ -194,22 +197,22 @@ class ActivityGame3 : AppCompatActivity() {
             val pieceHeight = pieceWidth
 
             val piecesCount = gridLayoutPuzzleSpaces.rowCount * gridLayoutPuzzleSpaces.columnCount
-            for (i in 0 until piecesCount) {
-                val imageView = ImageView(this).apply {
+            for (i in 1..piecesCount) {
+                val puzzleSlotView = PuzzlePieceView(this, convertNumberToTag(i)).apply {
                     layoutParams = GridLayout.LayoutParams().apply {
-                        width = pieceWidth
-                        height = pieceHeight
+                        width = 420
+                        height = 420
                         rightMargin = 10
                         bottomMargin = 10
                     }
-                    scaleType = ImageView.ScaleType.FIT_XY
-                    background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.puzzle_background_placeholder)
-                    setOnDragListener(dragListener)
+                    imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.puzzle_background_placeholder)
+                    tag = convertNumberToTag(i) // Tag each view with its slot number
                 }
-                gridLayoutPuzzleSpaces.addView(imageView)
+                gridLayoutPuzzleSpaces.addView(puzzleSlotView)
             }
         }
     }
+
 
 
 
@@ -236,6 +239,21 @@ class ActivityGame3 : AppCompatActivity() {
         fetchAndSliceImage(personNameG.toString(),"puzzle")
     }
 
+    private fun convertNumberToTag(number: Int): Int {
+        return number
+        /*
+        return when (number) {
+            7 -> 4
+            8 -> 5
+            9 -> 6
+            13 -> 7
+            14 -> 8
+            15 -> 9
+            else -> number
+        }
+        */
+
+    }
 
 
 
@@ -251,6 +269,8 @@ class ActivityGame3 : AppCompatActivity() {
     }
 
     private val dragListener = View.OnDragListener { view, dragEvent ->
+
+        Log.d("ActivityGame3", "Drag event: $dragEvent")
         when (dragEvent.action) {
             DragEvent.ACTION_DRAG_STARTED -> true
             DragEvent.ACTION_DRAG_ENTERED -> {
@@ -262,13 +282,26 @@ class ActivityGame3 : AppCompatActivity() {
                 true
             }
             DragEvent.ACTION_DROP -> {
-                val draggedView = dragEvent.localState as View
-                val owner = draggedView.parent as ViewGroup
-                owner.removeView(draggedView)
-                val destination = view as ImageView
-                destination.setImageBitmap((draggedView as ImageView).drawable.toBitmap())
+                val draggedView = dragEvent.localState as PuzzlePieceView
+                val destination = view as PuzzlePieceView
 
-                draggedView.visibility = View.VISIBLE
+                if (draggedView.tag == destination.tag) {
+                    val owner = draggedView.parent as ViewGroup
+                    owner.removeView(draggedView) // Remove from the current parent
+
+                    // Retrieve the bitmap from the ImageView within the dragged PuzzlePieceView
+                    val bitmap = (draggedView.imageView.drawable as BitmapDrawable).bitmap
+                    destination.setImageBitmap(bitmap) // Set the bitmap on the destination PuzzlePieceView
+
+                    draggedView.visibility = View.INVISIBLE // Hide the dragged view
+                    piecesPlaced++
+                    if (piecesPlaced == gridLayoutPuzzlePieces.childCount) {
+                        showPuzzleCompletionDialog() // Show completion dialog when all pieces are placed
+                    }
+                } else {
+                    // If the piece is not placed correctly, reset its visibility
+                    draggedView.visibility = View.VISIBLE
+                }
                 true
             }
 
@@ -276,13 +309,16 @@ class ActivityGame3 : AppCompatActivity() {
                 view.alpha = 1.0f
                 if (!dragEvent.result) {
                     val v = dragEvent.localState as View
-                    v.visibility = View.VISIBLE
+                    v.visibility = View.VISIBLE // Reset visibility if the drag did not result in a drop
                 }
                 true
             }
             else -> false
         }
     }
+
+
+
 
 
 }
