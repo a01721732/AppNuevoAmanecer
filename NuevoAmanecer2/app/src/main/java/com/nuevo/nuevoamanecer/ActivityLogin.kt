@@ -60,6 +60,7 @@ class ActivityLogin : AppCompatActivity() {
                     if (response.isSuccessful && response.body() != null && response.body()!!.isNotEmpty()) {
                         val psicologo = response.body()!![0]
                         savePsicologoId(psicologo.id)
+                        savePsicologoName(psicologo.nombre)
                         startActivity(Intent(this@ActivityLogin, PersonalizacionAlumno::class.java))
                     } else {
                         Toast.makeText(this@ActivityLogin, "Login failed", Toast.LENGTH_SHORT).show()
@@ -82,6 +83,16 @@ class ActivityLogin : AppCompatActivity() {
         val sharedPref = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         with(sharedPref.edit()) {
             putInt("psicologoId", id)
+            apply()
+        }
+    }
+
+    private fun savePsicologoName(name: String) {
+
+        // Guardar el id del psicologo en shared preferences
+        val sharedPref = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putString("psicologoName", name)
             apply()
         }
     }

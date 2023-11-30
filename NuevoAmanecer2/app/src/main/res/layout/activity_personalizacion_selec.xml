@@ -38,6 +38,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <TextView
+        android:id="@+id/textPersonalizacionAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_edges"
+        android:backgroundTint="#d9ef20"
+        android:text="Personalizando"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButtonPuzzle"
         android:layout_width="0dp"
@@ -47,19 +67,78 @@
         app:layout_constraintTop_toBottomOf="@id/buttonConfirmarPersonalizacionSelec"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/imageButtonFamily"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
         app:layout_constraintHorizontal_weight="1"/>
 
-    <ImageButton
-        android:id="@+id/imageButtonFamily"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <!-- Right Side: Family Icons -->
+    <!-- We use a ConstraintLayout for better control over the positioning -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFamilyIcons"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/family_icon"
-        android:scaleType="fitCenter"
-        app:layout_constraintTop_toBottomOf="@id/buttonConfirmarPersonalizacionSelec"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageButtonPuzzle"
+        app:layout_constraintStart_toEndOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_weight="1"/>
+        app:layout_constraintTop_toBottomOf="@id/buttonConfirmarPersonalizacionSelec"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Father Icon -->
+        <ImageButton
+            android:id="@+id/imageFather"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/fathericon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageBrother"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageMother"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <!-- Mother Icon -->
+        <ImageButton
+            android:id="@+id/imageMother"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/mothericon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageSister"
+            app:layout_constraintStart_toEndOf="@+id/imageFather"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <!-- Brother Icon -->
+        <ImageButton
+            android:id="@+id/imageBrother"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/brothericon"
+            app:layout_constraintTop_toBottomOf="@+id/imageFather"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageSister"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <!-- Sister Icon -->
+        <ImageButton
+            android:id="@+id/imageSister"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/sistericon"
+            app:layout_constraintTop_toBottomOf="@+id/imageMother"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageBrother"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintHorizontal_weight="1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

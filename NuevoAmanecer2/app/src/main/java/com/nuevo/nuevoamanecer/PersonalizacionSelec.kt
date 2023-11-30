@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -36,8 +37,17 @@ class PersonalizacionSelec : AppCompatActivity() {
 
         val btnConfirmar = findViewById<Button>(R.id.buttonConfirmarPersonalizacionSelec)
         val btnPersJuego1 = findViewById<ImageButton>(R.id.imageButtonPuzzle)
-        val btnPersFamilia = findViewById<ImageButton>(R.id.imageButtonFamily)
+        val btnPersFamilia = findViewById<ImageButton>(R.id.imageFather)
+        val btnMother = findViewById<ImageButton>(R.id.imageMother)
+        val btnBrother = findViewById<ImageButton>(R.id.imageBrother)
+        val btnSister = findViewById<ImageButton>(R.id.imageSister)
         val btnRegresar = findViewById<Button>(R.id.btnRegresarJuego1)
+        val textAlumno = findViewById<TextView>(R.id.textPersonalizacionAlumno)
+
+        val sharedPref = this.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        val personName = sharedPref.getString("user", "DefaultName") ?: "DefaultName"
+        textAlumno.text = "Personalizando para: $personName"
+
         btnConfirmar.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -49,24 +59,38 @@ class PersonalizacionSelec : AppCompatActivity() {
             startActivity(intent)
         }
         btnPersJuego1.setOnClickListener {
-            lastClickedButton = "puzzle"
-            // Start the image picker using Intent.ACTION_GET_CONTENT
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "image/*"
-            startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
+            lastClickedButton = BUTTON_TYPE_PUZZLE
+            startImagePicker()
         }
 
         btnPersFamilia.setOnClickListener {
-            lastClickedButton = "family"
-            // Start the image picker using Intent.ACTION_GET_CONTENT
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "image/*"
-            startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
+            lastClickedButton = BUTTON_TYPE_FATHER
+            startImagePicker()
+        }
+
+        btnMother.setOnClickListener {
+            lastClickedButton = BUTTON_TYPE_MOTHER
+            startImagePicker()
+        }
+
+        btnBrother.setOnClickListener {
+            lastClickedButton = BUTTON_TYPE_BROTHER
+            startImagePicker()
+        }
+
+        btnSister.setOnClickListener {
+            lastClickedButton = BUTTON_TYPE_SISTER
+            startImagePicker()
         }
     }
 
     companion object {
         private const val IMAGE_PICK_CODE = 1000
+        private const val BUTTON_TYPE_PUZZLE = "puzzle"
+        private const val BUTTON_TYPE_FATHER = "father"
+        private const val BUTTON_TYPE_MOTHER = "mother"
+        private const val BUTTON_TYPE_BROTHER = "brother"
+        private const val BUTTON_TYPE_SISTER = "sister"
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -122,7 +146,10 @@ class PersonalizacionSelec : AppCompatActivity() {
 
                     runOnUiThread {
                         Toast.makeText(this@PersonalizacionSelec, "Image uploaded successfully", Toast.LENGTH_SHORT).show()
-                        saveImageUrlToDatabase(personName, gameType,imageUrl)
+                        when (gameType) {
+                            BUTTON_TYPE_PUZZLE -> saveImageUrlToDatabase(personName, "puzzle", imageUrl)
+                            else -> saveImageUrlToDatabase(personName, "family/$gameType", imageUrl)
+                        }
                     }
                 } else {
                     runOnUiThread {
@@ -137,6 +164,12 @@ class PersonalizacionSelec : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    private fun startImagePicker() {
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.type = "image/*"
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)
     }
 
     private fun saveImageUrlToDatabase(childName: String, gameType: String, imageUrl: String) {

@@ -9,10 +9,12 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.nuevo.nuevoamanecer.RetrofitClientInstance.retrofitInstance
+import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -33,6 +35,7 @@ class PersonalizacionAlumno : AppCompatActivity() {
         synchronizeButton = findViewById(R.id.btnComenzarPersonalizacionAlumno)
         val btnPers = findViewById(R.id.btnPersonalizacionAlumno) as Button
         val btnRegresar = findViewById(R.id.btnRegresarPersonalizacionAlumno) as Button
+        val textBienvenida = findViewById(R.id.txtPsychologistName) as TextView
 
         val levels = listOf("0","1", "2", "3", "4")
         val adapterLevels = ArrayAdapter(this, R.layout.spinner_custom_item, levels)
@@ -59,6 +62,8 @@ class PersonalizacionAlumno : AppCompatActivity() {
         }
 
 
+        val psychologistName = getPsychologistNameFromPreferences()
+        textBienvenida.text = "Viendo alumnos de: $psychologistName"
 
         val psychologistId = getPsychologistIdFromPreferences()
         loadStudents(psychologistId)
@@ -96,10 +101,8 @@ class PersonalizacionAlumno : AppCompatActivity() {
                         //MOVER CUANDO YA FUNCIONE CON EL API BIEN
 
                         var selectedCognitiveLevel = getSelectedLevel()
-                        Log.d("Data", "selected cognitive level: $selectedCognitiveLevel (${selectedCognitiveLevel?.javaClass?.simpleName})")
-                        if (selectedCognitiveLevel == null) {
-                            selectedCognitiveLevel = -1
-                        }
+                        //Log.d("Data", "selected cognitive level: $selectedCognitiveLevel (${selectedCognitiveLevel?.javaClass?.simpleName})")
+
 
                             val selected = spinnerNames?.selectedItem as? String
                             val selectedStudent = studentsList.find { it?.name == selected }
@@ -165,6 +168,10 @@ class PersonalizacionAlumno : AppCompatActivity() {
         return sharedPreferences.getInt("psicologoId", -1)
     }
 
+    private fun getPsychologistNameFromPreferences(): String {
+        val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        return sharedPreferences.getString("psicologoName", "DefaultName") ?: "DefaultName"
+    }
 
     private fun showUpdateSuccessDialog(studentName: String?, cognitiveLevel: Int) {
         val dialogBuilder = AlertDialog.Builder(this)
