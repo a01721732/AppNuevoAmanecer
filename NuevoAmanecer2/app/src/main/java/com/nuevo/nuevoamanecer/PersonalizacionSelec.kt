@@ -86,6 +86,8 @@ class PersonalizacionSelec : AppCompatActivity() {
 
     companion object {
         private const val IMAGE_PICK_CODE = 1000
+
+        // Tipos de botones
         private const val BUTTON_TYPE_PUZZLE = "puzzle"
         private const val BUTTON_TYPE_FATHER = "father"
         private const val BUTTON_TYPE_MOTHER = "mother"
@@ -166,7 +168,7 @@ class PersonalizacionSelec : AppCompatActivity() {
         })
     }
 
-    private fun startImagePicker() {
+    private fun startImagePicker() { // Iniciar el selector de imagenes
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMAGE_PICK_CODE)

@@ -43,10 +43,11 @@ class MainActivity : AppCompatActivity() {
         if (cognitiveLevel > 0) {
             setupButtonInteractions(btnImg1, ActivityGame1::class.java, cognitiveLevel >= 1)
             setupButtonInteractions(btnImg2, ActivityGame2::class.java, cognitiveLevel >= 1)
-            setupButtonInteractions(btnImg3, ActivityGame3::class.java, cognitiveLevel >= 2)
-            setupButtonInteractions(btnImg4, Communicador1::class.java, cognitiveLevel >= 2)
-            setupButtonInteractions(btnImg5, ActivityGame5::class.java, cognitiveLevel >= 3)
-            setupButtonInteractions(btnImg6, CaraDePapa::class.java, cognitiveLevel >= 3)
+            setupButtonInteractions(btnImg5, ActivityGame5::class.java, cognitiveLevel >= 2)
+            setupButtonInteractions(btnImg6, CaraDePapa::class.java, cognitiveLevel >= 2)
+            setupButtonInteractions(btnImg3, ActivityGame3::class.java, cognitiveLevel >= 3)
+            setupButtonInteractions(btnImg4, Communicador1::class.java, cognitiveLevel >= 4)
+
             textBienvenido.text = "Bienvenido " + sharedPref.getString("user", "DefaultName")
         }
         else{
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    // Función para configurar la interacción de un botón
     private fun setupButtonInteractions(button: ImageButton, activityClass: Class<*>, isEnabled: Boolean) {
         if (isEnabled) {
             button.alpha = 1.0f

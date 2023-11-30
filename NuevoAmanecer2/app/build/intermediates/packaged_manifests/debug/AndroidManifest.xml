@@ -34,9 +34,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NuevoAmanecer" >
         <activity
-            android:name="com.nuevo.nuevoamanecer.PersonalizacionFamilia"
-            android:exported="false" />
-        <activity
             android:name="com.nuevo.nuevoamanecer.Communicador8"
             android:exported="false" />
         <activity
@@ -47,7 +44,7 @@
             android:exported="false" />
         <activity
             android:name="com.nuevo.nuevoamanecer.ActivityGame4"
-            android:exported="false" /> <!-- There should only be one MAIN and LAUNCHER intent filter across all activities -->
+            android:exported="false" />
         <activity
             android:name="com.nuevo.nuevoamanecer.SplashActivity"
             android:exported="true"
@@ -69,7 +66,7 @@
             android:exported="true" />
         <activity
             android:name="com.nuevo.nuevoamanecer.PersonalizacionAlumno"
-            android:exported="true" /> <!-- These activities should either be set as exported=true or have an intent-filter -->
+            android:exported="true" />
         <activity
             android:name="com.nuevo.nuevoamanecer.Juego1Personalizacion"
             android:exported="true" />

@@ -76,7 +76,7 @@ class ActivityGame5 : AppCompatActivity() {
 
     private fun checkIfAllImagesMoved() {
         imagesMovedCount++
-        if (imagesMovedCount == 12) { // Assuming you have 15 images in total
+        if (imagesMovedCount == 12) {
             showFinishDialog()
         }
     }
@@ -89,13 +89,12 @@ class ActivityGame5 : AppCompatActivity() {
                 resetImages()
             }
             .setNegativeButton("No") { _, _ ->
-                // Continue with the game
-            }
+                    }
             .show()
     }
 
     private fun resetImages() {
-        // Define the initial positions for each set of images.
+
         val initialPositions = listOf(
             Pair(150f, 200f),
             Pair(300f, 500f),
@@ -103,7 +102,7 @@ class ActivityGame5 : AppCompatActivity() {
             Pair(150f, 750f)
         )
 
-        // Define the image views that need to be reset.
+
         val imageViewsToReset = listOf(
             R.id.cherry, R.id.lemon, R.id.orange,
             R.id.cherry1, R.id.lemon1, R.id.orange1,
@@ -111,10 +110,10 @@ class ActivityGame5 : AppCompatActivity() {
             R.id.cherry3, R.id.lemon3, R.id.orange3
         )
 
-        // Reset each image view to its initial position.
+
         imageViewsToReset.forEachIndexed { index, imageViewId ->
-            // Calculate the position based on the index.
-            val positionIndex = index / 3  // Assuming you have 3 images per set
+
+            val positionIndex = index / 3
             val (initialX, initialY) = initialPositions[positionIndex]
 
             findViewById<ImageView>(imageViewId).animate()
@@ -124,7 +123,7 @@ class ActivityGame5 : AppCompatActivity() {
                 .start()
         }
 
-        // Reset the moved images count.
+
         imagesMovedCount = 0
     }
 

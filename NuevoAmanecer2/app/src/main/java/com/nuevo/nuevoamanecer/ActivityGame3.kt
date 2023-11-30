@@ -142,12 +142,12 @@ class ActivityGame3 : AppCompatActivity() {
         val cols = 3
         var pieceNumber = 1
 
-        for (i in 0 until rows) {
-            for (j in 0 until cols) {
+        for (j in 0 until cols) {
+            for (i in 0 until rows) {
                 val pieceBitmap = Bitmap.createBitmap(image, j * (image.width / cols), i * (image.height / rows), image.width / cols, image.height / rows)
                 val puzzlePieceView = PuzzlePieceView(this, pieceNumber).apply {
                     setImageBitmap(pieceBitmap)
-                    tag = pieceNumber // Tag each view with its piece number
+                    tag = pieceNumber
                 }
                 pieces.add(puzzlePieceView)
                 pieceNumber++
@@ -156,6 +156,7 @@ class ActivityGame3 : AppCompatActivity() {
 
         return pieces
     }
+
 
 
 
@@ -202,20 +203,24 @@ class ActivityGame3 : AppCompatActivity() {
             val pieceHeight = pieceWidth
 
             val piecesCount = gridLayoutPuzzleSpaces.rowCount * gridLayoutPuzzleSpaces.columnCount
-            for (i in 1..piecesCount) {
-                val puzzleSlotView = PuzzlePieceView(this, convertNumberToTag(i)).apply {
-                    layoutParams = GridLayout.LayoutParams().apply {
-                        width = 420
-                        height = 420
-                        rightMargin = 10
-                        bottomMargin = 10
+            var tagNumber = 1
+            for (row in 0 until gridLayoutPuzzleSpaces.rowCount) {
+                for (col in 0 until gridLayoutPuzzleSpaces.columnCount) {
+                    val puzzleSlotView = PuzzlePieceView(this, tagNumber).apply {
+                        layoutParams = GridLayout.LayoutParams().apply {
+                            width = 420
+                            height = 420
+                            rightMargin = 10
+                            bottomMargin = 10
+                        }
+                        imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.rompecabezas)
+                        tag = "Slot_$tagNumber" // Use the tagNumber for consistency with sliceImage
                     }
-                    imageView.background = ContextCompat.getDrawable(this@ActivityGame3, R.drawable.rompecabezas)
-                    tag = "Slot_$i" // Identificador unico
+                    gridLayoutPuzzleSpaces.addView(puzzleSlotView)
+                    puzzleSlotView.setOnTouchListener(touchListener)
+                    puzzleSlotView.setOnDragListener(dragListener)
+                    tagNumber++
                 }
-                gridLayoutPuzzleSpaces.addView(puzzleSlotView)
-                puzzleSlotView.setOnTouchListener(touchListener)
-                puzzleSlotView.setOnDragListener(dragListener)
             }
         }
     }

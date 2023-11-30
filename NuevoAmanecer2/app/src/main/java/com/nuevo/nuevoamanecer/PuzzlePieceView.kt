@@ -8,6 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 
+
+// Clase personalizada para mostrar las piezas del puzzle
+//Tiene la imagen, y un numero para la pieza
 class PuzzlePieceView(context: Context, val pieceNumber: Int) : FrameLayout(context) {
     val imageView: ImageView = ImageView(context).apply {
         scaleType = ImageView.ScaleType.CENTER_CROP
@@ -23,7 +26,7 @@ class PuzzlePieceView(context: Context, val pieceNumber: Int) : FrameLayout(cont
         }
     }
 
-    init {
+    init { // Inicializar el PuzzlePieceView
         addView(imageView)
         addView(numberView)
         numberView.apply {
@@ -34,6 +37,7 @@ class PuzzlePieceView(context: Context, val pieceNumber: Int) : FrameLayout(cont
         }
     }
 
+    // Bitmap
     fun setImageBitmap(bitmap: Bitmap) {
         imageView.setImageBitmap(bitmap)
     }
