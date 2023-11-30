@@ -163,16 +163,19 @@ class PersonalizacionAlumno : AppCompatActivity() {
         return spinnerNames?.selectedItem as String
     }
 
+    // Guardar el id del psicologo en shared preferences
     private fun getPsychologistIdFromPreferences(): Int {
         val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         return sharedPreferences.getInt("psicologoId", -1)
     }
 
+    // Sacar el id del psicologo en shared preferences
     private fun getPsychologistNameFromPreferences(): String {
         val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         return sharedPreferences.getString("psicologoName", "DefaultName") ?: "DefaultName"
     }
 
+    // Mostrar dialogo de exito
     private fun showUpdateSuccessDialog(studentName: String?, cognitiveLevel: Int) {
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setTitle("Actualización Exitosa")
@@ -187,10 +190,11 @@ class PersonalizacionAlumno : AppCompatActivity() {
         dialogBuilder.create().show()
     }
 
+    // Cargar estudiantes
     private fun loadStudents(idPsicologo: Int) {
         retrofitInstance?.create(EstudianteApiService::class.java)?.getStudents(idPsicologo)?.enqueue(object : Callback<List<Estudiante?>> {
             override fun onResponse(call: Call<List<Estudiante?>>, response: Response<List<Estudiante?>>) {
-                if (response.isSuccessful) {
+                if (response.isSuccessful) { // Checar que la respuesta este correcta y que no sea null
                     val students = response.body() ?: emptyList()
                     val studentNames = students.mapNotNull { it?.name }
                     studentsList = students

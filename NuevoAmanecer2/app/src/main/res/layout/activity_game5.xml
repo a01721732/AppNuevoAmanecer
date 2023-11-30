@@ -38,7 +38,7 @@
             android:layout_marginStart="0dp"
             android:layout_marginEnd="100dp"
             android:backgroundTint="@color/nuevoAmarillo"
-            android:text="Juego de Rompecabezas"
+            android:text="Juego de Frutas"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="16sp"

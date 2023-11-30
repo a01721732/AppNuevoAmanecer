@@ -61,6 +61,7 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         regresarBtn.setOnClickListener{
             val intent = Intent(this, Communicador1::class.java)
+            intent.putExtra("key", sentenceArea.text.toString())
             startActivity(intent)
         }
 

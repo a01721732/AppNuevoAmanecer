@@ -76,14 +76,15 @@
                 android:src="@drawable/iconoleon"
                 tools:src="@drawable/iconoleon" />
 
+
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/imageButton8"
                 android:layout_width="835dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/rompecabezas"
-                tools:src="@drawable/rompecabezas" />
+                android:src="@drawable/frutas"
+                tools:src="@drawable/frutas" />
         </LinearLayout>
 
         <LinearLayout
@@ -94,24 +95,6 @@
             android:translationY="-140dp">
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/comunicador"
-                tools:src="@drawable/comunicador" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="835dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/frutas"
-                tools:src="@drawable/frutas" />
-
-            <ImageButton
                 android:id="@+id/imageButton9"
                 android:layout_width="835dp"
                 android:layout_height="match_parent"
@@ -119,6 +102,24 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/papa"
                 tools:src="@drawable/papa" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="835dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rompecabezas"
+                tools:src="@drawable/rompecabezas" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="835dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/comunicador"
+                tools:src="@drawable/comunicador" />
         </LinearLayout>
     </LinearLayout>
 
