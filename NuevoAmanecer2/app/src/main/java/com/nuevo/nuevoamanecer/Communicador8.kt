@@ -29,12 +29,12 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var imageMother: ImageView
     private lateinit var imageBrother: ImageView
     private lateinit var imageSister: ImageView
-    private val familyMembers = listOf("padre", "madre", "hermano", "hermana")
+    private val familyMembers = listOf("father", "mother", "brother", "sister")
     private val imageViewsMap = mapOf(
-        "padre" to R.id.imageFather,
-        "madre" to R.id.imageMother,
-        "hermano" to R.id.imageBrother,
-        "hermana" to R.id.imageSister
+        "father" to R.id.imageFather,
+        "mother" to R.id.imageMother,
+        "brother" to R.id.imageBrother,
+        "sister" to R.id.imageSister
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +64,14 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
             startActivity(intent)
         }
 
+        /*
+        fetchImageForFamilyMember("father")
+        fetchImageForFamilyMember("mother")
+        fetchImageForFamilyMember("brother")
+        fetchImageForFamilyMember("sister")
+        */
+
+
         imageFather = findViewById<ImageView>(R.id.imageFather)
         imageMother = findViewById<ImageView>(R.id.imageMother)
         imageBrother = findViewById<ImageView>(R.id.imageBrother)
@@ -77,60 +85,57 @@ class Communicador8 : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun fetchImageForFamilyMember(familyMember: String) {
-        val path = "images/$personName/family"
+        val path = "images/$personName/family/$familyMember"
         val databaseReference = FirebaseDatabase.getInstance().getReference(path)
 
-        databaseReference.orderByChild("timestamp").limitToLast(4)
+        databaseReference.orderByChild("timestamp").limitToLast(1)
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
-                        resetToDefaultImages()
-
-                        // Cargar imagenes disponibles
-                        val images = snapshot.children.mapNotNull { it.child("url").getValue(String::class.java) }
-                        for ((index, imageUrl) in images.withIndex()) {
-                            downloadAndSetImage(imageUrl, familyMember, index)
-                        }
+                    // Checar
+                    val imageUrl = snapshot.children.firstOrNull()?.child("url")?.getValue(String::class.java)
+                    if (imageUrl != null) {
+                        // Si existe, descargar la imagen y setearla
+                        downloadAndSetImage(imageUrl, familyMember)
                     } else {
-                        // Si no hay imagenes, usar las imagenes por defecto
-                        resetToDefaultImages()
+                        // No hay URL de imagen
+                        setDefaultImage(familyMember)
                     }
                 }
 
                 override fun onCancelled(error: DatabaseError) {
                     // Handle error
+                    Log.e("Firebase", "Database error: $error")
+                    setDefaultImage(familyMember)
                 }
             })
     }
 
+
     private fun resetToDefaultImages() {
-        setDefaultImage("padre")
-        setDefaultImage("madre")
-        setDefaultImage("hermano")
-        setDefaultImage("hermana")
+        setDefaultImage("father")
+        setDefaultImage("mother")
+        setDefaultImage("brother")
+        setDefaultImage("sister")
     }
 
-    private fun downloadAndSetImage(imageUrl: String, familyMember: String, index: Int) {
-        val imageViewId = when (index) {
-            0 -> R.id.imageFather
-            1 -> R.id.imageMother
-            2 -> R.id.imageBrother
-            3 -> R.id.imageSister
-            else -> return
-        }
+    private fun downloadAndSetImage(imageUrl: String, familyMember: String) {
+        val imageViewId = imageViewsMap[familyMember] ?: return
+        val imageView = findViewById<ImageView>(imageViewId)
+
         Glide.with(this)
             .load(imageUrl)
-            .error(getDefaultDrawableForFamilyMember(familyMember))
-            .into(findViewById(imageViewId))
+            .error(getDefaultDrawableForFamilyMember(familyMember)) // Fallback to default image if Glide fails
+            .into(imageView)
     }
+
 
 
     private fun getDefaultDrawableForFamilyMember(familyMember: String): Int {
         return when (familyMember) {
-            "padre" -> R.drawable.fathericon
-            "madre" -> R.drawable.mothericon
-            "hermano" -> R.drawable.brothericon
-            "hermana" -> R.drawable.sistericon
+            "father" -> R.drawable.fathericon
+            "mother" -> R.drawable.mothericon
+            "brother" -> R.drawable.brothericon
+            "sister" -> R.drawable.sistericon
 
             else -> R.drawable.family_icon // Default
         }

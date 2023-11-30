@@ -2997,6 +2997,7 @@ drawable cartoony_left_arm
 drawable cartoony_right_arm
 drawable cepillar
 drawable cepillo_dientes
+drawable cherry
 drawable cinco
 drawable comer
 drawable comida
@@ -3066,6 +3067,7 @@ drawable jugetes
 drawable lapices_colores
 drawable lavar_cara
 drawable lavar_mano
+drawable lemon
 drawable leon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3145,6 +3147,7 @@ drawable notify_panel_notification_icon_bg
 drawable nueve
 drawable ocho
 drawable ojos
+drawable orange
 drawable pajaroloco
 drawable papa
 drawable papa_sin_cara
@@ -3288,11 +3291,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
-id blackBobomb
-id blackBobomb1
-id blackBobomb2
-id blackBobomb3
-id blackSquare
 id blocking
 id blueShoesView
 id bocaLineaView
@@ -3338,6 +3336,10 @@ id chains
 id checkbox
 id checked
 id checkmark
+id cherry
+id cherry1
+id cherry2
+id cherry3
 id chronometer
 id circle_center
 id clear_text
@@ -3541,11 +3543,6 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
-id greenBobomb
-id greenBobomb1
-id greenBobomb2
-id greenBobomb3
-id greenSquare
 id gridLayout
 id gridLayoutPuzzle
 id gridLayoutPuzzlePieces
@@ -3553,6 +3550,7 @@ id gridLayoutPuzzleSpaces
 id group_divider
 id grouping
 id groups
+id guideline
 id guidelineVerticalCenter
 id headerConstraintLayout
 id headerLayout
@@ -3578,7 +3576,6 @@ id imageButton6
 id imageButton7
 id imageButton8
 id imageButton9
-id imageButtonFamily
 id imageButtonPuzzle
 id imageFather
 id imageMother
@@ -3597,11 +3594,16 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutFamilyIcons
 id left
 id leftArrowButton
 id leftMuscleArmView
 id leftToRight
 id legacy
+id lemon
+id lemon1
+id lemon2
+id lemon3
 id light
 id line1
 id line3
@@ -3705,6 +3707,11 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id orange
+id orange1
+id orange2
+id orange3
+id orangeSquare
 id outline
 id outward
 id overshoot
@@ -3721,11 +3728,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id pinkBobomb
-id pinkBobomb1
-id pinkBobomb2
-id pinkBobomb3
-id pinkSquare
 id position
 id postLayout
 id pressed
@@ -3738,6 +3740,7 @@ id puzzle_grid
 id radio
 id ratio
 id rectangles
+id redSquare
 id relativeLayout
 id report_drawn
 id resetButton
@@ -3846,6 +3849,7 @@ id teclaGb
 id text
 id text2
 id textEnd
+id textPersonalizacionAlumno
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3878,6 +3882,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtPsychologistName
 id unchecked
 id uniform
 id unlabeled
@@ -3902,6 +3907,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yellowSquare
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration

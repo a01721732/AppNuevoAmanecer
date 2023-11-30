@@ -16,32 +16,36 @@ class ActivityGame5 : AppCompatActivity() {
     private var dY = 0f
     private var imagesMovedCount = 0
     private lateinit var btnRegresar: Button
-
+    private lateinit var btnReset: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game5)
 
-        setDraggable(findViewById(R.id.pinkSquare))
-        setDraggable(findViewById(R.id.blackSquare))
-        setDraggable(findViewById(R.id.greenSquare))
-        setDraggable(findViewById(R.id.pinkBobomb))
-        setDraggable(findViewById(R.id.greenBobomb))
-        setDraggable(findViewById(R.id.blackBobomb))
-        setDraggable(findViewById(R.id.pinkBobomb1))
-        setDraggable(findViewById(R.id.greenBobomb1))
-        setDraggable(findViewById(R.id.blackBobomb1))
-        setDraggable(findViewById(R.id.pinkBobomb2))
-        setDraggable(findViewById(R.id.greenBobomb2))
-        setDraggable(findViewById(R.id.blackBobomb2))
-        setDraggable(findViewById(R.id.pinkBobomb3))
-        setDraggable(findViewById(R.id.greenBobomb3))
-        setDraggable(findViewById(R.id.blackBobomb3))
+        //Pink = cherry
+        //Green = lemon
 
-        btnRegresar = findViewById(R.id.btnRegresarJuego1) as Button
+        val draggableImages = listOf(
+            R.id.cherry, R.id.lemon, R.id.orange,
+            R.id.cherry1, R.id.lemon1, R.id.orange1,
+            R.id.cherry2, R.id.lemon2, R.id.orange2,
+            R.id.cherry3, R.id.lemon3, R.id.orange3
+        )
+        //Black = orange
+
+        draggableImages.forEach { imageId ->
+            val imageView = findViewById<ImageView>(imageId)
+            setDraggable(imageView)
+        }
+
+        btnRegresar = findViewById(R.id.btnRegresarJuego3) as Button
+        btnReset = findViewById(R.id.btnReset) as Button
 
         btnRegresar.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+        btnReset.setOnClickListener(){
+            resetImages()
         }
     }
 
@@ -91,38 +95,39 @@ class ActivityGame5 : AppCompatActivity() {
     }
 
     private fun resetImages() {
-        // Reset the position of all images
-        val initialX = 150f
-        val initialY = 200f
+        // Define the initial positions for each set of images.
+        val initialPositions = listOf(
+            Pair(150f, 200f),
+            Pair(300f, 500f),
+            Pair(600f, 200f),
+            Pair(150f, 750f)
+        )
 
-        val initialX1 = 300f
-        val initialY1 = 500f
+        // Define the image views that need to be reset.
+        val imageViewsToReset = listOf(
+            R.id.cherry, R.id.lemon, R.id.orange,
+            R.id.cherry1, R.id.lemon1, R.id.orange1,
+            R.id.cherry2, R.id.lemon2, R.id.orange2,
+            R.id.cherry3, R.id.lemon3, R.id.orange3
+        )
 
-        val initialX2 = 600f
-        val initialY2 = 200f
+        // Reset each image view to its initial position.
+        imageViewsToReset.forEachIndexed { index, imageViewId ->
+            // Calculate the position based on the index.
+            val positionIndex = index / 3  // Assuming you have 3 images per set
+            val (initialX, initialY) = initialPositions[positionIndex]
 
-        val initialX3 = 150f
-        val initialY3 = 750f
+            findViewById<ImageView>(imageViewId).animate()
+                .x(initialX)
+                .y(initialY)
+                .setDuration(0)
+                .start()
+        }
 
-        findViewById<ImageView>(R.id.pinkBobomb).animate().x(initialX).y(initialY).setDuration(0).start()
-        findViewById<ImageView>(R.id.greenBobomb).animate().x(initialX).y(initialY).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb).animate().x(initialX).y(initialY).setDuration(0).start()
-
-        findViewById<ImageView>(R.id.pinkBobomb1).animate().x(initialX1).y(initialY1).setDuration(0).start()
-        findViewById<ImageView>(R.id.greenBobomb1).animate().x(initialX1).y(initialY1).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb1).animate().x(initialX1).y(initialY1).setDuration(0).start()
-
-        findViewById<ImageView>(R.id.pinkBobomb2).animate().x(initialX2).y(initialY2).setDuration(0).start()
-        findViewById<ImageView>(R.id.greenBobomb2).animate().x(initialX2).y(initialY2).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb2).animate().x(initialX2).y(initialY2).setDuration(0).start()
-
-
-        findViewById<ImageView>(R.id.pinkBobomb3).animate().x(initialX3).y(initialY3).setDuration(0).start()
-        findViewById<ImageView>(R.id.greenBobomb3).animate().x(initialX3).y(initialY3).setDuration(0).start()
-        findViewById<ImageView>(R.id.blackBobomb3).animate().x(initialX3).y(initialY3).setDuration(0).start()
-
+        // Reset the moved images count.
         imagesMovedCount = 0
     }
+
 }
 
 

@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".PersonalizacionAlumno">
 
+    <TextView
+        android:id="@+id/txtPsychologistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Bienvenido"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
     <Spinner
         android:id="@+id/dropdownAlumno"
         android:layout_width="430dp"
